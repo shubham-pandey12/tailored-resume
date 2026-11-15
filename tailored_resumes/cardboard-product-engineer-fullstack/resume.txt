@@ -1,0 +1,48 @@
+Shubham Pandey
+mr.pshubham@gmail.com | +91-8174081896
+GitHub: shubham-pandey12 | LinkedIn: shubhampandey | Portfolio: shubham.pandey
+Summary
+Fullstack software engineer owning production features across React, TypeScript, Node.js, and Express.js. Built a
+CMS for 5+ brands and AI-powered applications, improving onboarding, user engagement, and web performance.
+Work Experience
+Moresand Technologies | Bengaluru, Karnataka
+Software Development Engineer 2 | Mar 2025 - Present
+• Cut new-brand onboarding time by 50% by architecting a multi-tenant CMS end to end using React.js,
+TypeScript, Node.js, and Express.js, supporting 5+ luxury travel brands on one codebase.
+• Reduced development effort by 50% through a reusable widget and template library with configurable API
+integrations and data mapping; added Redis caching for high-traffic endpoints to reduce API response latency.
+• Owned schema design, API versioning, and service boundaries; designed REST APIs and data contracts
+connecting backend services with frontend components.
+• Owned unit and integration test strategy and CI/CD improvements across frontend and backend services to
+support reliable production deployments.
+MAQ Software | Noida, UP
+Software Engineer 1 | Apr 2024 - Feb 2025
+• Improved prompt accuracy by 28% by building and owning a production Node.js service for an AI assistant with
+a custom Azure AI Search orchestration layer.
+• Shipped reusable React and TypeScript components for AI-powered applications; designed backend APIs and
+retrieval workflows integrating search, application logic, and AI orchestration.
+Techolution | Remote
+Full Stack Developer | Jul 2023 - Mar 2024
+• Shipped production full-stack features using React.js and Angular.js; established unit, integration, and
+automated acceptance testing with 90% test coverage.
+• Reduced deployment time by 60% by designing Jenkins and Docker CI/CD pipelines for microservice
+deployments, improving release reliability.
+GeekForGeeks | Noida, UP
+Software Development Engineer (Intern) | Jan 2023 - Jun 2023
+• Increased user engagement by 30% and improved site performance by 40% by building reusable web components
+and optimized pages with JavaScript, React.js, and Next.js.
+Projects
+WebHealth | React.js, Node.js, Express.js, SQLite, REST APIs
+• Built a website health auditing platform end to end, integrating a multi-page crawler, Google Lighthouse, and
+passive security scanning to consolidate performance, accessibility, and SEO reports and replace manual,
+tool-by-tool audits.
+Skills Summary
+Frontend: React.js, Next.js, TypeScript, JavaScript, Redux
+Backend and AI: Node.js, Express.js, Java, Python, REST APIs, GraphQL, Azure AI Search
+Data and Delivery: SQL, MySQL, MongoDB, Redis, AWS, Docker, Jenkins, CI/CD, Git
+Testing: Jest, Unit Testing, Integration Testing, Automated Acceptance Testing
+Education
+Indian Institute Of Information Technology Vadodara
+Bachelor of Technology - Information Technology
+Achievements
+HACKIIITV | Best Idea Award | 2019: Led a team of 5 software engineers to win the Best Idea Award.

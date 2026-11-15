@@ -1,0 +1,70 @@
+SHUBHAM PANDEY
+Email: mr.pshubham@gmail.com
+Mobile: +91-8174081896
+Github: shubham-pandey12
+LinkedIn: shubhampandey
+Portfolio: shubham.pandey
+
+========================================
+EDUCATION
+========================================
+
+Indian Institute of Information Technology Vadodara — Vadodara, Gujarat
+Bachelor of Technology — Information Technology | 2019 – 2023
+
+========================================
+SKILLS SUMMARY
+========================================
+
+Backend:        Node.js, JavaScript, TypeScript, Python, REST APIs, Microservices, Data Pipelines
+Frontend:       React.js, Next.js, TypeScript, HTML5, CSS3, Responsive Design
+Databases:      MongoDB, MySQL, PostgreSQL, Redis, SQL, SQLite
+Infrastructure: AWS (EC2, S3, ECS), GCP, Docker, Git, CI/CD, Jenkins
+Testing:        Jest, Unit Testing, Integration Testing, Automated Testing, TDD
+AI Dev Tools:   GitHub Copilot, Claude, Cursor, AI-Assisted Development
+
+========================================
+EXPERIENCE
+========================================
+
+Moresand Technologies — Bengaluru, Karnataka
+Software Development Engineer 2 | Mar 2025 – Present
+
+- Built and maintained production-quality backend services, internal tools, and automations (Node.js, Express.js, TypeScript) for a multi-tenant SaaS platform — designed scalable REST APIs across 5+ enterprise client integrations; owned projects end-to-end from implementation through rollout, monitoring, and iteration, cutting onboarding time by 50%.
+
+- Improved system reliability, observability, and maintainability — structured logging, custom metrics, alerting, Redis-backed caching, and maintained data workflows across internal systems; owned unit/integration testing with Jest, CI/CD pipelines on AWS ECS; translated cross-functional business requirements into API contracts; mentored junior engineers and reduced development effort by 50%.
+
+---
+
+MAQ Software — Noida, UP
+Software Engineer 1 | Apr 2024 – Feb 2025
+
+- Evaluated and applied AI-enabled capabilities to production engineering — built a Node.js + TypeScript backend service for an enterprise AI assistant integrating data pipelines for search, retrieval, and LLM-powered responses; improved prompt accuracy by 28%; owned full delivery end-to-end using Claude and GitHub Copilot.
+
+- Partnered cross-functionally with product and QA teams to translate business requirements into technical specifications; designed data workflows integrating search, AI orchestration, and LLM APIs; maintained system observability through metrics, structured logs, and alerting; developed modular React + TypeScript component library enforcing code quality and maintainability standards across teams.
+
+---
+
+Techolution — Remote
+Full Stack Developer | Jul 2023 – Mar 2024
+
+- Built and shipped production-quality full-stack features (Node.js, React.js, TypeScript) with 90% test coverage; enforced code quality and maintainability through structured code reviews; owned CI/CD pipelines (Jenkins, Docker) on AWS — reduced deployment time by 60% and improved release reliability through automated pipelines and production health monitoring.
+
+---
+
+GeeksForGeeks — Noida, UP
+SDE Intern | Jan 2023 – Jun 2023
+
+- Boosted user engagement 30% and site performance 40% building reusable components with React.js and Next.js; applied web performance optimization (code-splitting, lazy-loading) on a high-traffic platform serving millions of monthly users.
+
+========================================
+PROJECTS
+========================================
+
+WebHealth: Self-initiated, production-quality full-stack website health auditing platform — Node.js/Express.js backend REST APIs, React.js + TypeScript frontend; integrated a custom multi-page web crawler, Google Lighthouse, and passive security scanning to generate automated, consolidated reports on SEO, performance, and accessibility — replacing manual, tool-by-tool audits with a reliable internal platform; deployed on GCP with full observability and monitoring.
+
+========================================
+ACHIEVEMENTS
+========================================
+
+HACKIIITV 2019 – Best Idea Award: Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the prestigious Best Idea Award.

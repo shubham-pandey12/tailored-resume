@@ -1,0 +1,133 @@
+%------------------------
+% Resume Template
+% Author : Shubham Pandey
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.70in}
+\addtolength{\textheight}{1.15in}
+\urlstyle{rm}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-10pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeItemWithoutTitle}[1]{\item\small{{\vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-1pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{#3} & \textit{#4} \\\end{tabular*}\vspace{-5pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Shubham Pandey}} & Email: \href{mailto:mr.pshubham@gmail.com}{mr.pshubham@gmail.com}\\
+  \href{https://github.com/shubham-pandey12}{Github: shubham-pandey12} & Mobile:~~~~~~~~~~~~+91-8174081896 \\
+  \href{https://www.linkedin.com/in/shubham-pandey-a74716199/}{LinkedIn: shubhampandey} & Portfolio:~~~~~~~~\href{https://shubham-portfolio-mocha.vercel.app/}{shubham.pandey} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute Of Information Technology Vadodara}{}
+      {Bachelor of Technology - Information Technology;}{}
+    \resumeSubHeadingListEnd
+
+\vspace{-5pt}
+
+%-----------SKILLS-----------------
+\section{Skills Summary}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Backend}{~~~~~~~~~Java, Spring Boot, Spring Framework, Node.js, Express.js, Python, REST APIs, GraphQL, Microservices}
+    \resumeSubItem{ORM \& DB}{~~~~~~~JPA, Hibernate, PostgreSQL, MySQL, MongoDB, Redis, SQL}
+    \resumeSubItem{Testing}{~~~~~~~~~~~JUnit, Mockito, Jest, Unit Testing, Integration Testing, Automated Testing}
+    \resumeSubItem{Frontend}{~~~~~~~~React.js, Next.js, TypeScript, JavaScript, Redux}
+    \resumeSubItem{Infrastructure}{~AWS (EC2, S3, ECS), Docker, Jenkins, CI/CD, Git, Swagger/OpenAPI, Spring Security, Kafka}
+  \resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+   \resumeSubheading{Moresand Technologies}{Bengaluru, Karnataka}
+      {Software Development Engineer 2}{Mar 2025 - Present}
+      \resumeItemListStart
+ \item\small{\textbf{Architected} a multi-tenant CMS platform applying \textbf{Spring Boot microservice design principles} -- SOLID and explicit service boundaries -- across \textbf{Node.js/Express.js} REST services and React.js/TypeScript frontend supporting 5+ luxury travel brands, cutting new-brand onboarding by \textbf{50\%}.}
+    \item\small{\textbf{Designed RESTful APIs and database schemas} following \textbf{JPA/Hibernate ORM patterns} -- complex SQL joins, entity mapping, and indexing -- integrating brand-specific data across systems via clean service-to-frontend data contracts.}
+    \item\small{Built a modular widget library with configurable API integrations and a \textbf{Redis-backed caching layer} for high-traffic endpoints -- reduced development effort by \textbf{50\%} and cut API response latency significantly.}
+    \item\small{\textbf{Owned test strategy and CI/CD} across frontend and backend -- implementing \textbf{JUnit/Mockito unit and integration tests with 90\% coverage} and Jenkins pipeline quality gates; managed production deployments with health monitoring to ensure regression-safe, SLA-compliant releases.}
+\resumeItemListEnd
+
+\resumeSubheading{MAQ Software}{Noida, UP}
+      {Software Engineer 1}{Apr 2024 - Feb 2025}
+      \resumeItemListStart
+\item\small{\textbf{Built a production backend AI assistant} with \textbf{Azure AI Search} orchestration, \textbf{Spring Boot} REST controllers, and \textbf{JPA/Hibernate} persistence; improved prompt accuracy by \textbf{28\%}.}
+\item\small{\textbf{Designed RESTful APIs} with \textbf{Spring MVC, Spring Security, Swagger/OpenAPI}, and Kafka event streaming -- maintained production observability via metrics and alerting.}
+\item\small{\textbf{Developed} reusable \textbf{React + TypeScript} components for AI-powered apps -- applied design patterns, code reviews, and \textbf{JUnit/Jest} tests to ensure consistent behaviour.}
+\resumeItemListEnd
+
+    \resumeSubheading{Techolution}{Remote}
+      {Full Stack Developer}{Jul 2023 - Mar 2024}
+      \resumeItemListStart
+     \item\small{Built and shipped full-stack features (\textbf{React.js, Angular.js, Node.js}) with \textbf{JUnit/Mockito} unit and integration tests achieving \textbf{90\% coverage}; enforced SOLID principles and code review gates.}
+\item\small{\textbf{Designed CI/CD pipelines} using \textbf{Jenkins and Docker} for AWS microservice deployments, reducing deployment time by \textbf{60\%}; managed production deployments with health monitoring.}
+      \resumeItemListEnd
+
+    \resumeSubheading{GeekForGeeks}{Noida, UP}
+      {Software Development Engineer (Intern)}{Jan 2023 - Jun 2023}
+      \resumeItemListStart
+      \item\small{Boosted user engagement by 30\% and site performance by 40\% building \textbf{reusable web components} with \textbf{JavaScript, React.js, and Next.js} -- server-side rendering and code-splitting on a high-traffic platform.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\vspace{-5pt}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubItem{\href{https://web-health-eta.vercel.app/}{WebHealth}}
+      {Full-stack health auditing platform (React.js, Node.js/Express.js, SQLite, REST APIs, \textbf{Swagger/OpenAPI}, Google OAuth, GCP) -- custom web crawler with Google Lighthouse integration, security scanning, and SEO/performance/accessibility reporting; deployed end-to-end on GCP.}
+    \resumeSubItem{Job Hunter Platform}
+      {Multi-tenant job aggregation platform -- Node.js/Express.js scraper service with React.js front-end, PostgreSQL storage, Docker containerisation, AWS ECS deployment, and automated \textbf{CI/CD pipelines}; horizontally scalable architecture ingesting jobs from multiple sources with deduplication and profile-based matching.}
+
+  \resumeSubHeadingListEnd
+
+\vspace{-5pt}
+
+%-----------ACHIEVEMENTS-----------------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubItem{HACKIIITV 2019 -- Best Idea Award}{Led a team of 5 engineers to win the Best Idea Award at IIIT Vadodara's annual hackathon -- demonstrating technical mentorship and cross-functional collaboration.}
+  \resumeSubHeadingListEnd
+
+\end{document}

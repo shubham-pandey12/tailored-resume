@@ -1,0 +1,72 @@
+SHUBHAM PANDEY
+Email: mr.pshubham@gmail.com
+Mobile: +91-8174081896
+Github: shubham-pandey12
+LinkedIn: shubhampandey
+Portfolio: shubham.pandey
+
+========================================
+EDUCATION
+========================================
+
+Indian Institute of Information Technology Vadodara — Vadodara, Gujarat
+Bachelor of Technology — Information Technology | 2019 – 2023
+
+========================================
+SKILLS SUMMARY
+========================================
+
+Backend:        Node.js, Express.js, Python, Flask, TypeScript, REST APIs, Microservices
+Frontend:       React.js, Next.js, TypeScript, JavaScript, HTML5, CSS3, Redux
+Databases:      SQL, MySQL, MongoDB, Redis, DynamoDB
+Infrastructure: AWS (EC2, S3, ECS), GCP, Docker, Jenkins, CI/CD, Git
+Testing:        Jest, Unit Testing, Integration Testing, Automated Testing
+AI Dev Tools:   GitHub Copilot, Claude, Cursor, AI-Assisted Development
+
+========================================
+EXPERIENCE
+========================================
+
+Moresand Technologies — Bengaluru, Karnataka
+Software Development Engineer 2 | Mar 2025 – Present
+
+- Designed and built full-stack features end-to-end (React.js, TypeScript frontend; Node.js, Express.js, Python backend) for a multi-tenant SaaS platform — implemented reusable UI component libraries, responsive interfaces, REST APIs, authentication and authorization mechanisms, and frontend-backend integrations across 5+ enterprise client deployments; cut onboarding time by 50%.
+
+- Integrated with external services and third-party APIs — built backend business logic, data processing pipelines, a Redis-backed caching layer for high-traffic endpoints, and workflow automations; maintained production reliability with structured logging, custom metrics, and alerting.
+
+- Drove engineering quality: automated testing (Jest, unit + integration), code reviews, CI/CD pipelines (Jenkins, Docker); refactored legacy code to improve maintainability and performance; mentored junior engineers; reduced development effort by 50%.
+
+---
+
+MAQ Software — Noida, UP
+Software Engineer 1 | Apr 2024 – Feb 2025
+
+- Developed backend services (Node.js, TypeScript) with third-party API integrations and a custom AI orchestration layer (Azure AI Search + LLM APIs); designed REST API contracts, implemented authentication and authorization, and improved prompt accuracy by 28%; owned delivery using Claude and GitHub Copilot.
+
+- Designed data pipelines for enterprise AI workflows — unit + integration testing, production reliability monitoring (metrics, structured logs, alerting); translated business requirements into technical solutions in an Agile scrum environment.
+
+---
+
+Techolution — Remote
+Full Stack Developer | Jul 2023 – Mar 2024
+
+- Built and shipped production full-stack features (Node.js, React.js, TypeScript) with 90% test coverage; implemented REST APIs, authentication flows, and CI/CD pipelines (Jenkins, Docker) on AWS — reduced deployment time by 60%; enforced code quality through code reviews.
+
+---
+
+GeeksForGeeks — Noida, UP
+Software Development Engineer (Intern) | Jan 2023 – Jun 2023
+
+- Built reusable React.js and Next.js components and backend features for an edtech platform serving millions of monthly students; improved platform performance 40% and user engagement 30% through rendering optimization and component refactoring.
+
+========================================
+PROJECTS
+========================================
+
+WebHealth: Full-stack web auditing platform — React.js + TypeScript frontend with Recharts dashboards and responsive design; Node.js/Express.js REST API backend with authentication, third-party integrations (Google OAuth, Google Lighthouse), and passive security scanning; deployed on GCP with full observability and monitoring.
+
+========================================
+ACHIEVEMENTS
+========================================
+
+HACKIIITV 2019 – Best Idea Award: Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the prestigious Best Idea Award.

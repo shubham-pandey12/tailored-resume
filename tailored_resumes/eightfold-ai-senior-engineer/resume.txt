@@ -1,0 +1,63 @@
+Shubham Pandey Email: mr.pshubham@gmail.com
+Github: shubham-pandey12 Mobile: +91-8174081896
+LinkedIn: shubhampandey Portfolio: shubham.pandey
+Education
+Indian Institute Of Information Technology Vadodara
+•
+Bachelor of Technology - Information Technology;
+Skills Summary
+• Backend: Python, Node.js, Express.js, Distributed Systems, Microservices, Server-Side Applications
+• Frontend & UX: React.js, TypeScript, Next.js, JavaScript, Reusable UI Modules, SaaS, User Experience (UX)
+• Data & Config: Data Pipelines, Data Integration, Configuration Management, SQL, MySQL, MongoDB, Redis
+• AI & Tools: Generative AI, LLMs, Agentic AI, AI-Assisted Dev (Cursor), Admin, Monitoring & Alerting
+• Cloud & QA: AWS, Azure, Cloud Debugging, Docker, Jenkins, CI/CD, Automated Unit, Selenium, Code Coverage
+Work Experience
+•
+•
+•
+•
+Moresand Technologies Bengaluru, Karnataka
+Software Development Engineer 2 Mar 2025 - Present
+◦ Architected multi-tenant SaaS server-side applications and microservices (Node.js, Express.js,
+React.js, TypeScript), owning distributed systems service boundaries, API versioning, and schema design
+for 5+ brands — cutting new-brand onboarding time by 50% while ensuring high scalability and reliability.
+◦ Engineered safe, reliable data pipelines and REST APIs for high-scale data integration across SQL
+(MySQL) and MongoDB databases, while building internal tools for platform administration,
+monitoring, and alerting across enterprise brand workflows.
+◦ Led the build of reusable widgets and modules with configuration management for customization and
+generalization alongside Redis caching — cutting development effort by 50% and reducing API latency.
+◦ Owned cloud debugging, troubleshooting, and CI/CD across AWS SaaS services, partnering across
+engineering and product teams while leveraging Cursor (AI-assisted development tools) to accelerate
+delivery, code coverage, and automated unit testing.
+MAQ Software Noida, UP
+Software Engineer 1 Apr 2024 - Feb 2025
+◦ Built and owned scalable server-side applications (Python, Node.js) on Azure powering Generative
+AI, LLMs, and agentic AI retrieval workflows via Azure AI Search — improving prompt accuracy by 28%.
+◦ Designed distributed retrieval data pipelines, microservices, and REST APIs for multi-source data
+integration and prompt configuration management, handling cloud debugging for reliable responses.
+◦ Developed and shipped reusable React.js and TypeScript modules with focus on user experience
+(UX) detail, collaborating across product and backend teams to scale resilient SaaS interfaces.
+Techolution Remote
+Full Stack Developer Jul 2023 - Mar 2024
+◦ Built and shipped full-stack SaaS features using React.js, Python, and Node.js, driving up code
+coverage to 90% through automated unit, integration, and Selenium acceptance testing suites.
+◦ Designed CI/CD pipelines using Docker and Jenkins for microservice deployments on AWS with
+monitoring and alerting tooling — reducing deployment time by 60% and lifting release reliability.
+GeekForGeeks Noida, UP
+Software Development Engineer (Intern) Jan 2023 - Jun 2023
+◦ Boosted user engagement by 30% and improved site performance by 40% by building reusable React.js,
+Next.js, and JavaScript components crafted for responsive user experience (UX).
+Projects
+•
+WebHealth
+React.js, Node.js, Express.js, SQLite, REST APIs, Recharts, Three.js, Google OAuth, GCP
+◦ Designed and built a full-stack website health auditing platform end-to-end (Node.js/Express backend,
+React.js frontend) to run client-facing website audits, integrating a custom multi-page web crawler, Google
+Lighthouse, and passive security scanning to generate consolidated SEO, performance, and accessibility reports
+via REST APIs, replacing manual, tool-by-tool audits.
+Achievements
+•
+HACKIIITV 2019
+Best Idea Award
+◦ Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the
+prestigious Best Idea Award.

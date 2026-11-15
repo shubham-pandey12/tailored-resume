@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "count": 10,
+    "page": 2
+  },
+  "results": [
+    {
+      "id": "4487501021",
+      "title": ".NET Full Stack (Internal)",
+      "company": "For demo Live",
+      "companyUrl": "https://www.linkedin.com/company/for-demo-live",
+      "location": "Pune/Pimpri-Chinchwad Area",
+      "date": "2026-11-04",
+      "url": "https://in.linkedin.com/jobs/view/net-full-stack-internal-at-for-demo-live-4487501021"
+    },
+    {
+      "id": "4465510219",
+      "title": "Software Engineer II",
+      "company": "GHX",
+      "companyUrl": "https://www.linkedin.com/company/ghx",
+      "location": "Hyderabad, Telangana, India",
+      "date": "2026-11-05",
+      "url": "https://in.linkedin.com/jobs/view/software-engineer-ii-at-ghx-4465510219"
+    },
+    {
+      "id": "4487247462",
+      "title": "Senior .NET Developer",
+      "company": "Alfa Laval",
+      "companyUrl": "https://se.linkedin.com/company/alfa-laval",
+      "location": "Pune City, Maharashtra, India",
+      "date": "2026-11-04",
+      "url": "https://in.linkedin.com/jobs/view/senior-net-developer-at-alfa-laval-4487247462"
+    },
+    {
+      "id": "4452742586",
+      "title": "Software Engineer III",
+      "company": "Pearson",
+      "companyUrl": "https://uk.linkedin.com/company/pearson",
+      "location": "Chennai, Tamil Nadu, India",
+      "date": "2026-11-06",
+      "url": "https://in.linkedin.com/jobs/view/software-engineer-iii-at-pearson-4452742586"
+    },
+    {
+      "id": "4488148581",
+      "title": ".Net Senior Developer",
+      "company": "NCR Voyix",
+      "companyUrl": "https://www.linkedin.com/company/ncrvoyix",
+      "location": "Chennai, Tamil Nadu, India",
+      "date": "2026-11-06",
+      "url": "https://in.linkedin.com/jobs/view/net-senior-developer-at-ncr-voyix-4488148581"
+    },
+    {
+      "id": "4484829035",
+      "title": "Fullstack Senior Software Engineer",
+      "company": "Diagrid",
+      "companyUrl": "https://www.linkedin.com/company/diagrid-inc",
+      "location": "Bengaluru East, Karnataka, India",
+      "date": "2026-11-03",
+      "url": "https://in.linkedin.com/jobs/view/fullstack-senior-software-engineer-at-diagrid-4484829035"
+    },
+    {
+      "id": "4486949966",
+      "title": ".NET Full Stack Developer",
+      "company": "Siemens Healthineers",
+      "companyUrl": "https://de.linkedin.com/company/siemens-healthineers",
+      "location": "Pune District, Maharashtra, India",
+      "date": "2026-11-06",
+      "url": "https://in.linkedin.com/jobs/view/net-full-stack-developer-at-siemens-healthineers-4486949966"
+    },
+    {
+      "id": "4487051451",
+      "title": "Junior Software Engineer",
+      "company": "Cin7",
+      "companyUrl": "https://www.linkedin.com/company/cin7",
+      "location": "Ahmedabad, Gujarat, India",
+      "date": "2026-11-03",
+      "url": "https://in.linkedin.com/jobs/view/junior-software-engineer-at-cin7-4487051451"
+    },
+    {
+      "id": "4467499553",
+      "title": "Software Engineer II",
+      "company": "GHX India",
+      "companyUrl": "https://in.linkedin.com/company/ghx-india",
+      "location": "Hyderabad, Telangana, India",
+      "date": "2026-11-05",
+      "url": "https://in.linkedin.com/jobs/view/software-engineer-ii-at-ghx-india-4467499553"
+    },
+    {
+      "id": "4478780173",
+      "title": "Senior Software Engineer (.Net)",
+      "company": "BOLD",
+      "companyUrl": "https://pr.linkedin.com/company/boldlimited",
+      "location": "Noida, Uttar Pradesh, India",
+      "date": "2026-11-03",
+      "url": "https://in.linkedin.com/jobs/view/senior-software-engineer-net-at-bold-4478780173"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+SHUBHAM PANDEY
+Email: mr.pshubham@gmail.com
+Mobile: +91-8174081896
+Github: shubham-pandey12
+LinkedIn: shubhampandey
+Portfolio: shubham.pandey
+
+========================================
+EDUCATION
+========================================
+
+Indian Institute of Information Technology Vadodara — Vadodara, Gujarat
+Bachelor of Technology — Information Technology | 2019 – 2023
+
+========================================
+SKILLS SUMMARY
+========================================
+
+Backend:        Java, Spring Boot, REST APIs, GraphQL, Microservices, Distributed Systems, Spring Security
+Frontend:       React.js, TypeScript, JavaScript, Next.js, Angular.js, Redux, State Management
+Databases:      MySQL, PostgreSQL, MongoDB, Redis, SQL, Data Modeling, Query Optimization
+Infrastructure: AWS (EC2, S3, ECS), Docker, Kubernetes, Jenkins, CI/CD, Git
+Testing:        Jest, Unit Testing, Integration Testing, TDD, Automated Testing
+AI Dev Tools:   GitHub Copilot, Claude, Cursor, AI-Assisted Development
+
+========================================
+EXPERIENCE
+========================================
+
+Moresand Technologies — Bengaluru, Karnataka
+Software Development Engineer 2 | Mar 2025 – Present
+
+- Architected a distributed, multi-tenant SaaS platform (Java, Spring Boot, React.js, TypeScript) serving 5+ enterprise clients — built configurable approval workflows, policy-based configuration tools, and role/permission management with microservice boundaries and enterprise-grade REST API design, reducing client onboarding time by 50%.
+
+- Owned data modelling and query optimisation for MySQL and PostgreSQL schemas end-to-end — complex joins, indexing strategies, and transactional integrity for high-volume enterprise data; drove the full Java/Spring Boot REST API data contract between backend services and React.js frontend components across clients.
+
+- Built a Redis-backed caching layer in Spring Boot for high-traffic API endpoints; maintained production observability via structured metrics, logs, and alerting — achieving SLA-compliant reliability with 50% reduction in development effort and enabling zero-downtime deployments across the platform.
+
+- Owned end-to-end CI/CD pipelines (Docker, AWS ECS) and production incident response — root-cause analysis, runbooks, and operational documentation; mentored junior engineers through structured code reviews, championing monitoring standards and engineering best practices across the team.
+
+---
+
+MAQ Software — Noida, UP
+Software Engineer 1 | Apr 2024 – Feb 2025
+
+- Built a production Java/Spring Boot backend service for an enterprise AI assistant, integrating an Azure AI Search orchestration layer for high-volume data retrieval at enterprise scale — improved prompt accuracy by 28%; took full ownership from system design through containerised deployment and production monitoring using Claude and GitHub Copilot throughout.
+
+- Designed scalable REST APIs and data services in Java/Spring Boot — integrating vector search, PostgreSQL queries, and LLM APIs with strict data modelling and query optimisation; maintained production observability (metrics, structured logs, alerting) to meet SLA commitments under high-volume enterprise load.
+
+- Developed reusable React + TypeScript component library with robust state management for AI-powered enterprise applications; enforced code review discipline, automated testing, and monitoring standards across multiple product teams using AI-assisted development workflows.
+
+---
+
+Techolution — Remote
+Full Stack Developer | Jul 2023 – Mar 2024
+
+- Built and shipped production full-stack features (Java, Spring Boot, React.js, Angular.js) with 90% test coverage across unit, integration, and automated acceptance tests; enforced SOLID principles, clean code, and high-signal code review discipline — driving predictable delivery of production-quality features.
+
+- Designed and owned CI/CD pipelines (Jenkins, Docker) for microservice deployments on AWS, cutting deployment time by 60%; managed production deployments end-to-end with health monitoring, alerting, and incident tracking.
+
+---
+
+GeeksForGeeks — Noida, UP
+SDE Intern | Jan 2023 – Jun 2023
+
+- Boosted user engagement by 30% and site performance by 40% by building reusable React.js and Next.js components with server-side rendering, code-splitting, and lazy-loading on a high-traffic platform serving millions of monthly users.
+
+========================================
+PROJECTS
+========================================
+
+WebHealth: Full-stack website health auditing platform — Java/Spring Boot backend, React.js frontend, REST APIs, MySQL, Google OAuth, GCP. Custom multi-page web crawler with Google Lighthouse integration, passive security scanning, and performance profiling; end-to-end owned from system design and data modelling to production deployment with automated consolidated audit reporting.
+
+========================================
+ACHIEVEMENTS
+========================================
+
+HACKIIITV 2019 – Best Idea Award: Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the prestigious Best Idea Award.

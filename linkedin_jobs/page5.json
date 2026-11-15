@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "count": 10,
+    "page": 5
+  },
+  "results": [
+    {
+      "id": "4471673732",
+      "title": "Software Engineer - Java Developer",
+      "company": "The Depository Trust & Clearing Corporation (DTCC)",
+      "companyUrl": "https://www.linkedin.com/company/dtcc",
+      "location": "Hyderabad, Telangana, India",
+      "date": "2026-11-07",
+      "url": "https://in.linkedin.com/jobs/view/software-engineer-java-developer-at-the-depository-trust-clearing-corporation-dtcc-4471673732"
+    },
+    {
+      "id": "4488860129",
+      "title": "Software Engineer III - Java Fullstack AWS",
+      "company": "JPMorganChase",
+      "companyUrl": "https://www.linkedin.com/company/jpmorganchase",
+      "location": "Mumbai, Maharashtra, India",
+      "date": "2026-11-09",
+      "url": "https://in.linkedin.com/jobs/view/software-engineer-iii-java-fullstack-aws-at-jpmorganchase-4488860129"
+    },
+    {
+      "id": "4487931931",
+      "title": "Senior Software Engineer (India)",
+      "company": "Sezzle",
+      "companyUrl": "https://www.linkedin.com/company/sezzle",
+      "location": "Delhi, Delhi, India",
+      "date": "2026-11-09",
+      "url": "https://in.linkedin.com/jobs/view/senior-software-engineer-india-at-sezzle-4487931931"
+    },
+    {
+      "id": "4485836849",
+      "title": "Senior .NET Developer",
+      "company": "Konrad",
+      "companyUrl": "https://www.linkedin.com/company/konrad-group",
+      "location": "Gurgaon, Haryana, India",
+      "date": "2026-11-05",
+      "url": "https://in.linkedin.com/jobs/view/senior-net-developer-at-konrad-4485836849"
+    },
+    {
+      "id": "4487044689",
+      "title": "Junior Software Engineer",
+      "company": "Cin7",
+      "companyUrl": "https://www.linkedin.com/company/cin7",
+      "location": "Pune Division, Maharashtra, India",
+      "date": "2026-11-03",
+      "url": "https://in.linkedin.com/jobs/view/junior-software-engineer-at-cin7-4487044689"
+    },
+    {
+      "id": "4480179697",
+      "title": "Software Engineer",
+      "company": "Warner Music Group",
+      "companyUrl": "https://www.linkedin.com/company/warner-music-group",
+      "location": "Bengaluru, Karnataka, India",
+      "date": "2026-11-06",
+      "url": "https://in.linkedin.com/jobs/view/software-engineer-at-warner-music-group-4480179697"
+    },
+    {
+      "id": "4435174751",
+      "title": "Senior Software Engineer – Java Full Stack",
+      "company": "Toast",
+      "companyUrl": "https://www.linkedin.com/company/toast-inc",
+      "location": "Chennai, Tamil Nadu, India",
+      "date": "2026-11-08",
+      "url": "https://in.linkedin.com/jobs/view/senior-software-engineer-%E2%80%93-java-full-stack-at-toast-4435174751"
+    },
+    {
+      "id": "4485084648",
+      "title": "(IND) Software Engineer III",
+      "company": "Walmart Global Tech India",
+      "companyUrl": "https://in.linkedin.com/company/walmartglobaltechindia",
+      "location": "Chennai, Tamil Nadu, India",
+      "date": "2026-11-04",
+      "url": "https://in.linkedin.com/jobs/view/ind-software-engineer-iii-at-walmart-global-tech-india-4485084648"
+    },
+    {
+      "id": "4487294330",
+      "title": "Software Engineer",
+      "company": "Microsoft",
+      "companyUrl": "https://www.linkedin.com/company/microsoft",
+      "location": "Hyderabad, Telangana, India",
+      "date": "2026-11-04",
+      "url": "https://in.linkedin.com/jobs/view/software-engineer-at-microsoft-4487294330"
+    },
+    {
+      "id": "4470946777",
+      "title": "Software Engineer II",
+      "company": "Xplor Technologies",
+      "companyUrl": "https://www.linkedin.com/company/xplor-technologies",
+      "location": "Pune/Pimpri-Chinchwad Area",
+      "date": "2026-11-05",
+      "url": "https://in.linkedin.com/jobs/view/software-engineer-ii-at-xplor-technologies-4470946777"
+    }
+  ]
+}

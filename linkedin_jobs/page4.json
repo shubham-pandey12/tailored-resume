@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "count": 10,
+    "page": 4
+  },
+  "results": [
+    {
+      "id": "4470310953",
+      "title": "Senior Software Engineer",
+      "company": "PAR Technology",
+      "companyUrl": "https://www.linkedin.com/company/partechnology",
+      "location": "Gurugram, Haryana, India",
+      "date": "2026-11-07",
+      "url": "https://in.linkedin.com/jobs/view/senior-software-engineer-at-par-technology-4470310953"
+    },
+    {
+      "id": "4452366122",
+      "title": "Senior Software Developer (.Net/C#)",
+      "company": "Sherweb",
+      "companyUrl": "https://ca.linkedin.com/company/sherweb",
+      "location": "Greater Kolkata Area",
+      "date": "2026-11-03",
+      "url": "https://in.linkedin.com/jobs/view/senior-software-developer-net-c%23-at-sherweb-4452366122"
+    },
+    {
+      "id": "4471030721",
+      "title": "Java Developer",
+      "company": "QuinStreet",
+      "companyUrl": "https://www.linkedin.com/company/quinstreet",
+      "location": "Pune Division, Maharashtra, India",
+      "date": "2026-11-07",
+      "url": "https://in.linkedin.com/jobs/view/java-developer-at-quinstreet-4471030721"
+    },
+    {
+      "id": "4471407804",
+      "title": "Java Developer",
+      "company": "Capco",
+      "companyUrl": "https://uk.linkedin.com/company/capco",
+      "location": "Pune City, Maharashtra, India",
+      "date": "2026-11-05",
+      "url": "https://in.linkedin.com/jobs/view/java-developer-at-capco-4471407804"
+    },
+    {
+      "id": "4479824645",
+      "title": "Senior Software Engineer - FullStack",
+      "company": "Xplor Technologies",
+      "companyUrl": "https://www.linkedin.com/company/xplor-technologies",
+      "location": "Pune/Pimpri-Chinchwad Area",
+      "date": "2026-11-05",
+      "url": "https://in.linkedin.com/jobs/view/senior-software-engineer-fullstack-at-xplor-technologies-4479824645"
+    },
+    {
+      "id": "4487990919",
+      "title": "Full Stack Software Engineer - Postgres",
+      "company": "ClickHouse",
+      "companyUrl": "https://www.linkedin.com/company/clickhouseinc",
+      "location": "Bengaluru, Karnataka, India",
+      "date": "2026-11-10",
+      "url": "https://in.linkedin.com/jobs/view/full-stack-software-engineer-postgres-at-clickhouse-4487990919"
+    },
+    {
+      "id": "4483248558",
+      "title": "Software Engineer-II",
+      "company": "Spreetail",
+      "companyUrl": "https://www.linkedin.com/company/spreetail",
+      "location": "Greater Delhi Area",
+      "date": "2026-11-04",
+      "url": "https://in.linkedin.com/jobs/view/software-engineer-ii-at-spreetail-4483248558"
+    },
+    {
+      "id": "4470988116",
+      "title": "Senior Full Stack Java Developer",
+      "company": "FIS",
+      "companyUrl": "https://www.linkedin.com/company/fis",
+      "location": "Pune/Pimpri-Chinchwad Area",
+      "date": "2026-11-06",
+      "url": "https://in.linkedin.com/jobs/view/senior-full-stack-java-developer-at-fis-4470988116"
+    },
+    {
+      "id": "4486564688",
+      "title": "Full Stack Developer (React JS & Node JS)",
+      "company": "IQVIA",
+      "companyUrl": "https://www.linkedin.com/company/iqvia",
+      "location": "Kochi, Kerala, India",
+      "date": "2026-11-05",
+      "url": "https://in.linkedin.com/jobs/view/full-stack-developer-react-js-node-js-at-iqvia-4486564688"
+    },
+    {
+      "id": "4425877575",
+      "title": "Senior Software Engineer - Full stack",
+      "company": "Barco",
+      "companyUrl": "https://be.linkedin.com/company/barco",
+      "location": "Noida, Uttar Pradesh, India",
+      "date": "2026-11-09",
+      "url": "https://in.linkedin.com/jobs/view/senior-software-engineer-full-stack-at-barco-4425877575"
+    }
+  ]
+}

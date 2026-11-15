@@ -1,0 +1,164 @@
+%------------------------
+% Tailored Resume — Shubham Pandey
+% Role: Application Support Engineer — Impact Analytics
+% Date: October 29, 2026
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.70in}
+\addtolength{\textheight}{1.15in}
+
+\urlstyle{rm}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Shubham Pandey}} & Email: \href{mailto:mr.pshubham@gmail.com}{mr.pshubham@gmail.com}\\
+  \href{https://github.com/shubham-pandey12}{Github: shubham-pandey12} & Mobile:~~~~~~~~~~~~+91-8174081896 \\
+  \href{https://www.linkedin.com/in/shubham-pandey-a74716199/}{LinkedIn: shubhampandey} & Portfolio:~~~~~~~~\href{https://shubham-portfolio-mocha.vercel.app/}{shubham.pandey} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute Of Information Technology Vadodara}{}
+      {Bachelor of Technology - Information Technology;}{}
+  \resumeSubHeadingListEnd
+
+\vspace{-5pt}
+
+%-----------SKILLS-----------------
+\section{Skills Summary}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Backend}{~~~~~~~~~~Node.js, Express.js, Java, Python, REST APIs, GraphQL, Microservices}
+    \resumeSubItem{Databases}{~~~~~~~PostgreSQL, MySQL, MongoDB, Redis}
+    \resumeSubItem{Observability}{~~Datadog, Grafana, Prometheus, Log Analysis, Distributed Tracing, Alerting}
+    \resumeSubItem{Infrastructure}{~AWS (EC2, S3, ECS), Docker, Kubernetes, Jenkins, CI/CD, Linux, Shell Scripting}
+    \resumeSubItem{Messaging}{~~~~~~~Kafka, RabbitMQ, BullMQ, Queue Monitoring}
+    \resumeSubItem{Frontend}{~~~~~~~~~React.js, Next.js, TypeScript, JavaScript}
+  \resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading{Moresand Technologies}{Bengaluru, Karnataka}
+      {Software Development Engineer 2}{Mar 2025 - Present}
+      \resumeItemListStart
+
+        \item \textnormal{\textbf{Owned production reliability} of a multi-tenant \textbf{Node.js/Express.js} backend serving 5+ luxury travel brands — monitored API health, triaged failures, and coordinated with teams to resolve production incidents and service disruptions end-to-end.}
+
+        \item \textnormal{\textbf{Built and maintained a Redis-backed caching layer} for high-traffic API endpoints — reduced latency by \textbf{50\%}; analysed performance metrics and logs to detect degradation and pre-empt incidents before they reached SLA thresholds.}
+
+        \item \textnormal{\textbf{Owned CI/CD pipelines} (Jenkins) for backend and frontend services — monitored deployments, validated production readiness, identified post-release regressions, and maintained runbooks for deployment rollback and incident triage.}
+
+        \item \textnormal{\textbf{Identified recurring production issues} in service integrations and database queries — conducted root cause analysis, filed and tracked fixes with engineering, and documented resolution patterns to reduce MTTR across the team.}
+
+      \resumeItemListEnd
+
+    \resumeSubheading{MAQ Software}{Noida, UP}
+      {Software Engineer 1}{Apr 2024 - Feb 2025}
+      \resumeItemListStart
+
+        \item \textnormal{\textbf{Built and operated} a production \textbf{Node.js backend service} for an AI assistant with an \textbf{Azure AI Search orchestration layer} — owned live incident response for API failures, search errors, and latency spikes; improved prompt accuracy by \textbf{28\%}.}
+
+        \item \textnormal{\textbf{Monitored distributed system health} across APIs, AI orchestration, and data retrieval — analysed application logs and traces to identify failure patterns, triage issues, and coordinate fixes across engineering teams.}
+
+        \item \textnormal{\textbf{Designed backend APIs} with structured logging and observability hooks — built internal tools using \textbf{REST APIs} and integrated alerting to detect service degradation and support incident escalation workflows.}
+
+      \resumeItemListEnd
+
+    \resumeSubheading{Techolution}{Remote}
+      {Full Stack Developer}{Jul 2023 - Mar 2024}
+      \resumeItemListStart
+
+        \item \textnormal{\textbf{Built and maintained CI/CD pipelines} using \textbf{Jenkins and Docker} for microservice deployments — validated production deployments, monitored service health post-release, and reduced deployment time by \textbf{60\%}.}
+
+        \item \textnormal{\textbf{Established unit, integration, and automated acceptance testing} with \textbf{90\% coverage} — ensured production stability and supported incident investigation through structured test suites and documented test plans.}
+
+      \resumeItemListEnd
+
+    \resumeSubheading{GeekForGeeks}{Noida, UP}
+      {Software Development Engineer (Intern)}{Jan 2023 - Jun 2023}
+      \resumeItemListStart
+        \item \textnormal{Improved site performance by \textbf{40\%} and user engagement by \textbf{30\%} on high-traffic pages — monitored web vitals, identified rendering bottlenecks, and deployed fixes using \textbf{JavaScript, React.js, and Next.js}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\vspace{-5pt}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading{\href{https://web-health-eta.vercel.app/}{WebHealth}}{}
+      {\textbf{Node.js, Express.js, REST APIs, Google Lighthouse, Web Crawler, GCP, React.js}}{}
+      \begin{itemize}
+        \item \textnormal{\textbf{Designed and built} a full-stack website health auditing platform — \textbf{Node.js/Express} backend integrating a custom web crawler, \textbf{Google Lighthouse}, and passive security scanning to generate consolidated SEO, performance, and availability reports via \textbf{REST APIs}; deployed to GCP with automated health checks.}
+      \end{itemize}
+
+  \resumeSubHeadingListEnd
+
+\vspace{-5pt}
+
+%-----------ACHIEVEMENTS-----------------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubheading{HACKIIITV}{2019}{\textbf{Best Idea Award}}{}
+      \begin{itemize}
+        \item{Led and guided a team of 5 software engineers in the HackIIITV competition, winning the Best Idea Award.}
+      \end{itemize}
+  \resumeSubHeadingListEnd
+
+\end{document}

@@ -1,0 +1,1632 @@
+<title>India SDE Jobs — Nov 2026</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+
+<style>
+:root {
+  --bg: #f5f6fa;
+  --surface: #ffffff;
+  --border: #e2e4ed;
+  --fg: #1a1d2e;
+  --fg2: #4a4f6a;
+  --fg3: #7a7f9a;
+  --accent: #3b5bdb;
+  --accent-light: #eef1ff;
+  --green: #2f9e44;
+  --green-light: #ebfbee;
+  --orange: #e67700;
+  --orange-light: #fff4e6;
+  --red: #c92a2a;
+  --red-light: #fff5f5;
+  --tag-bg: #eef1ff;
+  --tag-fg: #364fc7;
+  --applied-bg: #ebfbee;
+  --applied-border: #69db7c;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1117;
+    --surface: #1a1d2e;
+    --border: #2e3153;
+    --fg: #e8eaf6;
+    --fg2: #9ba3c9;
+    --fg3: #6670a0;
+    --accent: #748ffc;
+    --accent-light: #1e2347;
+    --green: #69db7c;
+    --green-light: #0d2b13;
+    --orange: #ffa94d;
+    --orange-light: #2b1900;
+    --red: #ff6b6b;
+    --red-light: #2b0000;
+    --tag-bg: #1e2347;
+    --tag-fg: #91a7ff;
+    --applied-bg: #0d2b13;
+    --applied-border: #2f9e44;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1117;
+  --surface: #1a1d2e;
+  --border: #2e3153;
+  --fg: #e8eaf6;
+  --fg2: #9ba3c9;
+  --fg3: #6670a0;
+  --accent: #748ffc;
+  --accent-light: #1e2347;
+  --green: #69db7c;
+  --green-light: #0d2b13;
+  --orange: #ffa94d;
+  --orange-light: #2b1900;
+  --red: #ff6b6b;
+  --red-light: #2b0000;
+  --tag-bg: #1e2347;
+  --tag-fg: #91a7ff;
+  --applied-bg: #0d2b13;
+  --applied-border: #2f9e44;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0;
+}
+
+.header {
+  background: var(--accent);
+  margin-left: calc(-1 * max(16px, env(safe-area-inset-left, 0px)));
+  margin-right: calc(-1 * max(16px, env(safe-area-inset-right, 0px)));
+  padding: 24px max(24px, env(safe-area-inset-left, 0px)) 20px;
+}
+.header h1 { font-family: 'Space Grotesk', sans-serif; font-size: clamp(20px,4vw,28px); font-weight: 700; color: #fff; text-wrap: balance; }
+.header-meta { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.header-pill { background: rgba(255,255,255,.18); border-radius: 20px; padding: 2px 10px; font-size: 12px; color: #fff; font-weight: 500; }
+
+/* Applied progress bar */
+.progress-bar-wrap { margin-top: 12px; }
+.progress-label { font-size: 12px; color: rgba(255,255,255,.8); margin-bottom: 4px; }
+.progress-track { height: 6px; background: rgba(255,255,255,.2); border-radius: 3px; }
+.progress-fill { height: 6px; background: #69db7c; border-radius: 3px; transition: width .4s ease; }
+
+/* Controls */
+.controls { padding-block: 14px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.controls-label { font-size: 11px; font-weight: 600; color: var(--fg3); text-transform: uppercase; letter-spacing: .06em; flex-basis: 100%; }
+.filter-btn { background: var(--surface); border: 1px solid var(--border); color: var(--fg2); font-size: 12px; font-weight: 500; padding: 5px 12px; border-radius: 20px; cursor: pointer; font-family: inherit; transition: background .12s, border-color .12s, color .12s; }
+.filter-btn:hover { border-color: var(--accent); color: var(--accent); }
+.filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+.toolbar { display: flex; justify-content: space-between; align-items: center; padding-bottom: 12px; gap: 8px; flex-wrap: wrap; }
+.count-bar { font-size: 12px; color: var(--fg3); font-variant-numeric: tabular-nums; }
+.count-bar strong { color: var(--fg); }
+.clear-btn { font-size: 12px; color: var(--accent); background: none; border: none; cursor: pointer; font-family: inherit; padding: 4px 8px; border-radius: 4px; }
+.clear-btn:hover { background: var(--accent-light); }
+
+/* Grid */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr)); gap: 12px; padding-bottom: 40px; }
+
+/* Card */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  transition: box-shadow .15s;
+  position: relative;
+}
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.07); }
+.card.applied { background: var(--applied-bg); border-color: var(--applied-border); }
+.card.applied .apply-btn { background: var(--green); }
+
+.card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+.company-logo { width: 36px; height: 36px; border-radius: 8px; background: var(--accent-light); color: var(--accent); font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 14px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.card-badges { display: flex; flex-wrap: wrap; gap: 4px; }
+.badge { font-size: 11px; font-weight: 500; padding: 2px 7px; border-radius: 4px; white-space: nowrap; }
+.badge-salary { background: var(--green-light); color: var(--green); }
+.badge-yoe { background: var(--orange-light); color: var(--orange); }
+.badge-new { background: var(--accent-light); color: var(--accent); }
+.badge-applied { background: var(--green-light); color: var(--green); }
+
+.card-title { font-family: 'Space Grotesk', sans-serif; font-size: 14px; font-weight: 600; color: var(--fg); line-height: 1.3; text-wrap: balance; }
+.card-company { font-size: 13px; font-weight: 500; color: var(--accent); }
+.card-loc { font-size: 12px; color: var(--fg3); display: flex; align-items: center; gap: 4px; }
+.card-loc::before { content: "📍"; font-size: 11px; }
+
+.tags { display: flex; flex-wrap: wrap; gap: 4px; }
+.tag { background: var(--tag-bg); color: var(--tag-fg); font-size: 11px; font-weight: 500; padding: 2px 6px; border-radius: 4px; }
+
+.card-footer { margin-top: auto; padding-top: 10px; border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.card-source { font-size: 11px; color: var(--fg3); }
+
+/* Applied checkbox */
+.applied-toggle { display: flex; align-items: center; gap: 6px; cursor: pointer; user-select: none; }
+.applied-toggle input[type=checkbox] { width: 15px; height: 15px; cursor: pointer; accent-color: var(--green); }
+.applied-toggle span { font-size: 11px; color: var(--fg3); font-weight: 500; }
+.applied-toggle:hover span { color: var(--green); }
+.card.applied .applied-toggle span { color: var(--green); }
+
+.apply-btn { display: inline-block; background: var(--accent); color: #fff; font-size: 12px; font-weight: 600; padding: 6px 14px; border-radius: 6px; text-decoration: none; font-family: inherit; transition: opacity .15s; white-space: nowrap; flex-shrink: 0; }
+.apply-btn:hover { opacity: .88; }
+
+.hidden-card { display: none !important; }
+</style>
+
+<div class="header">
+  <h1>🇮🇳 India SDE Jobs — November 2026</h1>
+  <div class="header-meta">
+    <span class="header-pill" id="total-pill">88 roles</span>
+    <span class="header-pill">2–5 YOE · 8+ LPA</span>
+    <span class="header-pill">Java · Python · JS · TS</span>
+  </div>
+  <div class="progress-bar-wrap">
+    <div class="progress-label" id="progress-label">Applied: 0 / 88</div>
+    <div class="progress-track"><div class="progress-fill" id="progress-fill" style="width:0%"></div></div>
+  </div>
+</div>
+
+<div class="controls">
+  <span class="controls-label">City</span>
+  <button class="filter-btn active" onclick="filter(this,'all','city')">All</button>
+  <button class="filter-btn" onclick="filter(this,'bengaluru','city')">Bengaluru</button>
+  <button class="filter-btn" onclick="filter(this,'hyderabad','city')">Hyderabad</button>
+  <button class="filter-btn" onclick="filter(this,'pune','city')">Pune</button>
+  <button class="filter-btn" onclick="filter(this,'gurugram','city')">Gurugram</button>
+  <button class="filter-btn" onclick="filter(this,'noida','city')">Noida</button>
+  <button class="filter-btn" onclick="filter(this,'mumbai','city')">Mumbai</button>
+</div>
+<div class="controls" style="padding-top:0">
+  <span class="controls-label">Role</span>
+  <button class="filter-btn active" onclick="filter(this,'all','role')">All</button>
+  <button class="filter-btn" onclick="filter(this,'backend','role')">Backend</button>
+  <button class="filter-btn" onclick="filter(this,'frontend','role')">Frontend</button>
+  <button class="filter-btn" onclick="filter(this,'fullstack','role')">Full Stack</button>
+  <button class="filter-btn" onclick="filter(this,'java','role')">Java</button>
+  <button class="filter-btn" onclick="filter(this,'applied','role')">✅ Applied</button>
+</div>
+
+<div class="toolbar">
+  <div class="count-bar"><strong id="count">50</strong> jobs shown</div>
+  <button class="clear-btn" onclick="clearApplied()">Clear applied</button>
+</div>
+
+<div class="grid" id="grid">
+
+<!-- ═══════════════ BENGALURU ═══════════════ -->
+
+<div class="card" id="j1" data-city="bengaluru" data-role="fullstack java">
+  <div class="card-top">
+    <div class="company-logo">JP</div>
+    <div class="card-badges"><span class="badge badge-yoe">3+ YOE</span></div>
+  </div>
+  <div class="card-title">Software Engineer III – Full Stack (Python &amp; React)</div>
+  <div class="card-company">JPMorganChase</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">React</span><span class="tag">TypeScript</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j1',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=94b189acc8ef0a23" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j2" data-city="bengaluru" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">DI</div>
+    <div class="card-badges"><span class="badge badge-yoe">2+ YOE</span></div>
+  </div>
+  <div class="card-title">Software Engineer II – Full Stack</div>
+  <div class="card-company">Disney (India)</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">React</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j2',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=f7ddb81705b89ccc" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j3" data-city="bengaluru" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">BS</div>
+    <div class="card-badges"><span class="badge badge-yoe">3–6 YOE</span></div>
+  </div>
+  <div class="card-title">Full Stack Engineer</div>
+  <div class="card-company">Bosch Group</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">Java</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j3',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=41511b762aa6167c" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j4" data-city="bengaluru" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo">TR</div>
+    <div class="card-badges"><span class="badge badge-yoe">3–5 YOE</span></div>
+  </div>
+  <div class="card-title">Software Engineer</div>
+  <div class="card-company">Thomson Reuters</div>
+  <div class="card-loc">Bengaluru (Hybrid)</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">TypeScript</span><span class="tag">Apigee</span><span class="tag">APIs</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j4',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=521e25f6be35fda1" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j5" data-city="bengaluru" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo">HP</div>
+    <div class="card-badges"><span class="badge badge-yoe">3–5 YOE</span></div>
+  </div>
+  <div class="card-title">Software Engineer 4</div>
+  <div class="card-company">HP Inc.</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">TypeScript</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j5',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=c59ce760a7513cbb" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j6" data-city="bengaluru" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo">CX</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">Backend Engineer (Node.js / TypeScript / Python)</div>
+  <div class="card-company">CLANX</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">TypeScript</span><span class="tag">Python</span><span class="tag">Node.js</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j6',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=3e7338d8712098d8" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j7" data-city="bengaluru" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo">CX</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">Backend Engineer (Python / TypeScript)</div>
+  <div class="card-company">CLANX</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">APIs</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j7',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=da08f1ca2dd97a44" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j8" data-city="bengaluru" data-role="backend java">
+  <div class="card-top">
+    <div class="company-logo">ZT</div>
+    <div class="card-badges"><span class="badge badge-yoe">1–3 YOE</span></div>
+  </div>
+  <div class="card-title">Backend Engineer (Founding Engineer)</div>
+  <div class="card-company">Zintlr</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Elasticsearch</span><span class="tag">Spring</span><span class="tag">Hibernate</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j8',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.naukri.com/job-listings-backend-engineer-founding-engineer-zintlr-bengaluru-1-to-3-years-110725500053" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j9" data-city="bengaluru" data-role="java backend">
+  <div class="card-top">
+    <div class="company-logo">TT</div>
+    <div class="card-badges"><span class="badge badge-yoe">2–3 YOE</span></div>
+  </div>
+  <div class="card-title">Java Developer 2–3</div>
+  <div class="card-company">Techtree</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Spring MVC</span><span class="tag">Hibernate</span><span class="tag">JavaScript</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j9',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.naukri.com/job-listings-java-developer-2-3-techtree-bengaluru-belagavi-2-to-3-years-111126017655" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j10" data-city="bengaluru" data-role="java backend">
+  <div class="card-top">
+    <div class="company-logo">TT</div>
+    <div class="card-badges"><span class="badge badge-yoe">4–5 YOE</span></div>
+  </div>
+  <div class="card-title">Java Developer</div>
+  <div class="card-company">Techtree</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">J2EE</span><span class="tag">Spring MVC</span><span class="tag">JavaScript</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j10',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.naukri.com/job-listings-java-developer-techtree-bengaluru-belagavi-4-to-5-years-111126017440" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j11" data-city="bengaluru" data-role="backend java">
+  <div class="card-top">
+    <div class="company-logo">IF</div>
+    <div class="card-badges"><span class="badge badge-yoe">3–5 YOE</span></div>
+  </div>
+  <div class="card-title">Technology Analyst</div>
+  <div class="card-company">Infosys</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">J2EE</span><span class="tag">Spring</span><span class="tag">Microservices</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j11',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.naukri.com/job-listings-technology-analyst-infosys-limited-bengaluru-3-to-5-years-061026918542" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j12" data-city="bengaluru" data-role="backend java">
+  <div class="card-top">
+    <div class="company-logo">PS</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">Software Engineer Java, AWS</div>
+  <div class="card-company">Photon</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">AWS</span><span class="tag">Spring Boot</span><span class="tag">Hibernate</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j12',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.naukri.com/job-listings-software-engineer-java-aws-photon-infotech-p-ltd-bengaluru-6-to-9-years-050226502969" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<!-- ═══════════════ HYDERABAD ═══════════════ -->
+
+<div class="card" id="j13" data-city="hyderabad" data-role="frontend">
+  <div class="card-top">
+    <div class="company-logo">🍎</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">Frontend Engineer</div>
+  <div class="card-company">Apple</div>
+  <div class="card-loc">Hyderabad</div>
+  <div class="tags"><span class="tag">TypeScript</span><span class="tag">JavaScript</span><span class="tag">React</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j13',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=533e6f30e351f95c" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j14" data-city="hyderabad" data-role="frontend">
+  <div class="card-top">
+    <div class="company-logo">🍎</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">Senior UI Engineer — Web</div>
+  <div class="card-company">Apple</div>
+  <div class="card-loc">Hyderabad</div>
+  <div class="tags"><span class="tag">TypeScript</span><span class="tag">JavaScript</span><span class="tag">React</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j14',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=b870b255682c57d1" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j15" data-city="hyderabad" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">🍎</div>
+    <div class="card-badges"><span class="badge badge-yoe">3+ YOE</span></div>
+  </div>
+  <div class="card-title">Full Stack Engineer — Python</div>
+  <div class="card-company">Apple</div>
+  <div class="card-loc">Hyderabad</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">APIs</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j15',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=e57f0c8973122028" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j16" data-city="hyderabad" data-role="frontend">
+  <div class="card-top">
+    <div class="company-logo">MS</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">Software Engineer 2 — Frontend (Copilot Search)</div>
+  <div class="card-company">Microsoft</div>
+  <div class="card-loc">Hyderabad</div>
+  <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j16',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=a19f136239a12c0e" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j17" data-city="hyderabad" data-role="frontend">
+  <div class="card-top">
+    <div class="company-logo">MS</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">Software Engineer II — Front End (Azure Data)</div>
+  <div class="card-company">Microsoft</div>
+  <div class="card-loc">Hyderabad</div>
+  <div class="tags"><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Azure</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j17',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=23ad38d6fa95be90" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j18" data-city="hyderabad" data-role="fullstack frontend java">
+  <div class="card-top">
+    <div class="company-logo">JP</div>
+    <div class="card-badges"><span class="badge badge-yoe">3+ YOE</span></div>
+  </div>
+  <div class="card-title">Software Engineer III — React Developer</div>
+  <div class="card-company">JPMorganChase</div>
+  <div class="card-loc">Hyderabad</div>
+  <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">JavaScript</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j18',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=b3057d051acde10f" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j19" data-city="hyderabad" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">PG</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">Full Stack Developer Software Engineer</div>
+  <div class="card-company">P&amp;G</div>
+  <div class="card-loc">Hyderabad</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">Angular</span><span class="tag">TypeScript</span><span class="tag">Azure</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j19',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=83c137114d364d6a" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j20" data-city="hyderabad" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">US</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">FullStack Developer — React + Node.js</div>
+  <div class="card-company">UST</div>
+  <div class="card-loc">Hyderabad</div>
+  <div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">TypeScript</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j20',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=be679e186adaec66" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j21" data-city="hyderabad" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">HZ</div>
+    <div class="card-badges"><span class="badge badge-salary">up to ₹25L</span></div>
+  </div>
+  <div class="card-title">Forward Deployed Engineer</div>
+  <div class="card-company">Heizen</div>
+  <div class="card-loc">Hyderabad</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">Java</span><span class="tag">Full Stack</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j21',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=d11912255f795c4a" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j22" data-city="hyderabad" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">AB</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">Engineer 2, Software</div>
+  <div class="card-company">Accurate Background</div>
+  <div class="card-loc">Hyderabad</div>
+  <div class="tags"><span class="tag">TypeScript</span><span class="tag">JavaScript</span><span class="tag">Agile</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j22',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=8ec847a99e2f8af9" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j23" data-city="hyderabad" data-role="java backend">
+  <div class="card-top">
+    <div class="company-logo">GG</div>
+    <div class="card-badges"><span class="badge badge-yoe">2–5 YOE</span></div>
+  </div>
+  <div class="card-title">Java Developer</div>
+  <div class="card-company">GAIAN GROUP</div>
+  <div class="card-loc">Hyderabad</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Spring</span><span class="tag">Microservices</span><span class="tag">SQL</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j23',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.naukri.com/job-listings-java-developer-gaian-group-hyderabad-2-to-5-years-290626503031" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j24" data-city="hyderabad" data-role="java backend">
+  <div class="card-top">
+    <div class="company-logo">SI</div>
+    <div class="card-badges"><span class="badge badge-yoe">2–4 YOE</span></div>
+  </div>
+  <div class="card-title">Java Developer</div>
+  <div class="card-company">Stark Industries</div>
+  <div class="card-loc">Hyderabad</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Microservices</span><span class="tag">Spring</span><span class="tag">Apache Tomcat</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j24',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.naukri.com/job-listings-java-developer-stark-industries-hyderabad-2-to-4-years-280926503213" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<!-- ═══════════════ PUNE ═══════════════ -->
+
+<div class="card" id="j25" data-city="pune" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo">PM</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">Software Engineer I (Backend)</div>
+  <div class="card-company">PUMA</div>
+  <div class="card-loc">Pune</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">Backend</span><span class="tag">APIs</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j25',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=c2655779def9f217" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j26" data-city="pune" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo">PM</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">Software Engineer II (Backend)</div>
+  <div class="card-company">PUMA</div>
+  <div class="card-loc">Pune</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">Java</span><span class="tag">CI/CD</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j26',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=f8f264a414a59b53" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j27" data-city="pune" data-role="java backend">
+  <div class="card-top">
+    <div class="company-logo">BR</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">Software Engineer</div>
+  <div class="card-company">Barclays</div>
+  <div class="card-loc">Pune</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">Full Stack</span><span class="tag">Agile</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j27',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=1b3013c3ccb69a30" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j28" data-city="pune" data-role="java backend">
+  <div class="card-top">
+    <div class="company-logo">DB</div>
+    <div class="card-badges"><span class="badge badge-yoe">5+ YOE</span></div>
+  </div>
+  <div class="card-title">Senior Software Engineer (Java) — AVP</div>
+  <div class="card-company">Deutsche Bank</div>
+  <div class="card-loc">Pune</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Microservices</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j28',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=2c860dcc25250326" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j29" data-city="pune" data-role="fullstack java">
+  <div class="card-top">
+    <div class="company-logo">OP</div>
+    <div class="card-badges"><span class="badge badge-yoe">3+ YOE</span></div>
+  </div>
+  <div class="card-title">Senior Software Engineer — Fullstack (Java / React)</div>
+  <div class="card-company">Optum</div>
+  <div class="card-loc">Pune</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">React.js</span><span class="tag">TypeScript</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j29',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=a44cfc8112de2346" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j30" data-city="pune" data-role="java backend">
+  <div class="card-top">
+    <div class="company-logo">CP</div>
+    <div class="card-badges"><span class="badge badge-yoe">4+ YOE</span></div>
+  </div>
+  <div class="card-title">Java IBM OpenPages Developer</div>
+  <div class="card-company">Capco</div>
+  <div class="card-loc">Pune / Bengaluru / Mumbai / Gurugram</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">IBM OpenPages</span><span class="tag">Spring</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j30',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=57edbd1d0c3b8edd" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j31" data-city="pune" data-role="java backend fullstack">
+  <div class="card-top">
+    <div class="company-logo">US</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">Developer III — Software Engineering</div>
+  <div class="card-company">UST</div>
+  <div class="card-loc">Pune</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">APIs</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j31',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=48dc3cd5fd32cac5" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j32" data-city="pune" data-role="java backend">
+  <div class="card-top">
+    <div class="company-logo">FE</div>
+    <div class="card-badges"><span class="badge badge-yoe">1–3 YOE</span></div>
+  </div>
+  <div class="card-title">Java Developer</div>
+  <div class="card-company">Forward Eye Technologies</div>
+  <div class="card-loc">Pune</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Kafka</span><span class="tag">AWS</span><span class="tag">MySQL</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j32',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.naukri.com/job-listings-java-developer-forward-eye-technologies-pune-1-to-3-years-111126930635" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<!-- ═══════════════ GURUGRAM ═══════════════ -->
+
+<div class="card" id="j33" data-city="gurugram" data-role="fullstack java backend">
+  <div class="card-top">
+    <div class="company-logo">AZ</div>
+    <div class="card-badges"><span class="badge badge-yoe">3+ YOE</span></div>
+  </div>
+  <div class="card-title">Software Dev Engineer II (CFX Team)</div>
+  <div class="card-company">Amazon India</div>
+  <div class="card-loc">Gurugram</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">Distributed Systems</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j33',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=b5d76e64cd9fa47b" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j34" data-city="gurugram" data-role="fullstack backend">
+  <div class="card-top">
+    <div class="company-logo">EX</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">Software Development Engineer II</div>
+  <div class="card-company">Expedia Group</div>
+  <div class="card-loc">Gurugram</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">Microservices</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j34',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=eccf516c3d0d9fbb" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j35" data-city="gurugram" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo">MN</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">Software Engineer (Data Solutions)</div>
+  <div class="card-company">Morningstar</div>
+  <div class="card-loc">Gurugram (Hybrid)</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">Data</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j35',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=838f276369be343b" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j36" data-city="gurugram" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">GM</div>
+    <div class="card-badges"><span class="badge badge-salary">₹20–25 LPA</span></div>
+  </div>
+  <div class="card-title">Web Development &amp; AI Specialist</div>
+  <div class="card-company">Grand Metropolitan Hotels</div>
+  <div class="card-loc">Gurugram</div>
+  <div class="tags"><span class="tag">TypeScript</span><span class="tag">Python</span><span class="tag">AI Tools</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j36',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=e8f0e463254b087b" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j37" data-city="gurugram" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">OP</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">Software Engineer — ServiceNow</div>
+  <div class="card-company">Optum</div>
+  <div class="card-loc">Gurugram</div>
+  <div class="tags"><span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">ServiceNow</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j37',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=f393f3c4befe67f8" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j38" data-city="gurugram" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">BC</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">Full Stack Developer</div>
+  <div class="card-company">BCS Technology</div>
+  <div class="card-loc">Gurugram</div>
+  <div class="tags"><span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Node.js</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j38',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=5fbc47ace2482bce" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j39" data-city="gurugram" data-role="java backend">
+  <div class="card-top">
+    <div class="company-logo">TG</div>
+    <div class="card-badges"><span class="badge badge-yoe">2–5 YOE</span></div>
+  </div>
+  <div class="card-title">Java Developer</div>
+  <div class="card-company">Tagbin Services</div>
+  <div class="card-loc">Gurugram</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Microservices</span><span class="tag">JavaScript</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j39',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.naukri.com/job-listings-java-developer-tagbin-services-private-limited-gurugram-india-haryana-2-to-5-years-051126021384" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j40" data-city="gurugram" data-role="java backend fullstack">
+  <div class="card-top">
+    <div class="company-logo">PX</div>
+    <div class="card-badges"><span class="badge badge-yoe">4–6 YOE</span></div>
+  </div>
+  <div class="card-title">Software Developers (Full Stack)</div>
+  <div class="card-company">Promax Business Services</div>
+  <div class="card-loc">Gurugram</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">Spring</span><span class="tag">Hibernate</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j40',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.naukri.com/job-listings-software-developers-promax-business-services-gurugram-4-to-6-years-090925500320" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<!-- ═══════════════ NOIDA ═══════════════ -->
+
+<div class="card" id="j41" data-city="noida" data-role="java backend">
+  <div class="card-top">
+    <div class="company-logo">FE</div>
+    <div class="card-badges"><span class="badge badge-yoe">1–3 YOE</span></div>
+  </div>
+  <div class="card-title">Java Developer</div>
+  <div class="card-company">Forward Eye Technologies</div>
+  <div class="card-loc">Noida</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Kafka</span><span class="tag">AWS</span><span class="tag">MySQL</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j41',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.naukri.com/job-listings-java-developer-forward-eye-technologies-noida-1-to-3-years-111126931012" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j42" data-city="noida" data-role="java backend">
+  <div class="card-top">
+    <div class="company-logo">SS</div>
+    <div class="card-badges"><span class="badge badge-yoe">4–6 YOE</span></div>
+  </div>
+  <div class="card-title">Java Developer (Spring Boot)</div>
+  <div class="card-company">Shashwath Solution</div>
+  <div class="card-loc">Noida</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Kafka</span><span class="tag">Microservices</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j42',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.naukri.com/job-listings-java-developer-shashwath-solution-noida-4-to-6-years-111126927238" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j43" data-city="noida" data-role="java backend">
+  <div class="card-top">
+    <div class="company-logo">NX</div>
+    <div class="card-badges"><span class="badge badge-yoe">1–5 YOE</span></div>
+  </div>
+  <div class="card-title">Java Developer &amp; Trainer</div>
+  <div class="card-company">Nex G Exuberant</div>
+  <div class="card-loc">Noida</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Spring</span><span class="tag">Hibernate</span><span class="tag">Microservices</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j43',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.naukri.com/job-listings-java-developer-trainer-nex-g-exuberant-solutions-noida-1-to-5-years-290525501428" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<!-- ═══════════════ MUMBAI ═══════════════ -->
+
+<div class="card" id="j44" data-city="mumbai" data-role="java fullstack">
+  <div class="card-top">
+    <div class="company-logo">MG</div>
+    <div class="card-badges"><span class="badge badge-yoe">2–6 YOE</span></div>
+  </div>
+  <div class="card-title">Java Developer</div>
+  <div class="card-company">Maig Innovations</div>
+  <div class="card-loc">Mumbai / Bengaluru / Hyderabad / Pune</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">Hibernate</span><span class="tag">Web Services</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j44',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.naukri.com/job-listings-java-developer-maig-innovations-kolkata-mumbai-new-delhi-hyderabad-pune-chennai-bengaluru-2-to-6-years-250825500691" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j45" data-city="mumbai" data-role="java backend">
+  <div class="card-top">
+    <div class="company-logo">CP</div>
+    <div class="card-badges"><span class="badge badge-yoe">4+ YOE</span></div>
+  </div>
+  <div class="card-title">Java IBM OpenPages Developer</div>
+  <div class="card-company">Capco</div>
+  <div class="card-loc">Mumbai / Pune / Bengaluru / Gurugram</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">IBM OpenPages</span><span class="tag">Risk Tech</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j45',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=57edbd1d0c3b8edd" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j46" data-city="mumbai" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">NW</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">Software Engineer (WOW Program)</div>
+  <div class="card-company">NatWest Group</div>
+  <div class="card-loc">Mumbai</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">Full Stack</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j46',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=0bb4c247db294a09" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<!-- fill to 50 with extra quality picks -->
+
+<div class="card" id="j47" data-city="bengaluru" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">NW</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">Software Engineer — DevOps &amp; Full Stack</div>
+  <div class="card-company">NatWest Group</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">DevOps</span><span class="tag">Cloud</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j47',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=6cbef48bfb4dd0f5" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j48" data-city="hyderabad" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">SD</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">Senior / Lead Full Stack Developer (FastAPI, React, PostgreSQL)</div>
+  <div class="card-company">Startup (Hyderabad)</div>
+  <div class="card-loc">Hyderabad</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">React</span><span class="tag">PostgreSQL</span><span class="tag">TypeScript</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j48',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=2920039eed765023" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j49" data-city="hyderabad" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">SD</div>
+    <div class="card-badges"><span class="badge badge-new">Recent</span></div>
+  </div>
+  <div class="card-title">Senior Developer — AI &amp; Full Stack</div>
+  <div class="card-company">Tech Company (Hyderabad)</div>
+  <div class="card-loc">Hyderabad</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">AI/ML</span><span class="tag">Full Stack</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j49',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.indeed.com/viewjob?jk=6cefbca85f2f0b88" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j50" data-city="bengaluru" data-role="java backend">
+  <div class="card-top">
+    <div class="company-logo">EP</div>
+    <div class="card-badges"><span class="badge badge-yoe">8–12 YOE</span></div>
+  </div>
+  <div class="card-title">Lead Software Engineer — Java FS Angular</div>
+  <div class="card-company">EPAM Systems</div>
+  <div class="card-loc">Bengaluru / Hyderabad</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Angular</span><span class="tag">Spring Boot</span><span class="tag">Microservices</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j50',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.naukri.com/job-listings-lead-software-engineer-java-fs-angular-epam-systems-hyderabad-chennai-bengaluru-8-to-12-years-040926000172" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<!-- ═══════════════ LINKEDIN — BENGALURU ═══════════════ -->
+
+<div class="card" id="j51" data-city="bengaluru" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">PP</div>
+    <div class="card-badges"><span class="badge badge-new">Today</span><span class="badge badge-yoe">3–5 YOE</span></div>
+  </div>
+  <div class="card-title">Sr Software Engineer — Full Stack (React / Node.js / Java)</div>
+  <div class="card-company">PayPal</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">TypeScript</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j51',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/sr-software-engineer-full-stack-%E2%80%93-react-node-js-java-at-paypal-4490322334" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j52" data-city="bengaluru" data-role="fullstack java">
+  <div class="card-top">
+    <div class="company-logo">JP</div>
+    <div class="card-badges"><span class="badge badge-new">5 days</span></div>
+  </div>
+  <div class="card-title">Software Engineer III — Full Stack (Python and React)</div>
+  <div class="card-company">JPMorganChase</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">React</span><span class="tag">Java</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j52',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/software-engineer-iii-full-stack-python-and-react-at-jpmorganchase-4488192249" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j53" data-city="bengaluru" data-role="fullstack java">
+  <div class="card-top">
+    <div class="company-logo">VS</div>
+    <div class="card-badges"><span class="badge badge-new">Today</span><span class="badge badge-yoe">3–5 YOE</span></div>
+  </div>
+  <div class="card-title">Sr Software Engineer — Full Stack (Java, React, Gen AI)</div>
+  <div class="card-company">Visa</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Gen AI</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j53',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/sr-software-engineer-3-5-yrs-of-exp-full-stack-development-java-react-gen-ai-at-visa-4489941527" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j54" data-city="bengaluru" data-role="java backend">
+  <div class="card-top">
+    <div class="company-logo">LS</div>
+    <div class="card-badges"><span class="badge badge-new">6 days</span></div>
+  </div>
+  <div class="card-title">Software Engineer (Java, Spring Boot &amp; Python)</div>
+  <div class="card-company">LSEG (London Stock Exchange)</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Python</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j54',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/software-engineer-java-spring-boot-python-at-lseg-4486795438" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j55" data-city="bengaluru" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">CI</div>
+    <div class="card-badges"><span class="badge badge-new">6 days</span></div>
+  </div>
+  <div class="card-title">Python Angular Fullstack Developer</div>
+  <div class="card-company">Citi</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">Angular</span><span class="tag">TypeScript</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j55',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/python-angular-fullstack-developer-at-citi-4486919607" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j56" data-city="bengaluru" data-role="backend java">
+  <div class="card-top">
+    <div class="company-logo">GS</div>
+    <div class="card-badges"><span class="badge badge-new">5 days</span></div>
+  </div>
+  <div class="card-title">Global Investment Research — Associate, Software Engineering</div>
+  <div class="card-company">Goldman Sachs</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">APIs</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j56',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/global-investment-research-associate-software-engineering-at-goldman-sachs-4487308898" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j57" data-city="bengaluru" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">FR</div>
+    <div class="card-badges"><span class="badge badge-new">Today</span></div>
+  </div>
+  <div class="card-title">Senior Full Stack Engineer (React + Python)</div>
+  <div class="card-company">Fractal Analytics</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">React</span><span class="tag">TypeScript</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j57',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/senior-full-stack-engineer-react-%2B-python-at-fractal-4489213022" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j58" data-city="bengaluru" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">AW</div>
+    <div class="card-badges"><span class="badge badge-new">Today</span></div>
+  </div>
+  <div class="card-title">Principal Engineer — Node &amp; React</div>
+  <div class="card-company">Autodesk</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">Node.js</span><span class="tag">React</span><span class="tag">TypeScript</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j58',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/principal-engineer-node-react-at-autodesk-4489209168" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j59" data-city="bengaluru" data-role="fullstack java">
+  <div class="card-top">
+    <div class="company-logo">AZ</div>
+    <div class="card-badges"><span class="badge badge-new">4 days</span></div>
+  </div>
+  <div class="card-title">Software Development Engineer II — Seller Partner Services</div>
+  <div class="card-company">Amazon</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">Distributed Systems</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j59',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/software-development-engineer-ii-seller-partner-services-tech-at-amazon-4471646111" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j60" data-city="bengaluru" data-role="backend java">
+  <div class="card-top">
+    <div class="company-logo">NW</div>
+    <div class="card-badges"><span class="badge badge-new">Today</span></div>
+  </div>
+  <div class="card-title">Software Engineer, AVP</div>
+  <div class="card-company">NatWest Group</div>
+  <div class="card-loc">Bengaluru</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">APIs</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j60',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/software-engineer-avp-at-natwest-group-4489994093" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<!-- ═══════════════ LINKEDIN — HYDERABAD ═══════════════ -->
+
+<div class="card" id="j61" data-city="hyderabad" data-role="fullstack java backend">
+  <div class="card-top">
+    <div class="company-logo">JP</div>
+    <div class="card-badges"><span class="badge badge-new">Today</span></div>
+  </div>
+  <div class="card-title">Software Engineer III — Java AWS</div>
+  <div class="card-company">JPMorganChase</div>
+  <div class="card-loc">Hyderabad</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">AWS</span><span class="tag">Spring Boot</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j61',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/software-engineer-iii-java-aws-at-jpmorganchase-4481208108" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j62" data-city="hyderabad" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">WF</div>
+    <div class="card-badges"><span class="badge badge-new">Today</span></div>
+  </div>
+  <div class="card-title">Software Engineer — Java Fullstack</div>
+  <div class="card-company">Wells Fargo</div>
+  <div class="card-loc">Hyderabad</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">Full Stack</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j62',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/software-engineer-java-fullstack-at-wells-fargo-4489932399" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j63" data-city="hyderabad" data-role="backend java">
+  <div class="card-top">
+    <div class="company-logo">SS</div>
+    <div class="card-badges"><span class="badge badge-new">Today</span></div>
+  </div>
+  <div class="card-title">Senior Software Engineer — Java Backend (Officer)</div>
+  <div class="card-company">State Street</div>
+  <div class="card-loc">Hyderabad</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">Microservices</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j63',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/senior-software-engineer-java-backend-officer-at-state-street-4483714574" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j64" data-city="hyderabad" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo">SC</div>
+    <div class="card-badges"><span class="badge badge-new">4 days</span></div>
+  </div>
+  <div class="card-title">Software Developer — Python</div>
+  <div class="card-company">Schrödinger</div>
+  <div class="card-loc">Hyderabad</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">APIs</span><span class="tag">Chemistry/Science</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j64',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/software-developer-python-hyderabad-at-schr%C3%B6dinger-4448747440" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j65" data-city="hyderabad" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">GH</div>
+    <div class="card-badges"><span class="badge badge-new">6 days</span></div>
+  </div>
+  <div class="card-title">Software Engineer II</div>
+  <div class="card-company">GHX (Global Healthcare Exchange)</div>
+  <div class="card-loc">Hyderabad</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">APIs</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j65',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/software-engineer-ii-at-ghx-4465510219" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<!-- ═══════════════ LINKEDIN — GURUGRAM ═══════════════ -->
+
+<div class="card" id="j66" data-city="gurugram" data-role="fullstack java backend">
+  <div class="card-top">
+    <div class="company-logo">AE</div>
+    <div class="card-badges"><span class="badge badge-new">6 days</span></div>
+  </div>
+  <div class="card-title">Software Engineer III</div>
+  <div class="card-company">American Express</div>
+  <div class="card-loc">Gurugram</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">TypeScript</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j66',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/software-engineer-iii-at-american-express-4486961241" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j67" data-city="gurugram" data-role="backend java">
+  <div class="card-top">
+    <div class="company-logo">RD</div>
+    <div class="card-badges"><span class="badge badge-new">Today</span><span class="badge badge-yoe">YC W22</span></div>
+  </div>
+  <div class="card-title">Software Development Engineer — Backend</div>
+  <div class="card-company">RDash (YC W22)</div>
+  <div class="card-loc">Gurugram</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">Startup</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j67',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/software-development-engineer-backend-at-rdash-yc-w22-4488278509" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<!-- ═══════════════ LINKEDIN — PUNE ═══════════════ -->
+
+<div class="card" id="j68" data-city="pune" data-role="fullstack java">
+  <div class="card-top">
+    <div class="company-logo">AZ</div>
+    <div class="card-badges"><span class="badge badge-new">4 days</span></div>
+  </div>
+  <div class="card-title">Software Development Engineer II — Alexa Devices</div>
+  <div class="card-company">Amazon</div>
+  <div class="card-loc">Pune</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">Distributed Systems</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j68',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/software-development-engineer-ii-alexa-endpoint-experiences-alexa-devices-at-amazon-4462829040" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j69" data-city="pune" data-role="backend java">
+  <div class="card-top">
+    <div class="company-logo">PP</div>
+    <div class="card-badges"><span class="badge badge-new">Today</span></div>
+  </div>
+  <div class="card-title">Software Engineer — Backend (3–5 years)</div>
+  <div class="card-company">PhonePe</div>
+  <div class="card-loc">Pune</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">Microservices</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j69',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/software-engineer-backend-3-5-years-at-phonepe-4488269987" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j70" data-city="pune" data-role="fullstack java">
+  <div class="card-top">
+    <div class="company-logo">DL</div>
+    <div class="card-badges"><span class="badge badge-new">6 days</span></div>
+  </div>
+  <div class="card-title">Fullstack Java With Angular — Software Engineer II</div>
+  <div class="card-company">Deloitte</div>
+  <div class="card-loc">Pune</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Angular</span><span class="tag">TypeScript</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j70',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/fullstack-java-with-angular-software-engineer-ii-at-deloitte-4424687206" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j71" data-city="pune" data-role="java backend">
+  <div class="card-top">
+    <div class="company-logo">MS</div>
+    <div class="card-badges"><span class="badge badge-new">6 days</span></div>
+  </div>
+  <div class="card-title">Software Engineer II</div>
+  <div class="card-company">Mastercard</div>
+  <div class="card-loc">Pune</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">APIs</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j71',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/software-engineer-ii-at-mastercard-4440190381" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j72" data-city="pune" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo">BK</div>
+    <div class="card-badges"><span class="badge badge-new">2 days</span></div>
+  </div>
+  <div class="card-title">Back-End Software Engineer</div>
+  <div class="card-company">Light &amp; Wonder</div>
+  <div class="card-loc">Pune</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">APIs</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j72',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://in.linkedin.com/jobs/view/back-end-software-engineer-at-light-wonder-4480993617" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<!-- ═══════════════ YC STARTUPS — NOIDA ═══════════════ -->
+
+<div class="card" id="j73" data-city="noida" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">AR</div>
+    <div class="card-badges"><span class="badge badge-salary">₹12–20 LPA</span><span class="badge badge-yoe">YC S26</span></div>
+  </div>
+  <div class="card-title">Forward Deployed Engineer</div>
+  <div class="card-company">Aktoria Robotics (YC S26)</div>
+  <div class="card-loc">Noida</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">Robotics</span><span class="tag">Startup</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j73',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.workatastartup.com/jobs/119343" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j74" data-city="noida" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo">AR</div>
+    <div class="card-badges"><span class="badge badge-salary">₹20–40 LPA</span><span class="badge badge-yoe">YC S26</span></div>
+  </div>
+  <div class="card-title">Data Infrastructure Engineer</div>
+  <div class="card-company">Aktoria Robotics (YC S26)</div>
+  <div class="card-loc">Noida</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">Data Engineering</span><span class="tag">Startup</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j74',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.workatastartup.com/jobs/118749" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<!-- ═══════════════ WELLFOUND — INDIA STARTUPS (REMOTE / IN-OFFICE) ═══════════════ -->
+
+<div class="card" id="j75" data-city="bengaluru" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">JL</div>
+    <div class="card-badges"><span class="badge badge-salary">₹15–25 LPA</span><span class="badge badge-new">3 wks</span></div>
+  </div>
+  <div class="card-title">Software Engineer / AI Engineer</div>
+  <div class="card-company">JuiceLabs AI</div>
+  <div class="card-loc">In office (India)</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">AI/ML</span><span class="tag">Startup</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j75',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/4879023-software-engineer-ai-engineer" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j76" data-city="bengaluru" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo">FP</div>
+    <div class="card-badges"><span class="badge badge-salary">₹12–16 LPA</span><span class="badge badge-new">3 days</span></div>
+  </div>
+  <div class="card-title">Senior Software Engineer — Backend &amp; Infrastructure</div>
+  <div class="card-company">FilterPixel</div>
+  <div class="card-loc">Remote (India)</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">Node.js</span><span class="tag">APIs</span><span class="tag">Startup</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j76',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/5027294-senior-software-engineer-backend-infrastructure" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j77" data-city="bengaluru" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo">LT</div>
+    <div class="card-badges"><span class="badge badge-salary">₹15+ LPA</span><span class="badge badge-new">1 day</span></div>
+  </div>
+  <div class="card-title">Senior Backend Engineer — FastAPI (Python)</div>
+  <div class="card-company">LearnTube.ai (Google-backed)</div>
+  <div class="card-loc">Remote (India)</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Startup</span><span class="tag">EdTech</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j77',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/3301948-senior-backend-engineer-fastapi" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j78" data-city="bengaluru" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo">MV</div>
+    <div class="card-badges"><span class="badge badge-salary">₹20+ LPA</span><span class="badge badge-new">4 days</span></div>
+  </div>
+  <div class="card-title">Senior AI Backend / Azure Platform Engineer</div>
+  <div class="card-company">MASHVERA</div>
+  <div class="card-loc">Remote (India)</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">Azure</span><span class="tag">AI/ML</span><span class="tag">Startup</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j78',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/5015988-senior-genai-agentic-ai-engineer-clone" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j79" data-city="bengaluru" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">MV</div>
+    <div class="card-badges"><span class="badge badge-salary">₹20+ LPA</span><span class="badge badge-new">4 days</span></div>
+  </div>
+  <div class="card-title">Senior AI UX/UI React Engineer</div>
+  <div class="card-company">MASHVERA</div>
+  <div class="card-loc">Remote (India)</div>
+  <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">AI</span><span class="tag">Startup</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j79',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/5015984-senior-ai-ux-ui-react-engineer-clone" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j80" data-city="bengaluru" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo">BR</div>
+    <div class="card-badges"><span class="badge badge-salary">₹25+ LPA</span></div>
+  </div>
+  <div class="card-title">Platform Security Engineer</div>
+  <div class="card-company">Branch</div>
+  <div class="card-loc">Remote (India)</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">APIs</span><span class="tag">Security</span><span class="tag">Startup</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j80',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/5015984-senior-ai-ux-ui-react-engineer-clone" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j81" data-city="bengaluru" data-role="backend java">
+  <div class="card-top">
+    <div class="company-logo">XH</div>
+    <div class="card-badges"><span class="badge badge-salary">₹18+ LPA</span><span class="badge badge-new">1 month</span></div>
+  </div>
+  <div class="card-title">Senior Solution Architect / Java Lead</div>
+  <div class="card-company">Xohani Solutions</div>
+  <div class="card-loc">India</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Architecture</span><span class="tag">APIs</span><span class="tag">Startup</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j81',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/5043155-senior-solution-architect-java-lead" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j82" data-city="bengaluru" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo">PA</div>
+    <div class="card-badges"><span class="badge badge-salary">₹30+ LPA</span><span class="badge badge-new">6 days</span></div>
+  </div>
+  <div class="card-title">Senior Data Engineer (Agentic Data Infrastructure)</div>
+  <div class="card-company">Pursuit Advisor</div>
+  <div class="card-loc">India</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">Data Engineering</span><span class="tag">AI Agents</span><span class="tag">Startup</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j82',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/4995289-we-are-hiring-senior-data-engineer-agentic-data-infrastructure" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j83" data-city="bengaluru" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">MG</div>
+    <div class="card-badges"><span class="badge badge-salary">$70–80k</span><span class="badge badge-new">2 days</span></div>
+  </div>
+  <div class="card-title">Full Stack Software Engineer</div>
+  <div class="card-company">Moongate</div>
+  <div class="card-loc">Remote (Asia)</div>
+  <div class="tags"><span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Web3</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j83',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/5031224-full-stack-software-engineer" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j84" data-city="bengaluru" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo">SC</div>
+    <div class="card-badges"><span class="badge badge-new">3 days</span></div>
+  </div>
+  <div class="card-title">Senior Software Engineer — Backend &amp; Infrastructure</div>
+  <div class="card-company">CloudCrane</div>
+  <div class="card-loc">Remote</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">Cloud</span><span class="tag">Startup</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j84',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/5027354-senior-software-engineer" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j85" data-city="bengaluru" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo">MV</div>
+    <div class="card-badges"><span class="badge badge-salary">₹20+ LPA</span><span class="badge badge-new">4 days</span></div>
+  </div>
+  <div class="card-title">Senior GenAI / Agentic AI Engineer</div>
+  <div class="card-company">MASHVERA</div>
+  <div class="card-loc">Remote (India)</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">LLMs</span><span class="tag">TypeScript</span><span class="tag">Startup</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j85',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/5015984-senior-ai-ux-ui-react-engineer-clone" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j86" data-city="bengaluru" data-role="backend java">
+  <div class="card-top">
+    <div class="company-logo">XH</div>
+    <div class="card-badges"><span class="badge badge-salary">₹18+ LPA</span></div>
+  </div>
+  <div class="card-title">Apigee Application Engineer (Java / API Gateway)</div>
+  <div class="card-company">Xohani Solutions</div>
+  <div class="card-loc">India</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Apigee</span><span class="tag">APIs</span><span class="tag">Startup</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j86',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/5035445-apigee-application-engineer" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j87" data-city="bengaluru" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">KD</div>
+    <div class="card-badges"><span class="badge badge-new">3 days</span></div>
+  </div>
+  <div class="card-title">AI Systems Engineer (3+ Years)</div>
+  <div class="card-company">Kodense</div>
+  <div class="card-loc">India</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">AI Systems</span><span class="tag">Startup</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j87',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/5013099-ai-systems-engineer-3-years-experience" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j88" data-city="bengaluru" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo">MV</div>
+    <div class="card-badges"><span class="badge badge-salary">₹20+ LPA</span><span class="badge badge-new">4 days</span></div>
+  </div>
+  <div class="card-title">Senior AI Security &amp; Governance Engineer</div>
+  <div class="card-company">MASHVERA</div>
+  <div class="card-loc">Remote (India)</div>
+  <div class="tags"><span class="tag">Python</span><span class="tag">TypeScript</span><span class="tag">Security</span><span class="tag">Startup</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j88',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/5015989-senior-ai-backend-azure-platform-engineer-clone" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+</div><!-- /grid -->
+
+<script>
+const state = { city: 'all', role: 'all' };
+const STORAGE_KEY = 'india_jobs_applied_v2';
+
+// Load applied state
+let applied = {};
+try { applied = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch(e) {}
+
+function toggleApplied(id, cb) {
+  const card = document.getElementById(id);
+  if (cb.checked) {
+    applied[id] = true;
+    card.classList.add('applied');
+    card.querySelector('.applied-toggle span').textContent = '✅ Applied';
+  } else {
+    delete applied[id];
+    card.classList.remove('applied');
+    card.querySelector('.applied-toggle span').textContent = 'Mark applied';
+  }
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(applied)); } catch(e) {}
+  updateProgress();
+  if (state.role === 'applied') applyFilters();
+}
+
+function clearApplied() {
+  applied = {};
+  try { localStorage.removeItem(STORAGE_KEY); } catch(e) {}
+  document.querySelectorAll('.card.applied').forEach(c => {
+    c.classList.remove('applied');
+    c.querySelector('input[type=checkbox]').checked = false;
+    c.querySelector('.applied-toggle span').textContent = 'Mark applied';
+  });
+  updateProgress();
+  if (state.role === 'applied') applyFilters();
+}
+
+function updateProgress() {
+  const count = Object.keys(applied).length;
+  const total = document.querySelectorAll('.card').length;
+  const pct = Math.round(count / total * 100);
+  document.getElementById('progress-label').textContent = `Applied: ${count} / ${total}`;
+  document.getElementById('progress-fill').style.width = pct + '%';
+}
+
+function filter(btn, val, type) {
+  state[type] = val;
+  document.querySelectorAll(`button.filter-btn`).forEach(b => {
+    if (b.onclick?.toString().includes(`'${type}'`)) b.classList.remove('active');
+  });
+  btn.classList.add('active');
+  applyFilters();
+}
+
+function applyFilters() {
+  const cards = document.querySelectorAll('.card');
+  let shown = 0;
+  cards.forEach(card => {
+    const id = card.id;
+    const cityMatch = state.city === 'all' || card.dataset.city === state.city;
+    const roleMatch = state.role === 'all' || (state.role === 'applied' ? applied[id] : card.dataset.role?.includes(state.role));
+    const visible = cityMatch && roleMatch;
+    card.classList.toggle('hidden-card', !visible);
+    if (visible) shown++;
+  });
+  document.getElementById('count').textContent = shown;
+}
+
+// Restore on load
+window.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.card').forEach(card => {
+    const id = card.id;
+    if (applied[id]) {
+      card.classList.add('applied');
+      card.querySelector('input[type=checkbox]').checked = true;
+      card.querySelector('.applied-toggle span').textContent = '✅ Applied';
+    }
+  });
+  updateProgress();
+});
+</script>

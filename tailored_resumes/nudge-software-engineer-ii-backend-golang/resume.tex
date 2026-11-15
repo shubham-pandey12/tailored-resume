@@ -1,0 +1,181 @@
+%------------------------
+% Resume Template
+% Author : Shubham Pandey
+% Github : https://github.com/xprilion
+% License : MIT
+%------------------------
+
+\documentclass[a4paper,20pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.70in}
+\addtolength{\textheight}{1.15in}
+
+\urlstyle{rm}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Shubham Pandey}} & Email: \href{mailto:mr.pshubham@gmail.com}{mr.pshubham@gmail.com}\\
+  \href{https://github.com/shubham-pandey12}{Github: shubham-pandey12} & Mobile:~~~~~~~~~~~~+91-8174081896 \\
+  \href{https://www.linkedin.com/in/shubham-pandey-a74716199/}{LinkedIn: shubhampandey} & Portfolio:~~~~~~~~~\href{https://shubham-portfolio-mocha.vercel.app/}{shubham.pandey} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute Of Information Technology Vadodara}{}
+      {Bachelor of Technology - Information Technology;}{}
+    \resumeSubHeadingListEnd
+
+\vspace{-5pt}
+
+%-----------SKILLS-----------------
+\section{Skills Summary}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Backend \& Go}{~~~~Golang (Goroutines, Channels, Context), Microservices, RESTful APIs, Event-Driven Systems}
+    \resumeSubItem{Concurrency}{~~~~~~Concurrency Patterns, Idempotency, Distributed Locks, Rate-Limiting, Retries, Partial Failures}
+    \resumeSubItem{Data \& Caching}{~~PostgreSQL (Schema Design, Indexing, Query Tuning), Redis Caching, Ledger Consistency}
+    \resumeSubItem{Cloud \& Ops}{~~~~~Docker, Kubernetes, CI/CD, GCP, AWS, Third-Party Integrations, Design Docs, On-Call}
+    \resumeSubItem{Observability}{~~~~Logging, Metrics, Alerts, Dashboards, Profiling, Postmortems, Automated Testing, Code Reviews}
+    \resumeSubItem{AI Coding Tools}{~Claude Code, Cursor, GitHub Copilot, AI Code Review Standards, Pairing, Debugging}
+  \resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+   \resumeSubheading{Moresand Technologies}{Bengaluru, Karnataka}
+      {Software Development Engineer 2}{Mar 2025 - Present}
+      \resumeItemListStart
+
+    \item \textnormal{\textbf{Architected} a multi-tenant platform end-to-end with \textbf{Golang microservices} and \textbf{RESTful APIs}, authoring \textbf{design docs} and \textbf{PostgreSQL schema design} for 5+ brands --- cutting onboarding by \textbf{50\%}.}
+
+    \item \textnormal{\textbf{Engineered concurrent Golang workflows} using \textbf{goroutines, channels, and context} with \textbf{idempotency}, \textbf{Redis distributed locks}, and \textbf{rate-limiting} to prevent duplicate writes and abuse while preserving \textbf{ledger consistency} under retries and partial failures.}
+
+    \item \textnormal{\textbf{Built} reusable \textbf{third-party integrations} (auth, retries, rate limits), \textbf{Redis caching}, and \textbf{PostgreSQL indexing and query tuning} for heavy read/write workloads --- cutting effort by \textbf{50\%} and latency.}
+
+    \item \textnormal{\textbf{Owned production uptime} and \textbf{CI/CD} --- instrumenting \textbf{logging, metrics, alerts, and dashboards}, leading \textbf{on-call debugging} via \textbf{profiles}, writing \textbf{postmortems}, and mentoring via \textbf{code reviews}.}
+
+\resumeItemListEnd
+
+\resumeSubheading{MAQ Software}{Noida, UP}
+      {Software Engineer 1}{Apr 2024 - Feb 2025}
+      \resumeItemListStart
+
+\item \textnormal{\textbf{Built and owned} a production \textbf{Golang} backend service on \textbf{AWS} powering an \textbf{event-driven pipeline} for high-volume data ingestion and parsing orchestration, improving response accuracy by \textbf{28\%}.}
+
+\item \textnormal{\textbf{Designed event-driven systems} and \textbf{RESTful APIs} with \textbf{concurrency patterns}, schema validation, and \textbf{idempotent} retry handling on \textbf{PostgreSQL} and \textbf{Redis} to process messy payloads reliably in production.}
+
+\item \textnormal{\textbf{Accelerated delivery} across products using \textbf{AI coding tools} (\textbf{Claude Code, Cursor, GitHub Copilot}), setting \textbf{code review} standards, \textbf{pairing}, and \textbf{automated testing} for maintainable \textbf{Golang} services.}
+
+\resumeItemListEnd
+
+    \resumeSubheading{Techolution}{Remote}
+      {Full Stack Developer}{Jul 2023 - Mar 2024}
+      \resumeItemListStart
+     \item \textnormal{\textbf{Built and shipped} production \textbf{Golang} backend features and \textbf{RESTful APIs}, establishing unit, integration, and \textbf{automated testing} suites with high \textbf{test coverage (90\%)} and thorough \textbf{code reviews}.}
+
+\item \textnormal{\textbf{Designed CI/CD pipelines} using \textbf{Docker} and \textbf{Kubernetes} for \textbf{Golang microservices} on \textbf{GCP} and \textbf{AWS}, reducing deployment time by \textbf{60\%} while improving release reliability and engineering tooling.}
+      \resumeItemListEnd
+
+    \resumeSubheading{GeekForGeeks}{Noida, UP}
+      {Software Development Engineer (Intern)}{Jan 2023 - Jun 2023}
+      \resumeItemListStart
+      \item \textnormal{\textbf{Boosted user engagement by 30\%} and improved site performance by \textbf{40\%} by building modular \textbf{Golang RESTful APIs} and optimizing high-traffic endpoints with \textbf{PostgreSQL query tuning} and \textbf{Redis caching}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\vspace{-5pt}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading{\href{https://web-health-eta.vercel.app/}{WebHealth}}{}
+      {\textbf{React.js, Node.js, Express.js, SQLite, REST APIs, Recharts, Three.js, Google OAuth, GCP}}{}
+      \begin{itemize}
+         \item{\textbf{Designed and built} a full-stack website health auditing platform end-to-end (\textbf{Node.js/Express} backend, \textbf{React.js} frontend) to run \textbf{client-facing website audits}, integrating a custom multi-page web crawler, Google Lighthouse, and passive security scanning to generate consolidated SEO, performance, and accessibility reports via \textbf{REST APIs}, replacing manual, tool-by-tool audits.}
+      \end{itemize}
+
+    % \resumeSubheading{\href{https://github.com/dev-shubham01/Mobivax}{Mobivax}}{}
+    %   {\textbf{HTML5, CSS, JavaScript, React.js, Node.js, Express.js, Hooks, Mapbox}}{}
+    %   \begin{itemize}
+    %     \item{Enhanced WebApp security with OTP verification and integrated Mapbox for real-time geolocation, facilitating accurate registration and easy navigation for healthcare professionals. Implemented \textbf{unit tests} to ensure reliability across core modules.}
+    %   \end{itemize}
+
+  \resumeSubHeadingListEnd
+
+\vspace{-5pt}
+
+%-----------ACHIEVEMENTS-----------------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubheading{HACKIIITV}{2019}{\textbf{Best Idea Award}}{}
+      \begin{itemize}
+        \item{Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the prestigious Best Idea Award.}
+      \end{itemize}
+  \resumeSubHeadingListEnd
+
+\end{document}

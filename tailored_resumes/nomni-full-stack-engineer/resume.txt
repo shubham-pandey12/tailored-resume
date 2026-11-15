@@ -1,0 +1,60 @@
+Shubham Pandey Email: mr.pshubham@gmail.com
+Github: shubham-pandey12 Mobile: +91-8174081896
+LinkedIn: shubhampandey Portfolio: shubham.pandey
+Education
+•
+Indian Institute Of Information Technology Vadodara
+Bachelor of Technology - Information Technology;
+Skills Summary
+• Frontend & Mobile: React, React Native, Next.js, TypeScript, JavaScript, Redux, Web & Mobile UI
+• Backend & Data: Node.js, Express.js, Supabase, SQL, PostgreSQL, REST APIs, Third-Party Integrations
+• AI & Eval/Ops: LLM-Powered Apps, AI Evaluation, Prompt Assessment, Braintrust, Langfuse, AI Tracing
+• Delivery & Ops: Concept-to-Production, Mobile App Releases, Prototyping, Testing, CI/CD, Git
+• Product Craft: End-to-End Ownership, Practical Architecture, AI-Assisted Workflows, Production Support
+Work Experience
+•
+•
+•
+•
+Moresand Technologies Bengaluru, Karnataka
+Software Development Engineer 2 Mar 2025 - Present
+◦ Architected web and mobile platforms end-to-end (React, React Native, Next.js, TypeScript, Node.js)
+across 5+ brands, turning early concepts into products — cutting onboarding by 50%.
+◦ Designed Supabase and SQL schemas, REST APIs, and third-party integrations, bringing structure
+to evolving requirements with practical architecture and trade-offs.
+◦ Built reusable UI libraries across React and React Native (JavaScript, TypeScript) and shipped
+mobile app releases — cutting engineering effort by 50% and latency.
+◦ Owned testing, deployment, and post-launch production support across multiple initiatives, applying
+AI-assisted development workflows to ship fast and maintain high quality.
+MAQ Software Noida, UP
+Software Engineer 1 Apr 2024 - Feb 2025
+◦ Built and owned an LLM-powered application backend in Node.js and TypeScript, integrating AI
+evaluation, prompt evaluation, and model assessment — lifting accuracy by 28%.
+◦ Instrumented AI observability, tracing, and debugging pipelines (utilizing Braintrust and Langfuse
+patterns) alongside REST APIs and databases for reliable AI features.
+◦ Developed and shipped polished React, Next.js, and TypeScript interfaces for AI-enabled product
+capabilities, iterating rapidly from prototyping through launch.
+Techolution Remote
+Full Stack Developer Jul 2023 - Mar 2024
+◦ Built and shipped production web and React Native mobile features (React, TypeScript, Node.js),
+establishing unit and automated testing suites with 90% test coverage.
+◦ Streamlined CI/CD and release workflows for web and mobile application deployments using Docker
+and Git, reducing deployment time by 60%.
+GeekForGeeks Noida, UP
+Software Development Engineer (Intern) Jan 2023 - Jun 2023
+◦ Boosted user engagement by 30% and usability and performance by 40% building responsive React,
+Next.js, JavaScript, and TypeScript experiences in a fast-moving team.
+Projects
+•
+WebHealth
+React.js, Node.js, Express.js, SQLite, REST APIs, Recharts, Three.js, Google OAuth, GCP
+◦ Designed and built a full-stack website health auditing platform end-to-end (Node.js/Express backend,
+React.js frontend) to run client-facing website audits, integrating a custom multi-page web crawler, Google
+Lighthouse, and passive security scanning to generate consolidated SEO, performance, and accessibility reports
+via REST APIs, replacing manual, tool-by-tool audits.
+Achievements
+•
+HACKIIITV 2019
+Best Idea Award
+◦ Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the
+prestigious Best Idea Award.

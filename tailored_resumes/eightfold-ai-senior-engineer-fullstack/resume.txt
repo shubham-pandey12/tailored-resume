@@ -1,0 +1,60 @@
+Shubham Pandey Email: mr.pshubham@gmail.com
+Github: shubham-pandey12 Mobile: +91-8174081896
+LinkedIn: shubhampandey Portfolio: shubham.pandey
+Education
+•
+Indian Institute Of Information Technology Vadodara
+Bachelor of Technology - Information Technology;
+Skills Summary
+• Backend & APIs: • Full Stack & UI: • Data & Security: • Cloud & Scale: • Analytics & AI: Work Experience
+Node.js, Express.js, Python, REST APIs, Data Modeling, Query Optimization, Aggregations
+React.js, Next.js, TypeScript, JavaScript, Dashboards, Adhoc Reports, Data Hub Reports
+SQL, MySQL, MongoDB, Redis, Large Datasets, Row-Level Security (RLS), Data Access Control
+AWS, Azure, Microservices, Performance at Scale, Scalability, Data Correctness, CI/CD
+Analytics Systems, Native Reporting, Conversation Analytics, Agentic AI, Automation
+•
+•
+•
+•
+Moresand Technologies Bengaluru, Karnataka
+Software Development Engineer 2 Mar 2025 - Present
+◦ Architected multi-tenant backend services and APIs (Node.js, Express.js, TypeScript) for
+data-heavy products and reporting systems across 5+ brands — cutting onboarding time by 50%.
+◦ Designed data modeling schemas, SQL aggregations, query optimization, and row-level security
+(RLS) / data access control patterns across large datasets for tenant isolation.
+◦ Built full stack reporting dashboards, Data Hub reports, and Adhoc reports UI (React.js, Next.js)
+backed by Redis caching — cutting effort by 50% and latency at scale.
+◦ Owned performance at scale, scalability, and data correctness with product and design teams across
+AWS pipelines, enforcing automated tests and iterative releases.
+MAQ Software Noida, UP
+Software Engineer 1 Apr 2024 - Feb 2025
+◦ Built and owned high-throughput backend services on Azure supporting agentic AI and retrieval
+workflows, lifting response accuracy and data correctness by 28%.
+◦ Engineered conversation analytics pipelines, APIs, and query optimization over large volumes of
+analytics data with strict row-level security (RLS) and data access control.
+◦ Shipped full stack features and interactive native reporting dashboards (React.js, TypeScript) with
+product and design to turn analytics requirements into reliable tools.
+Techolution Remote
+Full Stack Developer Jul 2023 - Mar 2024
+◦ Delivered full stack analytics and reporting features end-to-end (Node.js, React.js, SQL), owning
+automated testing and validation suites with 90% test coverage.
+◦ Automated cloud builds and backend service deployments on AWS with CI/CD pipelines for
+performant, reliable data workflows — reducing deployment time by 60%.
+GeekForGeeks Noida, UP
+Software Development Engineer (Intern) Jan 2023 - Jun 2023
+◦ Boosted user engagement by 30% and improved platform performance by 40% shipping fast frontend
+components and dashboards (JavaScript, React.js, Next.js) in an iterative team.
+Projects
+•
+WebHealth
+React.js, Node.js, Express.js, SQLite, REST APIs, Recharts, Three.js, Google OAuth, GCP
+◦ Designed and built a full-stack website health auditing platform end-to-end (Node.js/Express backend,
+React.js frontend) to run client-facing website audits, integrating a custom multi-page web crawler, Google
+Lighthouse, and passive security scanning to generate consolidated SEO, performance, and accessibility reports
+via REST APIs, replacing manual, tool-by-tool audits.
+Achievements
+•
+HACKIIITV 2019
+Best Idea Award
+◦ Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the
+prestigious Best Idea Award.

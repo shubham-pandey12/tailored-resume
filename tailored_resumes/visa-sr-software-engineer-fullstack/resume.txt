@@ -1,0 +1,72 @@
+SHUBHAM PANDEY
+Email: mr.pshubham@gmail.com
+Mobile: +91-8174081896
+Github: shubham-pandey12
+LinkedIn: shubhampandey
+Portfolio: shubham.pandey
+
+========================================
+EDUCATION
+========================================
+
+Indian Institute of Information Technology Vadodara — Vadodara, Gujarat
+Bachelor of Technology — Information Technology | 2019 – 2023
+
+========================================
+SKILLS SUMMARY
+========================================
+
+Backend:        Node.js, Express.js, TypeScript, JavaScript, Python, REST APIs, Microservices, Integration Patterns
+Frontend:       React.js, Next.js, TypeScript, HTML5, CSS3, Responsive Design
+Databases:      MySQL, PostgreSQL, MongoDB, Redis, SQL, SQLite
+Infrastructure: AWS (EC2, S3, ECS), GCP, Docker, Git, CI/CD, Jenkins, DevOps
+Testing:        Jest, Unit Testing, Integration Testing, Automated Testing, TDD
+AI Dev Tools:   GitHub Copilot, Claude, Cursor, GenAI Integration, AI-Assisted Development
+
+========================================
+EXPERIENCE
+========================================
+
+Moresand Technologies — Bengaluru, Karnataka
+Software Development Engineer 2 | Mar 2025 – Present
+
+- Designed and owned complex technical deliverables end-to-end for enterprise applications (Node.js, Express.js, React.js, TypeScript) — drove solution architecture, technical design, and integration patterns across 5+ enterprise client platforms; produced detailed API contracts and reusable platform capabilities to support multiple brands on a single codebase, cutting onboarding time by 50%.
+
+- Built and maintained integrations between enterprise APIs, data sources, and internal systems — designed workflow automations, modular component libraries, and a Redis-backed caching layer for high-traffic endpoints; applied secure software development practices including authentication flows, data isolation, and production reliability controls.
+
+- Improved scalability, resiliency, and maintainability — structured logging, custom metrics, alerting, observability tooling, and CI/CD pipelines; owned automated testing with Jest, code reviews, and mentored junior engineers on engineering standards and reusable patterns; reduced development effort by 50%.
+
+---
+
+MAQ Software — Noida, UP
+Software Engineer 1 | Apr 2024 – Feb 2025
+
+- Developed AI/GenAI-enabled enterprise applications — built a production Node.js + TypeScript backend service with a custom AI orchestration layer (Azure AI Search + LLM APIs), integrating agentic capabilities for context-aware retrieval and response generation; improved prompt accuracy by 28%; owned full delivery using Claude and GitHub Copilot throughout.
+
+- Designed REST APIs, integration patterns, and data pipelines for enterprise AI workflows — applied SOLID principles, code quality standards, and automated testing (unit, integration); maintained production reliability through metrics, structured logs, and alerting; translated business requirements into technical solutions and enforced engineering standards across teams.
+
+---
+
+Techolution — Remote
+Full Stack Developer | Jul 2023 – Mar 2024
+
+- Built and shipped production full-stack features (Node.js, React.js, TypeScript) with 90% test coverage; enforced code quality through structured code reviews; designed and owned CI/CD pipelines (Jenkins, Docker) on AWS — reduced deployment time by 60% applying DevOps practices for production health monitoring and incident response.
+
+---
+
+GeeksForGeeks — Noida, UP
+SDE Intern | Jan 2023 – Jun 2023
+
+- Boosted user engagement 30% and site performance 40% building reusable components with React.js and Next.js; applied web performance optimization on a high-traffic platform serving millions of monthly users.
+
+========================================
+PROJECTS
+========================================
+
+WebHealth: Secure, full-stack enterprise platform for website health auditing — Node.js/Express.js backend REST APIs and integrations, React.js + TypeScript frontend; integrated a custom web crawler, Google Lighthouse, and passive security scanning; deployed on GCP with full observability and monitoring — automating consolidated SEO, performance, and accessibility reporting.
+
+========================================
+ACHIEVEMENTS
+========================================
+
+HACKIIITV 2019 – Best Idea Award: Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the prestigious Best Idea Award.

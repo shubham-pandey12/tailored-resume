@@ -1,0 +1,72 @@
+SHUBHAM PANDEY
+Email: mr.pshubham@gmail.com
+Mobile: +91-8174081896
+Github: shubham-pandey12
+LinkedIn: shubhampandey
+Portfolio: shubham.pandey
+
+========================================
+EDUCATION
+========================================
+
+Indian Institute of Information Technology Vadodara — Vadodara, Gujarat
+Bachelor of Technology — Information Technology | 2019 – 2023
+
+========================================
+SKILLS SUMMARY
+========================================
+
+Frontend:       React.js, Next.js, TypeScript, JavaScript, HTML5, CSS3, Redux
+Backend:        Node.js, Express.js, Python, REST APIs, GraphQL, Microservices
+Databases:      SQL, MySQL, MongoDB, Redis
+Infrastructure: AWS (EC2, S3, ECS, CloudFront), GCP, Docker, Jenkins, CI/CD, Git
+Testing:        Jest, Unit Testing, Integration Testing, E2E Testing
+AI Dev Tools:   GitHub Copilot, Claude, Cursor, GenAI Integration, AI-Assisted Development
+
+========================================
+EXPERIENCE
+========================================
+
+Moresand Technologies — Bengaluru, Karnataka
+Software Development Engineer 2 | Mar 2025 – Present
+
+- Architected scalable, high-performance web applications (React.js, TypeScript) for a multi-tenant SaaS platform — designed enterprise component libraries, reusable UI modules, and design token-aligned architecture across 5+ client deployments; pixel-perfect responsive implementation; cut new-brand onboarding time by 50%.
+
+- Engineered production frontend performance — lazy loading, rendering optimization, Redis-backed caching, REST API and GraphQL integrations; owned performance budgets, structured logging, custom metrics, alerting, and observability tooling for high-traffic enterprise clients.
+
+- Drove engineering rigor end-to-end: automated testing with Jest (unit, integration, E2E), constructive code and design reviews, CI/CD pipelines (Jenkins, Docker); mentored junior engineers on component patterns, accessibility standards, and engineering quality; reduced development effort by 50%.
+
+---
+
+MAQ Software — Noida, UP
+Software Engineer 1 | Apr 2024 – Feb 2025
+
+- Built AI-powered frontend interfaces (React.js, TypeScript) — integrated LLM APIs and Azure AI Search for conversational UI and semantic retrieval experiences; owned async state management, real-time data flows, and improved prompt accuracy by 28%; applied Claude and GitHub Copilot for AI-assisted development throughout.
+
+- Designed REST API and GraphQL integration contracts for enterprise AI workflows — applied SOLID principles, unit and integration testing, production reliability monitoring (metrics, structured logs, alerting); translated business requirements into pixel-perfect, production-ready technical solutions.
+
+---
+
+Techolution — Remote
+Full Stack Developer | Jul 2023 – Mar 2024
+
+- Shipped production full-stack features (React.js, TypeScript) with 90% test coverage; engineered CI/CD pipelines (Jenkins, Docker) on AWS — reduced deployment time by 60%; enforced component architecture standards through structured code and design reviews.
+
+---
+
+GeeksForGeeks — Noida, UP
+SDE Intern | Jan 2023 – Jun 2023
+
+- Improved platform performance 40% and user engagement 30% building reusable React.js and Next.js components on a high-traffic platform serving millions of monthly users; applied rendering optimization and Core Web Vitals profiling for scale.
+
+========================================
+PROJECTS
+========================================
+
+WebHealth: Production full-stack web auditing platform — React.js + TypeScript frontend with Recharts data visualization dashboards and performance analytics; integrated Google Lighthouse for automated Core Web Vitals (LCP, INP, CLS), performance profiling, accessibility scoring, and SEO reporting; Node.js/Express.js REST API backend; deployed on GCP with full observability and monitoring.
+
+========================================
+ACHIEVEMENTS
+========================================
+
+HACKIIITV 2019 – Best Idea Award: Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the prestigious Best Idea Award.

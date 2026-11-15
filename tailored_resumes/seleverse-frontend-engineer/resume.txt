@@ -1,0 +1,60 @@
+Shubham Pandey Email: mr.pshubham@gmail.com
+Github: shubham-pandey12 Mobile: +91-8174081896
+LinkedIn: shubhampandey Portfolio: shubham.pandey
+Education
+•
+Indian Institute Of Information Technology Vadodara
+Bachelor of Technology - Information Technology;
+Skills Summary
+• Frontend: React (React.js), Next.js, Next.js App Router, TypeScript, JavaScript, Modern CSS
+• UI & A11y: Pixel-Perfect, Accessible UIs, Accessibility Standards, RTL Text, Localization
+• Performance: Performance Optimization, Low-Bandwidth Networks, Emerging Markets, Caching
+• AI & Product: AI APIs, Real-Time Content Features, Creator Dashboards, Content Feeds, REST APIs
+• Engineering: Clean, Tested, Documented Code, Jest, Unit & Integration Testing, Git, Open Source Contributions
+Work Experience
+•
+•
+•
+•
+Moresand Technologies Bengaluru, Karnataka
+Software Development Engineer 2 Mar 2025 - Present
+◦ Architected a multi-tenant CMS and Creator Dashboard-style platform (React, Next.js App Router,
+TypeScript, modern CSS) for 5+ luxury travel brands — cutting onboarding time by 50%.
+◦ Partnered with design to ship pixel-perfect, accessible UIs supporting accessibility standards and
+RTL text readiness, defining clean REST API contracts for frontend components.
+◦ Led the build of modular React and Next.js widgets, content feeds, and templates with caching and
+low-bandwidth performance optimization — cutting dev effort 50% and latency.
+◦ Owned frontend test strategy and CI/CD across multi-brand releases, enforcing clean, tested,
+documented code via unit and integration testing for reliable production deployments.
+MAQ Software Noida, UP
+Software Engineer 1 Apr 2024 - Feb 2025
+◦ Built and owned real-time frontend integrations with AI APIs for a production AI assistant (React,
+TypeScript), refining query orchestration and streaming response UI to improve prompt accuracy by 28%.
+◦ Engineered API retrieval workflows powering real-time content features and context-aware AI
+responses, optimizing payload sizes and rendering paths for reliable performance across emerging markets.
+◦ Developed and shipped reusable React, TypeScript, and modern CSS components for AI-powered
+applications, delivering pixel-perfect, accessible UIs and resilient user experiences across multiple products.
+Techolution Remote
+Full Stack Developer Jul 2023 - Mar 2024
+◦ Built and shipped production features in React, Next.js, and TypeScript, establishing unit, integration,
+and acceptance tests with 90% test coverage and clean, tested, documented code.
+◦ Streamlined CI/CD workflows and shared UI libraries with automated quality checks and docs aligned
+with open source contributions — cutting deployment time by 60% and boosting reliability.
+GeekForGeeks Noida, UP
+Software Development Engineer (Intern) Jan 2023 - Jun 2023
+◦ Boosted user engagement by 30% and site performance by 40% across high-traﬀic emerging markets web
+pages using reusable JavaScript, React, and Next.js UIs and low-bandwidth tuning.
+Projects
+•
+WebHealth
+React.js, Node.js, Express.js, SQLite, REST APIs, Recharts, Three.js, Google OAuth, GCP
+◦ Designed and built a full-stack website health auditing platform end-to-end (Node.js/Express backend,
+React.js frontend) to run client-facing website audits, integrating a custom multi-page web crawler, Google
+Lighthouse, and passive security scanning to generate consolidated SEO, performance, and accessibility reports
+via REST APIs, replacing manual, tool-by-tool audits.
+Achievements
+•
+HACKIIITV 2019
+Best Idea Award
+◦ Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the
+prestigious Best Idea Award.

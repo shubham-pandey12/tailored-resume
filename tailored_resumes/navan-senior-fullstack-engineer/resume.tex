@@ -1,0 +1,117 @@
+\documentclass[a4paper,20pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.70in}
+\addtolength{\textheight}{1.15in}
+\urlstyle{rm}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-10pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeItemWithoutTitle}[1]{\item\small{{\vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-1pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{#3} & \textit{#4} \\\end{tabular*}\vspace{-5pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Shubham Pandey}} & Email: \href{mailto:mr.pshubham@gmail.com}{mr.pshubham@gmail.com}\\
+  \href{https://github.com/shubham-pandey12}{Github: shubham-pandey12} & Mobile:~~~~~~~~~~~~+91-8174081896 \\
+  \href{https://www.linkedin.com/in/shubham-pandey-a74716199/}{LinkedIn: shubhampandey} & Portfolio:~~~~~~~~\href{https://shubham-portfolio-mocha.vercel.app/}{shubham.pandey} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Information Technology Vadodara}{Vadodara, Gujarat}
+      {Bachelor of Technology -- Information Technology}{2019 -- 2023}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\section{Skills Summary}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Backend}{~~~~~~~~~Java, Spring Boot, REST APIs, GraphQL, Microservices, Distributed Systems, Spring Security}
+    \resumeSubItem{Frontend}{~~~~~~~~React.js, TypeScript, JavaScript, Next.js, Angular.js, Redux, State Management}
+    \resumeSubItem{Databases}{~~~~~~~MySQL, PostgreSQL, MongoDB, Redis, SQL, Data Modeling, Query Optimization}
+    \resumeSubItem{Infrastructure}{~AWS (EC2, S3, ECS), Docker, Kubernetes, Jenkins, CI/CD, Git}
+    \resumeSubItem{Testing}{~~~~~~~~~~~Jest, Unit Testing, Integration Testing, TDD, Automated Testing}
+    \resumeSubItem{AI Dev Tools}{~~~GitHub Copilot, Claude, Cursor, AI-Assisted Development}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Moresand Technologies}{Bengaluru, Karnataka}
+      {Software Development Engineer 2}{Mar 2025 -- Present}
+      \resumeItemListStart
+        \item\small{Architected a distributed, multi-tenant SaaS platform (\textbf{Java, Spring Boot}, React.js, TypeScript) serving 5+ enterprise clients -- built \textbf{configurable approval workflows, policy-based configuration tools, and role/permission management} with microservice boundaries and enterprise-grade REST API design, reducing client onboarding time by \textbf{50\%}.}
+        \item\small{Owned \textbf{data modelling and query optimisation} for MySQL and PostgreSQL schemas end-to-end -- complex joins, indexing strategies, and transactional integrity for high-volume enterprise data; drove the full \textbf{Java/Spring Boot REST API} data contract between backend services and React.js frontend components across clients.}
+        \item\small{Built a \textbf{Redis-backed caching layer} in Spring Boot for high-traffic API endpoints; maintained \textbf{production observability} via structured metrics, logs, and alerting -- achieving SLA-compliant reliability with \textbf{50\%} reduction in development effort and enabling zero-downtime deployments across the platform.}
+        \item\small{Owned \textbf{end-to-end CI/CD pipelines} (Docker, AWS ECS) and production incident response -- root-cause analysis, runbooks, and operational documentation; \textbf{mentored junior engineers} through structured code reviews, championing monitoring standards and engineering best practices across the team.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {MAQ Software}{Noida, UP}
+      {Software Engineer 1}{Apr 2024 -- Feb 2025}
+      \resumeItemListStart
+        \item\small{Built a production \textbf{Java/Spring Boot backend service} for an enterprise AI assistant, integrating an Azure AI Search orchestration layer for \textbf{high-volume data retrieval at enterprise scale} -- improved prompt accuracy by \textbf{28\%}; took full ownership from \textbf{system design} through containerised deployment and production monitoring using \textbf{Claude and GitHub Copilot} throughout.}
+        \item\small{Designed \textbf{scalable REST APIs and data services} in Java/Spring Boot -- integrating vector search, PostgreSQL queries, and LLM APIs with strict \textbf{data modelling and query optimisation}; maintained production observability (metrics, structured logs, alerting) to meet SLA commitments under high-volume enterprise load.}
+        \item\small{Developed reusable \textbf{React + TypeScript} component library with robust \textbf{state management} for AI-powered enterprise applications; enforced code review discipline, automated testing, and monitoring standards across multiple product teams using AI-assisted development workflows.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Techolution}{Remote}
+      {Full Stack Developer}{Jul 2023 -- Mar 2024}
+      \resumeItemListStart
+        \item\small{Built and shipped production full-stack features (\textbf{Java, Spring Boot, React.js, Angular.js}) with \textbf{90\% test coverage} across unit, integration, and automated acceptance tests; enforced SOLID principles, clean code, and high-signal code review discipline -- driving predictable delivery of production-quality features.}
+        \item\small{Designed and owned \textbf{CI/CD pipelines} (Jenkins, Docker) for \textbf{microservice deployments on AWS}, cutting deployment time by \textbf{60\%}; managed production deployments end-to-end with health monitoring, alerting, and incident tracking.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {GeeksForGeeks}{Noida, UP}
+      {SDE Intern}{Jan 2023 -- Jun 2023}
+      \resumeItemListStart
+        \item\small{Boosted user engagement by \textbf{30\%} and site performance by \textbf{40\%} by building reusable \textbf{React.js and Next.js} components with server-side rendering, code-splitting, and lazy-loading on a high-traffic platform serving millions of monthly users.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{WebHealth}
+      {Full-stack website health auditing platform -- \textbf{Java/Spring Boot} backend, \textbf{React.js} frontend, REST APIs, MySQL, Google OAuth, GCP. Custom multi-page web crawler with Google Lighthouse integration, passive security scanning, and performance profiling; end-to-end owned from system design and \textbf{data modelling} to production deployment with automated consolidated audit reporting.}
+  \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubItem{HACKIIITV 2019 -- Best Idea Award}{Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the prestigious Best Idea Award.}
+  \resumeSubHeadingListEnd
+
+\end{document}

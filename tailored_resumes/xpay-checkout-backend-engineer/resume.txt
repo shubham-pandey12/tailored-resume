@@ -1,0 +1,64 @@
+Shubham Pandey Email: mr.pshubham@gmail.com
+Github: shubham-pandey12 Mobile: +91-8174081896
+LinkedIn: shubhampandey Portfolio: shubham.pandey
+Education
+Indian Institute Of Information Technology Vadodara
+•
+Bachelor of Technology - Information Technology;
+Skills Summary
+• Languages & Core: Java 21, Spring Boot, REST APIs, API Design, System Design, Distributed Systems
+• MongoDB & Modeling: MongoDB, MongoDB Data Modeling, Indexing, Transactions vs. Atomic Updates, Versioning
+• Caching & Analytics: Redis, ClickHouse, Update Patterns, Consistency, Scalability, High-Performance Querying
+• Cloud & Payments: AWS (ECS, SQS, S3, SES), Multi-Currency Payment Systems, Production Deployment
+• Operations & Quality: Monitoring, On-Call Support, Production Debugging, Reliability, Unit & Integration Testing
+Work Experience
+•
+•
+•
+•
+Moresand Technologies Bengaluru, Karnataka
+Software Development Engineer 2 Mar 2025 - Present
+◦ Architected a multi-tenant backend platform end-to-end using Java 21, Spring Boot, and MongoDB,
+owning system design, API design, versioning, and distributed systems boundaries across 5+ travel
+brands — cutting new-brand onboarding time by 50%.
+◦ Owned MongoDB data modeling, indexing, and REST APIs, balancing transactions vs. atomic
+updates and update patterns for multi-currency payment systems and partner data contracts with
+strong consistency and scalability.
+◦ Led the build of modular Spring Boot services with configurable REST APIs, Redis caching,
+ClickHouse analytics, and AWS (SQS, S3, SES) integrations for high-traﬀic endpoints — cutting
+development effort by 50% and latency.
+◦ Owned end-to-end feature lifecycles from technical design to AWS ECS production deployment,
+monitoring, and on-call support — driving automated testing and production debugging to eliminate
+bottlenecks and strengthen reliability.
+MAQ Software Noida, UP
+Software Engineer 1 Apr 2024 - Feb 2025
+◦ Built and owned production Java 21 and Spring Boot backend services powered by MongoDB, Redis,
+and ClickHouse query orchestration, improving production system accuracy by 28%.
+◦ Designed scalable REST APIs and distributed systems workflows integrating AWS (ECS, SQS, S3)
+storage and asynchronous queues to deliver reliable, consistent, low-latency responses in production.
+◦ Collaborated with product and engineering to ship modular Java services with strict versioning and
+MongoDB indexing, resolving bottlenecks via systematic production debugging.
+Techolution Remote
+Full Stack Developer Jul 2023 - Mar 2024
+◦ Built and shipped production Java 21 and Spring Boot backend services and REST APIs, establishing
+unit, integration, and automated testing suites with 90% test coverage to ensure reliability and performance.
+◦ Automated production deployment workflows on AWS (ECS, S3, SQS, SES) for distributed Java
+services with monitoring and on-call support, cutting deployment time by 60% and boosting reliability.
+GeekForGeeks Noida, UP
+Software Development Engineer (Intern) Jan 2023 - Jun 2023
+◦ Boosted user engagement by 30% and improved platform performance by 40% by building and
+deploying modular Java software components, REST APIs, and latency-optimized backend data workflows.
+Projects
+•
+WebHealth
+React.js, Node.js, Express.js, SQLite, REST APIs, Recharts, Three.js, Google OAuth, GCP
+◦ Designed and built a full-stack website health auditing platform end-to-end (Node.js/Express backend,
+React.js frontend) to run client-facing website audits, integrating a custom multi-page web crawler, Google
+Lighthouse, and passive security scanning to generate consolidated SEO, performance, and accessibility reports
+via REST APIs, replacing manual, tool-by-tool audits.
+Achievements
+•
+HACKIIITV 2019
+Best Idea Award
+◦ Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the
+prestigious Best Idea Award.

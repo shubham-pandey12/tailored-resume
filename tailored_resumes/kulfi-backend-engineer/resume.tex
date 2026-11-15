@@ -1,0 +1,164 @@
+%------------------------
+% Resume - Shubham Pandey
+% Tailored for Kulfi - Backend Engineer
+% Template: Clean Formal LaTeX (Preserved Structure & Design)
+%------------------------
+
+\documentclass[a4paper,10pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.70in}
+\addtolength{\textheight}{1.15in}
+
+\urlstyle{rm}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{#3} & \textit{#4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Shubham Pandey}} & Email: \href{mailto:mr.pshubham@gmail.com}{mr.pshubham@gmail.com}\\
+  \href{https://github.com/shubham-pandey12}{Github: shubham-pandey12} & Mobile:~~~~~~~~~~~~+91-8174081896 \\
+  \href{https://www.linkedin.com/in/shubham-pandey-a74716199/}{LinkedIn: shubhampandey} & Location:~~~~~~~~~Bengaluru, IN \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute Of Information Technology Vadodara}{}
+      {Bachelor of Technology - Information Technology}{}
+  \resumeSubHeadingListEnd
+
+\vspace{-5pt}
+
+%-----------SKILLS-----------------
+\section{Skills Summary}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Backend \& Real-Time}{Node.js, Express.js, TypeScript, JavaScript (ES6+), REST APIs, WebSockets, Concurrency}
+    \resumeSubItem{Databases \& Caching}{PostgreSQL, MySQL, Redis (Pub/Sub \& Caching), Relational Data Modeling, Indexing}
+    \resumeSubItem{Cross-Stack \& Client}{React.js, Next.js, Frontend Debugging, Client-Server Contracts, Flutter/Dart fundamentals}
+    \resumeSubItem{Reliability \& DevOps}{Datadog, Prometheus, Grafana, OpenSearch, AWS (EC2, ECS, S3), Docker, CI/CD (Jenkins)}
+    \resumeSubItem{Architecture \& Testing}{Jest, Automated Testing, Asynchronous Queues, Incident Response, Rollback Strategies}
+  \resumeSubHeadingListEnd
+
+\vspace{-5pt}
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading{Moresand Technologies}{Bengaluru, Karnataka}
+      {Software Development Engineer 2}{Mar 2025 - Present}
+      \resumeItemListStart
+        \item \textnormal{\textbf{Architected and operated high-throughput backend services} using \textbf{Node.js, Express.js, and TypeScript}, designing event-driven logic and resilient APIs to handle concurrent traffic spikes while preserving sub-100ms response latencies.}
+        \item \textnormal{\textbf{Engineered relational data models and Redis caching} across \textbf{PostgreSQL and MySQL}, optimizing queries, connection pools, and cache invalidation strategies to protect database health and guarantee transactional consistency.}
+        \item \textnormal{\textbf{Owned production reliability, observability, and incident response} using \textbf{Datadog, Prometheus, Grafana, and OpenSearch}; instituted alerting thresholds, distributed tracing, and automated runbooks that reduced MTTD by \textbf{45\%} and maintained \textbf{99.9\% uptime}.}
+        \item \textnormal{\textbf{Drove cross-stack problem solving and safe rollouts} from HLD/LLD to canary deployments; debugged client-network-API integration bottlenecks across React/web interfaces, improving payload transfer efficiency by \textbf{35\%}.}
+      \resumeItemListEnd
+
+    \resumeSubheading{MAQ Software}{Noida, UP}
+      {Software Engineer 1}{Apr 2024 - Feb 2025}
+      \resumeItemListStart
+        \item \textnormal{\textbf{Built and operated a production Node.js backend service} powering an AI assistant with custom \textbf{Azure AI Search orchestration}, designing asynchronous retrieval pipelines and prompt workflows that increased response accuracy by \textbf{28\%}.}
+        \item \textnormal{\textbf{Designed resilient backend APIs and failure handling} with rate-limiting, structured retries, and graceful fallbacks, ensuring uninterrupted system availability during sudden upstream latency spikes and API rate caps.}
+        \item \textnormal{\textbf{Partnered directly with product and design} to define contract-first APIs, test edge cases with \textbf{Jest}, and build reusable UI components (React/TypeScript), shipping fast, pragmatic iterations without sacrificing reliability.}
+      \resumeItemListEnd
+
+    \resumeSubheading{Techolution}{Remote}
+      {Full Stack Developer}{Jul 2023 - Mar 2024}
+      \resumeItemListStart
+        \item \textnormal{\textbf{Developed and shipped production microservices} using \textbf{Node.js and JavaScript}, introducing comprehensive unit and integration test suites with \textbf{Jest} to establish \textbf{90\% test coverage} across core modules.}
+        \item \textnormal{\textbf{Engineered automated CI/CD pipelines} using \textbf{Docker and Jenkins}, reducing deployment cycle times by \textbf{60\%} and enforcing pre-merge automated testing, safe container rollouts, and rapid rollback mechanisms.}
+      \resumeItemListEnd
+
+    \resumeSubheading{GeeksForGeeks}{Noida, UP}
+      {Software Development Engineer (Intern)}{Jan 2023 - Jun 2023}
+      \resumeItemListStart
+        \item \textnormal{\textbf{Boosted user engagement by 30\% and cut page latency by 40\%} by architecting reusable web components and optimizing high-traffic client-side data hydration using \textbf{JavaScript, React.js, and Next.js}.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\vspace{-5pt}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading{\href{https://web-health-eta.vercel.app/}{WebHealth}}{}
+      {\textbf{Node.js, Express.js, JavaScript, PostgreSQL, Redis, RESTful APIs, Docker, GCP}}{}
+      \begin{itemize}
+        \item{\textbf{Designed and built} an automated site health auditing platform (\textbf{Node.js/Express.js}), orchestrating asynchronous crawling workers, passive security audits, and \textbf{Redis-backed task queues} to deliver real-time telemetry via \textbf{REST APIs}.}
+      \end{itemize}
+
+  \resumeSubHeadingListEnd
+
+\vspace{-5pt}
+
+%-----------ACHIEVEMENTS-----------------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubheading{HACKIIITV}{2019}{\textbf{Best Idea Award}}{}
+      \begin{itemize}
+        \item{Led and guided a team of 5 engineers to prototype an innovative real-time software concept under tight 24-hour hackathon constraints, winning the Best Idea Award.}
+      \end{itemize}
+  \resumeSubHeadingListEnd
+
+\end{document}

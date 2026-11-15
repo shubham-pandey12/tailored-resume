@@ -1,0 +1,18 @@
+# Cover Letter — Increff | Software Development Engineer II (SDE-II)
+
+**Date:** October 30, 2026
+
+---
+
+Dear Hiring Team,
+
+The SDE-II role at Increff maps closely to how I work at Moresand Technologies today: end-to-end ownership of a technical area — planning it, writing HLDs/LLDs, shipping it, holding its quality bar in production, and mentoring the engineers working on it. I own sprint planning and release readiness, act as merge-quality gatekeeper through structured code reviews, and run incident response and RCA when issues reach production. I write design documents that the team and adjacent stakeholders can read and critique, and I surface risks before they become blockers. At MAQ Software I built and owned a production backend service end-to-end — designed the system architecture, REST APIs, and an AI orchestration layer, improved prompt accuracy by 28%, and maintained production reliability throughout.
+
+On the technical side: I have strong fundamentals in relational data modelling and SQL (MySQL, PostgreSQL), REST API design, distributed caching (Redis), and CI/CD. I use AI tools (Claude, GitHub Copilot) actively for research, task breakdown, and edge-case discovery — with disciplined output validation. I am an AI-native developer by practice. My CS degree covered Java and data structures thoroughly; I am actively deepening my Spring Boot expertise to match Increff's backend stack. My production backend experience is Node.js, and I am direct about that — but the engineering discipline (system design, production ownership, high-throughput architecture, data correctness) transfers directly.
+
+Increff's problem space — reliable, high-throughput systems for inventory management and supply chain at retail scale — is exactly the direction I want to grow into. The combination of a technical ownership model, high engineering standards, and a mentorship structure makes this a role worth pursuing seriously. I would welcome a conversation about fit.
+
+Sincerely,  
+**Shubham Pandey**  
+mr.pshubham@gmail.com | +91-8174081896  
+linkedin.com/in/shubham-pandey-a74716199 | github.com/shubham-pandey12

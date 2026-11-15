@@ -1,0 +1,60 @@
+Shubham Pandey Email: mr.pshubham@gmail.com
+Github: shubham-pandey12 Mobile: +91-8174081896
+LinkedIn: shubhampandey Portfolio: shubham.pandey
+Education
+•
+Indian Institute Of Information Technology Vadodara
+Bachelor of Technology - Information Technology;
+Skills Summary
+• Languages & Script: • CI/CD & Harness: • Infra, IaC & Cloud: • Observability & Sec: • Customer & FDE: Work Experience
+Python, Java, Go, Shell Scripting, Automation, Deep-Dive Troubleshooting
+CI/CD, Jenkins, GitHub Actions, GitLab CI, CircleCI, Harness (CI, CD, Flags, STO)
+Docker, Kubernetes, Terraform, Ansible, AWS, GCP, Azure, Multi-Cloud
+Prometheus, Grafana, Splunk, Datadog, Cloud Cost Management, Governance
+Customer Engineering, Solutions Engineering, Migrations, Runbooks, Android/iOS
+•
+•
+•
+•
+Moresand Technologies Bengaluru, Karnataka
+Software Development Engineer 2 Mar 2025 - Present
+◦ Architected scalable DevOps and CI/CD platforms (Python, Java, Jenkins, GitHub Actions) for
+enterprise clients, driving standardization and governance — cutting onboarding by 50%.
+◦ Led customer-facing technical migrations and infrastructure integration across Docker, Kubernetes,
+Terraform, and Ansible on AWS in multi-cloud and hybrid environments.
+◦ Built automation for pipeline execution, Feature Flags, and Cloud Cost Management using Shell
+scripting — cutting engineering effort by 50% and latency.
+◦ Conducted deep-dive troubleshooting across code, logs, and configurations with Prometheus, Grafana,
+and Datadog, delivering technical workshops and run books with Engineering.
+MAQ Software Noida, UP
+Software Engineer 1 Apr 2024 - Feb 2025
+◦ Built and owned enterprise Python and Java automation services on Azure and GCP, resolving complex
+configuration and retrieval failures to lift accuracy by 28%.
+◦ Engineered SDLC orchestration and Security Testing Orchestration (STO) integrations with Splunk
+logging and Go tooling for compliant customer deployments.
+◦ Partnered with Customer Engineering and Product Management to translate enterprise requirements
+into Harness-aligned CI/CD solutions, bug fixes, and code contributions.
+Techolution Remote
+Full Stack Developer Jul 2023 - Mar 2024
+◦ Developed and shipped automated verification, Solutions Engineering integrations, and pipeline testing
+(Python, Java) across GitLab CI and CircleCI with 90% test coverage.
+◦ Designed CI/CD pipelines with Jenkins, Docker, Kubernetes, and Terraform across AWS and
+GCP, automating release and root-cause diagnostics to reduce deployment time by 60%.
+GeekForGeeks Noida, UP
+Software Development Engineer (Intern) Jan 2023 - Jun 2023
+◦ Boosted user engagement by 30% and improved platform performance by 40% through Python and
+Shell automation scripts, config debugging, and reliable releases.
+Projects
+•
+WebHealth
+React.js, Node.js, Express.js, SQLite, REST APIs, Recharts, Three.js, Google OAuth, GCP
+◦ Designed and built a full-stack website health auditing platform end-to-end (Node.js/Express backend,
+React.js frontend) to run client-facing website audits, integrating a custom multi-page web crawler, Google
+Lighthouse, and passive security scanning to generate consolidated SEO, performance, and accessibility reports
+via REST APIs, replacing manual, tool-by-tool audits.
+Achievements
+•
+HACKIIITV 2019
+Best Idea Award
+◦ Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the
+prestigious Best Idea Award.

@@ -1,0 +1,131 @@
+\documentclass[a4paper,20pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.70in}
+\addtolength{\textheight}{1.15in}
+
+\urlstyle{rm}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\vspace{-10pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeItemWithoutTitle}[1]{\item\small{{\vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-1pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{#3} & \textit{#4} \\\end{tabular*}\vspace{-5pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Shubham Pandey}} & Email: \href{mailto:mr.pshubham@gmail.com}{mr.pshubham@gmail.com}\\
+  \href{https://github.com/shubham-pandey12}{Github: shubham-pandey12} & Mobile:~~~~~~~~~~~~+91-8174081896 \\
+  \href{https://www.linkedin.com/in/shubham-pandey-a74716199/}{LinkedIn: shubhampandey} & Portfolio:~~~~~~~~\href{https://shubham-portfolio-mocha.vercel.app/}{shubham.pandey} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{~~Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute Of Information Technology Vadodara}{}
+      {Bachelor of Technology - Information Technology;}{}
+  \resumeSubHeadingListEnd
+
+\vspace{-5pt}
+
+%-----------SKILLS-----------------
+\section{Skills Summary}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Backend}{~~~~~~~~~Java, Spring Boot, Node.js, Express.js, Python, REST APIs, GraphQL, Microservices}
+    \resumeSubItem{Frontend}{~~~~~~~~React.js, Next.js, TypeScript, JavaScript, HTML, CSS, Redux}
+    \resumeSubItem{Databases}{~~~~~~~MySQL, PostgreSQL, MongoDB, Redis, Efficient SQL}
+    \resumeSubItem{Infrastructure}{~AWS (EC2, S3, ECS, CloudFront), Docker, Kubernetes, Kafka, Jenkins, CI/CD, Git}
+    \resumeSubItem{Testing}{~~~~~~~~~~~Jest, JUnit, Unit Testing, Integration Testing, E2E Testing}
+    \resumeSubItem{Practices}{~~~~~~~Spring Security, Auth/Vendor Integrations, Production Observability, GitHub Copilot, Claude Code}
+  \resumeSubHeadingListEnd
+
+\vspace{-5pt}
+
+%-----------EXPERIENCE-----------------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading{Moresand Technologies}{Bengaluru, Karnataka}
+      {Software Development Engineer 2}{Mar 2025 -- Present}
+      \resumeItemListStart
+        \item \textnormal{\textbf{Architected} a multi-tenant platform (Java/Spring Boot, Node.js, React.js, TypeScript) with micro-frontend-style widget architecture and Spring Security auth layers, supporting 5+ luxury travel brands on a single codebase -- owned design, build, test, and production operations end-to-end, cutting new-brand onboarding by \textbf{50\%}.}
+        \item \textnormal{\textbf{Designed MySQL schemas and REST APIs} from scratch with complex SQL joins, indexing strategies, and foreign-key relationships for brand-specific data integration -- owning the full data contract between backend services and React.js frontend components; documented service ownership through runbooks and OpDocs.}
+        \item \textnormal{\textbf{Built a Redis-backed caching layer} and integrated production observability (structured logs, latency metrics, CloudWatch alerts) for high-traffic endpoints in a modular widget library -- reduced API latency, improved SLA reliability, and cut development effort by \textbf{50\%}.}
+        \item \textnormal{\textbf{Owned CI/CD pipelines, test strategy} (JUnit, unit, integration, E2E testing; Jenkins, Docker, Kubernetes, AWS ECS), and production incident handling -- monitoring application health, driving root-cause analysis, and ensuring SLA-compliant zero-downtime deployments across all brands.}
+      \resumeItemListEnd
+
+    \resumeSubheading{MAQ Software}{Noida, UP}
+      {Software Engineer 1}{Apr 2024 -- Feb 2025}
+      \resumeItemListStart
+        \item \textnormal{\textbf{Built and owned} a production Java/Spring Boot backend service for an AI assistant -- Spring Security auth, JPA/Hibernate data access, Azure AI Search vendor integration, and Kafka event streams for asynchronous processing -- improving prompt accuracy by \textbf{28\%}; managed full production lifecycle from design to incident handling.}
+        \item \textnormal{\textbf{Designed GraphQL and REST APIs} integrating third-party vendor platforms (Azure AI Search, LLM APIs) with workflow orchestration, retries, failure handling, and Swagger/OpenAPI documentation for reliable, context-aware responses under production SLA commitments.}
+        \item \textnormal{\textbf{Developed and shipped} reusable React + TypeScript micro-frontend components for AI-powered applications; enforced design patterns, JUnit/Jest test coverage, and code-review standards to ensure maintainability and scalable user experiences across multiple enterprise products.}
+      \resumeItemListEnd
+
+    \resumeSubheading{Techolution}{Remote}
+      {Full Stack Developer}{Jul 2023 -- Mar 2024}
+      \resumeItemListStart
+        \item \textnormal{\textbf{Built and shipped} production full-stack features (React.js, Angular.js, Node.js) with \textbf{90\% test coverage} via unit, integration, and E2E testing using JUnit and Jest; monitored production observability dashboards and handled live incidents with structured postmortem records.}
+        \item \textnormal{\textbf{Designed and owned CI/CD pipelines} (Jenkins, Docker, Kubernetes) for microservice deployments on AWS ECS -- reduced deployment time by \textbf{60\%}, improved release reliability through automated gate checks, and ensured SLA-compliant rollouts across production environments.}
+      \resumeItemListEnd
+
+    \resumeSubheading{GeekForGeeks}{Noida, UP}
+      {Software Development Engineer (Intern)}{Jan 2023 -- Jun 2023}
+      \resumeItemListStart
+        \item \textnormal{Boosted user engagement by \textbf{30\%} and site performance by \textbf{40\%} by building reusable \textbf{React.js and Next.js} components with server-side rendering, code-splitting optimisations, and accessibility improvements; contributed to a high-traffic platform serving millions of monthly users.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+\vspace{-5pt}
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubheading{\href{https://web-health-eta.vercel.app/}{WebHealth}}{}
+      {\textbf{React.js, Node.js, Express.js, SQLite, REST APIs, Recharts, Three.js, Google OAuth, GCP}}{}
+      \begin{itemize}
+        \item{\textbf{Designed and built} a full-stack website health auditing platform (Node.js/Express backend, React.js frontend) integrating a custom web crawler, Google Lighthouse, and security scanning -- surfacing SEO, performance, and accessibility reports via REST APIs with interactive Recharts visualisations and Google OAuth.}
+      \end{itemize}
+  \resumeSubHeadingListEnd
+
+\vspace{-5pt}
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubheading{HACKIIITV}{2019}{\textbf{Best Idea Award}}{}
+      \begin{itemize}
+        \item{Led a team of 5 engineers in the HACKIIITV competition at IIIT Vadodara, winning the Best Idea Award for a distributed systems solution; coordinated technical architecture decisions and cross-functional collaboration across the team.}
+      \end{itemize}
+  \resumeSubHeadingListEnd
+
+
+\end{document}

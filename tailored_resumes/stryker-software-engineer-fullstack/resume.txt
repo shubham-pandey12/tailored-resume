@@ -1,0 +1,72 @@
+SHUBHAM PANDEY
+Email: mr.pshubham@gmail.com
+Mobile: +91-8174081896
+Github: shubham-pandey12
+LinkedIn: shubhampandey
+Portfolio: shubham.pandey
+
+========================================
+EDUCATION
+========================================
+
+Indian Institute of Information Technology Vadodara — Vadodara, Gujarat
+Bachelor of Technology — Information Technology | 2019 – 2023
+
+========================================
+SKILLS SUMMARY
+========================================
+
+Backend:        Node.js, Express.js, TypeScript, JavaScript, REST APIs, Microservices, Distributed Systems
+Frontend:       React.js, TypeScript, JavaScript, HTML5, CSS3, Responsive Design
+Infrastructure: GCP (Cloud Run, Cloud Functions, Cloud Logging), AWS (EC2, S3, ECS), Docker, Git, CI/CD
+Databases:      MySQL, PostgreSQL, MongoDB, Redis, SQL, SQLite
+Testing:        Jest, Unit Testing, Integration Testing, Security Testing, Automated Testing, TDD
+AI Dev Tools:   GitHub Copilot, Claude, Cursor, AI-Assisted Development
+
+========================================
+EXPERIENCE
+========================================
+
+Moresand Technologies — Bengaluru, Karnataka
+Software Development Engineer 2 | Mar 2025 – Present
+
+- Designed and built secure, high-availability full-stack services (Node.js, Express.js, React.js, TypeScript) for a multi-tenant SaaS platform — produced component design specifications, led architectural reviews, owned scalable RESTful API and service boundary decisions across 5+ enterprise clients, cutting onboarding time by 50%.
+
+- Architected distributed backend microservices with end-to-end data contracts — modelled schema, API versioning, and service boundaries enabling independent deployment; evaluated technology trade-offs at each layer; built Redis-backed caching layer for high-traffic endpoints, reducing development effort by 50%.
+
+- Implemented automated testing suites (unit, integration, and security checks) with Jest; owned CI/CD pipelines and championed Agile methodologies — sprint planning, code reviews, backlog grooming, and continuous improvement cycles ensuring production-ready, zero-downtime deployments.
+
+---
+
+MAQ Software — Noida, UP
+Software Engineer 1 | Apr 2024 – Feb 2025
+
+- Built and owned a production Node.js + TypeScript backend service for an enterprise AI assistant — designed scalable RESTful APIs and a custom Azure AI Search orchestration layer, improving prompt accuracy by 28%; deployed to cloud with structured logging and alerting for high-availability SLAs.
+
+- Developed modular, responsive React.js + TypeScript component library; partnered with product and QA across Agile sprint cycles — sprint planning, backlog grooming, automated testing suites (unit, integration), and code review discipline enforcing quality standards across multiple teams.
+
+---
+
+Techolution — Remote
+Full Stack Developer | Jul 2023 – Mar 2024
+
+- Built and shipped production full-stack features (Node.js, React.js, TypeScript) with automated testing suites — unit, integration, security checks — at 90% coverage; enforced SOLID principles and code review discipline for secure, production-quality delivery in an Agile team; owned CI/CD pipelines (Jenkins, Docker) cutting deployment time by 60%.
+
+---
+
+GeeksForGeeks — Noida, UP
+SDE Intern | Jan 2023 – Jun 2023
+
+- Boosted user engagement 30% and site performance 40% by building modular, responsive web components using React.js, Next.js, and TypeScript on a high-traffic platform serving millions of monthly users.
+
+========================================
+PROJECTS
+========================================
+
+WebHealth: Secure, full-stack website health auditing platform — Node.js/Express.js backend REST APIs, React.js + TypeScript frontend, deployed on GCP (Cloud Run) with Cloud Logging; integrated a custom web crawler, Google Lighthouse, and passive security scanning to generate consolidated SEO, performance, and accessibility reports via automated, high-availability reporting pipelines.
+
+========================================
+ACHIEVEMENTS
+========================================
+
+HACKIIITV 2019 – Best Idea Award: Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the prestigious Best Idea Award.

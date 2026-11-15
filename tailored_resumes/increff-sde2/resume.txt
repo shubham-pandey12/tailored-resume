@@ -1,0 +1,72 @@
+SHUBHAM PANDEY
+Email: mr.pshubham@gmail.com
+Mobile: +91-8174081896
+Github: shubham-pandey12
+LinkedIn: shubhampandey
+Portfolio: shubham.pandey
+
+========================================
+EDUCATION
+========================================
+
+Indian Institute of Information Technology Vadodara — Vadodara, Gujarat
+Bachelor of Technology — Information Technology | 2019 – 2023
+
+========================================
+SKILLS SUMMARY
+========================================
+
+Backend:        Java, Spring Boot, TypeScript, JavaScript, REST APIs, Microservices
+Frontend:       React.js, Next.js, TypeScript, JavaScript
+Databases:      MySQL, PostgreSQL, SQL, MongoDB, Redis
+Infrastructure: AWS (EC2, S3, ECS), GCP, Docker, Jenkins, CI/CD, Git
+Testing:        Jest, Unit Testing, Integration Testing, Automated Testing
+AI Dev Tools:   GitHub Copilot, Claude, Cursor, AI-Assisted Development
+
+========================================
+EXPERIENCE
+========================================
+
+Moresand Technologies — Bengaluru, Karnataka
+Software Development Engineer 2 | Mar 2025 – Present
+
+- Owned a technical area end-to-end — planned it, designed it (HLDs/LLDs), and shipped it; drove system design decisions across 5+ enterprise client platforms (Node.js, Express.js, React.js, TypeScript), defended architectural trade-offs, and maintained release readiness through sprint planning, scope management, and risk surfacing; cut onboarding time by 50%.
+
+- Built and operated reliable, high-throughput backend systems — REST API design, relational data modelling, Redis-backed caching, and production health tooling (alerts, dashboards, runbooks); acted as merge-quality gatekeeper through structured code reviews focused on correctness, security, performance, and data correctness; owned incident response and RCA on production defects.
+
+- Mentored junior engineers through design walkthroughs, pairing, and code reviews until they owned features end to end; automated repetitive quality checks; used AI tools (Claude, GitHub Copilot) for research, task breakdown, and edge-case discovery; reduced development effort by 50%.
+
+---
+
+MAQ Software — Noida, UP
+Software Engineer 1 | Apr 2024 – Feb 2025
+
+- Built and owned a production backend service for an AI assistant — designed system architecture, REST APIs, and a custom AI orchestration layer (Azure AI Search + LLM APIs); improved prompt accuracy by 28%; owned full delivery using Claude and GitHub Copilot for research and task breakdown throughout.
+
+- Designed REST APIs and data pipelines for AI workflows; applied SOLID principles, test coverage standards, and automated testing (unit, integration); maintained production reliability through structured logs, metrics, and alerting; enforced engineering standards across teams.
+
+---
+
+Techolution — Remote
+Full Stack Developer | Jul 2023 – Mar 2024
+
+- Built and shipped production full-stack features (Node.js, React.js, TypeScript) with 90% test coverage; designed CI/CD pipelines (Jenkins, Docker); reduced deployment time by 60% — applied production health monitoring, incident response practices, and structured code review processes.
+
+---
+
+GeeksForGeeks — Noida, UP
+SDE Intern | Jan 2023 – Jun 2023
+
+- Boosted user engagement by 30% and improved site performance by 40% by building and deploying reusable web components and optimized pages using JavaScript, React.js, and Next.js.
+
+========================================
+PROJECTS
+========================================
+
+WebHealth: Designed and built end-to-end — HLD through production; owned system design decisions, REST API contracts, and production deployment on GCP — a full-stack website health auditing platform (Node.js/Express.js, React.js, SQLite, REST APIs, Recharts, Three.js, Google OAuth) integrating a custom web crawler, Google Lighthouse, and passive security scanning to generate consolidated SEO, performance, and accessibility reports.
+
+========================================
+ACHIEVEMENTS
+========================================
+
+HACKIIITV 2019 – Best Idea Award: Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the prestigious Best Idea Award.

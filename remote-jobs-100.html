@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>100 Remote Dev Jobs</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<style>
+:root {
+  --bg: #f5f4f0;
+  --surface: #ffffff;
+  --surface2: #eeece6;
+  --border: #dedad0;
+  --fg: #18160f;
+  --fg2: #585448;
+  --fg3: #9a9484;
+  --accent: #2a6049;
+  --accent-bg: #d6ede2;
+  --accent-hover: #1f4d3a;
+  --remoteok: #1f7a5c;
+  --remoteok-bg: #d9f0e8;
+  --wwr: #c0392b;
+  --wwr-bg: #fce8e6;
+  --remotive: #2563eb;
+  --remotive-bg: #dbeafe;
+  --yc: #d97706;
+  --yc-bg: #fef3c7;
+  --wf: #7c3aed;
+  --wf-bg: #ede9fe;
+  --gold: #b45309;
+  --gold-bg: #fef3c7;
+  --tag-bg: #e8e6df;
+  --tag-fg: #48453b;
+  --shadow: 0 1px 2px rgba(0,0,0,.06), 0 2px 8px rgba(0,0,0,.04);
+  --shadow-hover: 0 4px 20px rgba(0,0,0,.12);
+  --r: 12px;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #100f0d; --surface: #1a1916; --surface2: #232119; --border: #2c2a24;
+  --fg: #e8e4da; --fg2: #9a9484; --fg3: #605c50;
+  --accent: #4ade80; --accent-bg: #052e16; --accent-hover: #22c55e;
+  --remoteok: #34d399; --remoteok-bg: #064e3b; --wwr: #f87171; --wwr-bg: #450a0a;
+  --remotive: #60a5fa; --remotive-bg: #1e3a5f; --yc: #fbbf24; --yc-bg: #451a03;
+  --wf: #a78bfa; --wf-bg: #2e1065; --gold: #fbbf24; --gold-bg: #451a03;
+  --tag-bg: #2c2a24; --tag-fg: #bab4a4; --shadow: 0 1px 3px rgba(0,0,0,.4); --shadow-hover: 0 4px 20px rgba(0,0,0,.5);
+  color-scheme: dark;
+}}
+:root[data-theme="dark"] {
+  --bg: #100f0d; --surface: #1a1916; --surface2: #232119; --border: #2c2a24;
+  --fg: #e8e4da; --fg2: #9a9484; --fg3: #605c50;
+  --accent: #4ade80; --accent-bg: #052e16; --accent-hover: #22c55e;
+  --remoteok: #34d399; --remoteok-bg: #064e3b; --wwr: #f87171; --wwr-bg: #450a0a;
+  --remotive: #60a5fa; --remotive-bg: #1e3a5f; --yc: #fbbf24; --yc-bg: #451a03;
+  --wf: #a78bfa; --wf-bg: #2e1065; --gold: #fbbf24; --gold-bg: #451a03;
+  --tag-bg: #2c2a24; --tag-fg: #bab4a4; --shadow: 0 1px 3px rgba(0,0,0,.4); --shadow-hover: 0 4px 20px rgba(0,0,0,.5);
+  color-scheme: dark;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--fg);min-height:100vh;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 40px}
+
+/* header */
+.hdr{background:var(--surface);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10;
+  padding:16px max(20px,env(safe-area-inset-left,0px))}
+.hdr-row{max-width:1140px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:12px}
+.logo{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:1.1rem;display:flex;align-items:center;gap:8px}
+.logo-dot{width:9px;height:9px;border-radius:50%;background:var(--accent)}
+.meta{font-size:.78rem;color:var(--fg3);display:flex;gap:12px;flex-wrap:wrap}
+.meta b{color:var(--fg2)}
+
+.prog-wrap{max-width:1140px;margin:0 auto 10px}
+.prog-lbl{font-size:.72rem;color:var(--fg3);margin-bottom:4px}
+.prog-track{height:3px;background:var(--border);border-radius:2px;overflow:hidden}
+.prog-fill{height:100%;background:var(--accent);border-radius:2px;transition:width .3s;width:0%}
+
+.filters{max-width:1140px;margin:0 auto;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.fg-sep{width:1px;background:var(--border);align-self:stretch;margin:0 2px}
+.fb{font-size:.72rem;font-weight:500;padding:4px 10px;border-radius:20px;border:1px solid var(--border);
+  background:transparent;color:var(--fg2);cursor:pointer;transition:all .12s;white-space:nowrap}
+.fb:hover{background:var(--surface2);color:var(--fg)}
+.fb.active{background:var(--accent);border-color:var(--accent);color:#fff}
+
+/* source colours for active state */
+.fb.a-remoteok{background:var(--remoteok);border-color:var(--remoteok);color:#fff}
+.fb.a-wwr{background:var(--wwr);border-color:var(--wwr);color:#fff}
+.fb.a-remotive{background:var(--remotive);border-color:var(--remotive);color:#fff}
+.fb.a-yc{background:var(--yc);border-color:var(--yc);color:#fff}
+.fb.a-wf{background:var(--wf);border-color:var(--wf);color:#fff}
+
+/* main */
+.main{max-width:1140px;margin:0 auto;padding-top:20px}
+
+.sh{font-family:'Space Grotesk',sans-serif;font-size:.7rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--fg3);margin-bottom:12px;display:flex;align-items:center;gap:8px}
+.sh::after{content:'';flex:1;height:1px;background:var(--border)}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(295px,1fr));gap:12px}
+
+/* card */
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--r);padding:14px;
+  display:flex;flex-direction:column;gap:8px;box-shadow:var(--shadow);transition:transform .15s,box-shadow .15s}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow-hover)}
+.card.applied{opacity:.55;border-color:var(--accent)}
+.card.hid{display:none}
+
+.ct{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.clogo{width:36px;height:36px;border-radius:9px;font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:.72rem;
+  display:flex;align-items:center;justify-content:center;flex-shrink:0;border:1px solid var(--border)}
+.badges{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+.bdg{font-size:.62rem;font-weight:600;padding:2px 6px;border-radius:8px;white-space:nowrap}
+.b-src-remoteok{background:var(--remoteok-bg);color:var(--remoteok)}
+.b-src-wwr{background:var(--wwr-bg);color:var(--wwr)}
+.b-src-remotive{background:var(--remotive-bg);color:var(--remotive)}
+.b-src-yc{background:var(--yc-bg);color:var(--yc)}
+.b-src-wf{background:var(--wf-bg);color:var(--wf)}
+.b-remote{background:var(--accent-bg);color:var(--accent)}
+.b-high{background:var(--gold-bg);color:var(--gold)}
+
+.ctitle{font-family:'Space Grotesk',sans-serif;font-size:.9rem;font-weight:600;line-height:1.3;text-wrap:balance}
+.cco{font-size:.78rem;font-weight:500;color:var(--fg2)}
+.cloc{font-size:.7rem;color:var(--fg3)}
+.cloc::before{content:'📍';font-size:.65rem;margin-right:3px}
+.csal{font-size:.82rem;font-weight:600;color:var(--accent)}
+.csal.hi{color:var(--gold)}
+.csal.empty{color:var(--fg3);font-weight:400;font-size:.75rem}
+
+.tags{display:flex;gap:4px;flex-wrap:wrap}
+.tag{font-size:.65rem;font-weight:500;padding:2px 7px;border-radius:7px;background:var(--tag-bg);color:var(--tag-fg)}
+
+.cf{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:8px;border-top:1px solid var(--border)}
+.at{display:flex;align-items:center;gap:5px;cursor:pointer;font-size:.7rem;color:var(--fg3);user-select:none}
+.at input{width:13px;height:13px;cursor:pointer;accent-color:var(--accent)}
+.ab{font-size:.74rem;font-weight:600;padding:6px 12px;border-radius:7px;background:var(--accent);color:#fff;text-decoration:none;transition:background .12s;white-space:nowrap}
+.ab:hover{background:var(--accent-hover)}
+
+.empty-state{text-align:center;padding:60px 20px;color:var(--fg3)}
+.empty-state h3{color:var(--fg2);font-size:.95rem;margin-bottom:4px}
+
+@media(max-width:600px){.hdr{padding:12px 16px}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="hdr">
+  <div class="hdr-row">
+    <div class="logo"><span class="logo-dot"></span>100 Remote Dev Jobs</div>
+    <div class="meta">
+      <span>Showing <b id="cnt">100</b> jobs</span>
+      <span>Sources: RemoteOK · WWR · Remotive · YC · Wellfound</span>
+      <span>Updated Nov 2026</span>
+    </div>
+  </div>
+  <div class="prog-wrap">
+    <div class="prog-lbl" id="plbl">Applied: 0 / 100</div>
+    <div class="prog-track"><div class="prog-fill" id="pfill"></div></div>
+  </div>
+  <div class="filters" id="filters">
+    <div style="display:flex;gap:4px;flex-wrap:wrap">
+      <button class="fb active" data-f="source" data-v="all">All Sources</button>
+      <button class="fb" data-f="source" data-v="remoteok">🟢 RemoteOK</button>
+      <button class="fb" data-f="source" data-v="wwr">🔴 WWR</button>
+      <button class="fb" data-f="source" data-v="remotive">🔵 Remotive</button>
+      <button class="fb" data-f="source" data-v="yc">🟡 YC</button>
+      <button class="fb" data-f="source" data-v="wf">🟣 Wellfound</button>
+    </div>
+    <div class="fg-sep"></div>
+    <div style="display:flex;gap:4px;flex-wrap:wrap">
+      <button class="fb active" data-f="pay" data-v="all">Any Pay</button>
+      <button class="fb" data-f="pay" data-v="high">$100K+</button>
+      <button class="fb" data-f="pay" data-v="mid">$50K–100K</button>
+      <button class="fb" data-f="pay" data-v="stated">Salary Listed</button>
+    </div>
+    <div class="fg-sep"></div>
+    <div style="display:flex;gap:4px;flex-wrap:wrap">
+      <button class="fb active" data-f="role" data-v="all">All Roles</button>
+      <button class="fb" data-f="role" data-v="backend">Backend</button>
+      <button class="fb" data-f="role" data-v="fullstack">Full Stack</button>
+      <button class="fb" data-f="role" data-v="ai">AI / ML</button>
+      <button class="fb" data-f="role" data-v="devops">DevOps / Infra</button>
+      <button class="fb" data-f="role" data-v="senior">Senior / Staff</button>
+    </div>
+    <div class="fg-sep"></div>
+    <button class="fb" data-f="role" data-v="applied" style="color:var(--accent)">✅ Applied</button>
+  </div>
+</header>
+
+<main class="main">
+  <div class="sh" id="grid-label">All Remote Jobs</div>
+  <div class="grid" id="grid"></div>
+  <div class="empty-state" id="empty" style="display:none"><h3>No jobs match</h3><p>Try different filters</p></div>
+</main>
+
+<script>
+// ── DATA ─────────────────────────────────────────────────────────────────────
+const JOBS = [
+// === REMOTEOK ===
+{id:'r1',src:'remoteok',title:'Senior Software Engineer — Kubernetes Control Plane',co:'Buoyant',loc:'Worldwide',sal:'',salN:0,tags:['Go','Kubernetes','Senior'],role:'backend'},
+{id:'r2',src:'remoteok',title:'Senior Agentic AI Engineer',co:'GT Consulting',loc:'Worldwide',sal:'',salN:0,tags:['AI','Python','React'],role:'ai'},
+{id:'r3',src:'remoteok',title:'UI Developer',co:'RainFocus',loc:'US Remote',sal:'',salN:0,tags:['React','Frontend','UI'],role:'fullstack'},
+{id:'r4',src:'remoteok',title:'AI Developer',co:'Salvo Software',loc:'Worldwide',sal:'',salN:0,tags:['AI','Python','Docker'],role:'ai'},
+{id:'r5',src:'remoteok',title:'AI Engineer — Feltsense',co:'Silver.dev',loc:'Worldwide',sal:'$60K – $110K',salN:60,tags:['AI','Python'],role:'ai'},
+{id:'r6',src:'remoteok',title:'ML Inference Engineer (vLLM / SGLang / TensorRT-LLM)',co:'Toptal',loc:'Anywhere',sal:'',salN:0,tags:['ML','LLM','GPU','Python'],role:'ai'},
+{id:'r7',src:'remoteok',title:'Senior Vue Developer',co:'Lemon.io',loc:'Worldwide',sal:'$50K – $180K',salN:50,tags:['Vue','Full Stack','TypeScript'],role:'fullstack'},
+{id:'r8',src:'remoteok',title:'Senior Staff Infrastructure & Security Engineer',co:'CivilGrid',loc:'US Remote',sal:'$137K – $193K',salN:137,tags:['DevOps','Security','Infra'],role:'devops'},
+{id:'r9',src:'remoteok',title:'Tech Lead',co:'Ringbook Limited',loc:'Worldwide',sal:'$40K – $50K',salN:40,tags:['Tech Lead','SaaS'],role:'backend'},
+{id:'r10',src:'remoteok',title:'AI / ML Engineer',co:'Docusketch',loc:'Worldwide',sal:'$10K – $120K',salN:10,tags:['AI','ML','Deep Learning'],role:'ai'},
+{id:'r11',src:'remoteok',title:'Software Engineer — Infrastructure',co:'Sodalis',loc:'Palo Alto / Remote',sal:'$185K – $215K',salN:185,tags:['Infrastructure','Cloud','Ruby'],role:'devops'},
+{id:'r12',src:'remoteok',title:'AWS Cloud Solutions Architect',co:'Cloudary SAS',loc:'Worldwide',sal:'',salN:0,tags:['AWS','Architect','Cloud'],role:'devops'},
+{id:'r13',src:'remoteok',title:'Cloud Engineer — Automation',co:'Smile Digital Health',loc:'Canada Remote',sal:'',salN:0,tags:['Cloud','DevOps','Python'],role:'devops'},
+{id:'r14',src:'remoteok',title:'Front End Developer',co:'Cambridge Information Group',loc:'Worldwide',sal:'$80K – $100K',salN:80,tags:['Frontend','JavaScript'],role:'fullstack'},
+{id:'r15',src:'remoteok',title:'Senior Software Engineer (LATAM)',co:'Wagmo',loc:'Worldwide',sal:'$100K – $140K',salN:100,tags:['Python','Django','React','Senior'],role:'backend'},
+{id:'r16',src:'remoteok',title:'Senior Software Engineer',co:'Klardaten',loc:'Worldwide',sal:'$80K – $100K',salN:80,tags:['JavaScript','TypeScript','Full Stack'],role:'fullstack'},
+{id:'r17',src:'remoteok',title:'Solutions Engineer',co:'Onebrief',loc:'Worldwide',sal:'$180K – $220K',salN:180,tags:['Python','Infra','Security'],role:'backend'},
+{id:'r18',src:'remoteok',title:'Senior DevOps Engineer',co:'Lemon.io',loc:'Worldwide',sal:'$50K – $150K',salN:50,tags:['DevOps','Python','Go','AWS'],role:'devops'},
+{id:'r19',src:'remoteok',title:'Senior Software Engineer',co:"Sotheby's",loc:'Worldwide',sal:'',salN:0,tags:['Go','Senior'],role:'backend'},
+{id:'r20',src:'remoteok',title:'Senior Backend Engineer',co:'Rain',loc:'Worldwide',sal:'',salN:0,tags:['Go','Backend','Senior','FinTech'],role:'backend'},
+{id:'r21',src:'remoteok',title:'Senior Software Engineer II — Applied AI',co:'Wrapbook',loc:'Worldwide',sal:'',salN:0,tags:['AI','Backend','AWS'],role:'ai'},
+{id:'r22',src:'remoteok',title:'Principal Software Engineer',co:'Vytalize Health',loc:'US Remote',sal:'',salN:0,tags:['Python','Docker','HealthTech'],role:'backend'},
+{id:'r23',src:'remoteok',title:'Product Engineering Lead',co:'Tether Operations',loc:'Worldwide',sal:'',salN:0,tags:['React','Crypto','Lead'],role:'fullstack'},
+{id:'r24',src:'remoteok',title:'Platform & Integration Engineer — Security',co:'RedMimicry',loc:'Worldwide',sal:'',salN:0,tags:['Go','Security','Platform'],role:'devops'},
+{id:'r25',src:'remoteok',title:'Software Engineer',co:'Prenosis',loc:'Worldwide',sal:'',salN:0,tags:['Go','HealthTech'],role:'backend'},
+{id:'r26',src:'remoteok',title:'Frontend Engineer',co:'Bjak',loc:'Southeast Asia / Remote',sal:'',salN:0,tags:['React','GraphQL','Frontend'],role:'fullstack'},
+{id:'r27',src:'remoteok',title:'Senior Backend Engineer — Build AI Agents',co:'Salesforge',loc:'Worldwide',sal:'',salN:0,tags:['AI','Backend','Node.js','Senior'],role:'ai'},
+{id:'r28',src:'remoteok',title:'Senior Software Engineer — Case Execution',co:'Pivotal Health',loc:'US Remote',sal:'$190K – $220K',salN:190,tags:['Python','HealthTech','Senior'],role:'backend'},
+{id:'r29',src:'remoteok',title:'Data Engineer',co:'Addepto',loc:'Worldwide',sal:'',salN:0,tags:['Python','Data Engineering','Salesforce'],role:'backend'},
+{id:'r30',src:'remoteok',title:'AI Engineer — Data APIs',co:'Benzinga',loc:'Worldwide',sal:'',salN:0,tags:['AI','APIs','Data'],role:'ai'},
+
+// === WE WORK REMOTELY ===
+{id:'w1',src:'wwr',title:'Staff Software Engineer',co:'Samsara',loc:'US Remote',sal:'$100K+',salN:100,tags:['Senior','Staff'],role:'senior'},
+{id:'w2',src:'wwr',title:'Robotics Software Engineer',co:'EdgeQ Technologies',loc:'US Remote',sal:'$100K+',salN:100,tags:['Robotics','Embedded','Systems'],role:'backend'},
+{id:'w3',src:'wwr',title:'GIS Software Engineer',co:'EdgeQ Technologies',loc:'US Remote',sal:'$100K+',salN:100,tags:['GIS','Maps','Geospatial'],role:'backend'},
+{id:'w4',src:'wwr',title:'Software Engineer Interviewer',co:'Karat',loc:'Anywhere',sal:'',salN:0,tags:['Interviewer','Contract'],role:'backend'},
+{id:'w5',src:'wwr',title:'Senior Software Engineer',co:'DrFirst',loc:'US Remote',sal:'$100K+',salN:100,tags:['HealthTech','Senior'],role:'backend'},
+{id:'w6',src:'wwr',title:'Software Engineer — React & REST',co:'Yooli',loc:'Anywhere',sal:'',salN:0,tags:['React','REST','FullStack'],role:'fullstack'},
+{id:'w7',src:'wwr',title:'Senior Software Engineer',co:'WelcomeHome Software',loc:'US Remote',sal:'$100K+',salN:100,tags:['PropTech','Senior'],role:'backend'},
+{id:'w8',src:'wwr',title:'Software Engineer, Infrastructure',co:'Descript',loc:'US Remote',sal:'',salN:0,tags:['Infra','Python','Media'],role:'devops'},
+{id:'w9',src:'wwr',title:'Senior Software Engineer, Data',co:'Doximity',loc:'Anywhere',sal:'',salN:0,tags:['Data','Ruby','Senior','HealthTech'],role:'backend'},
+{id:'w10',src:'wwr',title:'Senior Software Engineer',co:'Vested Inc',loc:'US Remote',sal:'$100K+',salN:100,tags:['FinTech','Senior'],role:'backend'},
+{id:'w11',src:'wwr',title:'Software Engineer — PlanetScale Postgres',co:'PlanetScale',loc:'Anywhere',sal:'',salN:0,tags:['Databases','Go','Postgres'],role:'backend'},
+{id:'w12',src:'wwr',title:'Senior Software Engineer',co:'Oportun',loc:'US Remote',sal:'',salN:0,tags:['FinTech','Senior'],role:'backend'},
+{id:'w13',src:'wwr',title:'Software Development Engineer II',co:'OfferUp',loc:'Remote',sal:'',salN:0,tags:['Java','Android','Marketplace'],role:'backend'},
+{id:'w14',src:'wwr',title:'Senior Software Engineer, Product Platform',co:'Lithic',loc:'Anywhere',sal:'',salN:0,tags:['FinTech','Platform','Senior'],role:'backend'},
+{id:'w15',src:'wwr',title:'Senior Software Engineer, Processing',co:'Lithic',loc:'Anywhere',sal:'',salN:0,tags:['FinTech','Payments','Senior'],role:'backend'},
+{id:'w16',src:'wwr',title:'Staff Software Engineer — Connectivity',co:'Dremio',loc:'Anywhere',sal:'',salN:0,tags:['Go','Data','Staff'],role:'senior'},
+{id:'w17',src:'wwr',title:'Senior Software Engineer, Infrastructure Platform',co:'Lattice',loc:'US Remote',sal:'',salN:0,tags:['Infra','HRTech','Senior'],role:'devops'},
+{id:'w18',src:'wwr',title:'Principal Software Engineer',co:'Smartsheet',loc:'US / Bulgaria Remote',sal:'',salN:0,tags:['.NET','SaaS','Principal'],role:'senior'},
+{id:'w19',src:'wwr',title:'Backend Product Software Engineer',co:'Dropbox',loc:'Anywhere',sal:'',salN:0,tags:['Python','Backend','Storage'],role:'backend'},
+{id:'w20',src:'wwr',title:'Staff Software Engineer, Revenue Systems',co:'Squarespace',loc:'Anywhere',sal:'',salN:0,tags:['Java','Revenue','Staff'],role:'senior'},
+{id:'w21',src:'wwr',title:'Software Development Engineer III — Fullstack Workflows',co:'HighLevel',loc:'Remote',sal:'',salN:0,tags:['Full Stack','SaaS','Node.js'],role:'fullstack'},
+{id:'w22',src:'wwr',title:'Software Development Engineer II — CRM',co:'HighLevel',loc:'Remote',sal:'',salN:0,tags:['CRM','SaaS','Node.js'],role:'backend'},
+{id:'w23',src:'wwr',title:'Senior Software Engineer',co:'Prospex CRM',loc:'Anywhere',sal:'',salN:0,tags:['CRM','Senior'],role:'backend'},
+{id:'w24',src:'wwr',title:'Tech Lead Full-Stack Rails Engineer',co:'Mitre Media',loc:'US Remote',sal:'$170K – $200K',salN:170,tags:['Ruby on Rails','Full Stack','Tech Lead'],role:'senior'},
+{id:'w25',src:'wwr',title:'Senior Software Engineer — FULL TIME React',co:'Yooli',loc:'Anywhere',sal:'',salN:0,tags:['React','Node.js','Full Stack'],role:'fullstack'},
+
+// === REMOTIVE ===
+{id:'m1',src:'remotive',title:'Senior React Full-Stack Developer',co:'Lemon.io',loc:'LATAM / Europe / USA',sal:'',salN:0,tags:['React','Full Stack','Node.js'],role:'fullstack'},
+{id:'m2',src:'remotive',title:'Senior Back-end Developer',co:'Lemon.io',loc:'Europe / USA / Canada',sal:'',salN:0,tags:['.NET','C#','Backend'],role:'backend'},
+{id:'m3',src:'remotive',title:'Head of Engineering',co:'Lemon.io',loc:'Worldwide',sal:'',salN:0,tags:['AI/ML','Leadership','Startup'],role:'senior'},
+{id:'m4',src:'remotive',title:'Full-Stack Developer',co:'Fluence International',loc:'Worldwide',sal:'$3.5K–$5K/month',salN:42,tags:['AWS','Cloud','Backend','React'],role:'fullstack'},
+{id:'m5',src:'remotive',title:'Tech Lead Full-Stack Rails Engineer',co:'Mitre Media',loc:'US Remote',sal:'$170K – $200K',salN:170,tags:['Ruby on Rails','Full Stack','ElasticSearch'],role:'senior'},
+{id:'m6',src:'remotive',title:'Software Engineer — AI Coding Tasks',co:'Askable',loc:'Worldwide',sal:'$1000/task',salN:0,tags:['AI','Java','Go','C++'],role:'ai'},
+{id:'m7',src:'remotive',title:'Tier III Service Desk Engineer',co:'Unio Digital',loc:'Worldwide',sal:'',salN:0,tags:['Azure','Cisco','Security'],role:'devops'},
+
+// === YC / WorkAtStartup ===
+{id:'y1',src:'yc',title:'Chief Technology Officer',co:'Bloomy',loc:'Remote — Worldwide',sal:'$200K – $250K',salN:200,tags:['CTO','Leadership','YC'],role:'senior'},
+{id:'y2',src:'yc',title:'Founding Engineer',co:'Limrun',loc:'Remote — Worldwide',sal:'$180K – $300K',salN:180,tags:['Founding Eng','Startup'],role:'backend'},
+{id:'y3',src:'yc',title:'Founding Engineer',co:'Bloomy',loc:'Remote — Worldwide',sal:'$175K – $200K',salN:175,tags:['Founding Eng','YC'],role:'backend'},
+{id:'y4',src:'yc',title:'Developer Relations Engineer',co:'Limrun',loc:'Remote — Worldwide',sal:'$165K – $175K',salN:165,tags:['DevRel','APIs','YC'],role:'backend'},
+{id:'y5',src:'yc',title:'Member of Technical Staff',co:'Edviro',loc:'Remote — Worldwide',sal:'$160K – $260K',salN:160,tags:['AI','Energy','YC'],role:'ai'},
+{id:'y6',src:'yc',title:'Senior Software Engineer, Emerging Product',co:'GiveCampus',loc:'Remote — US',sal:'$148K – $190K',salN:148,tags:['EdTech','Senior','YC'],role:'backend'},
+{id:'y7',src:'yc',title:'Senior Software Engineer, AI',co:'Ironclad',loc:'Remote — US',sal:'$126K – $175K',salN:126,tags:['AI','LLM','Contracts'],role:'ai'},
+{id:'y8',src:'yc',title:'Full Stack Engineer',co:'GiveCampus',loc:'Remote — US',sal:'$120K – $200K',salN:120,tags:['Full Stack','React','YC'],role:'fullstack'},
+{id:'y9',src:'yc',title:'Software Engineer',co:'Volaren',loc:'Remote — Worldwide',sal:'$110K – $150K',salN:110,tags:['FinTech','AI Agent'],role:'backend'},
+{id:'y10',src:'yc',title:'Solutions Engineer',co:'Onebrief',loc:'Remote — Worldwide',sal:'$180K – $220K',salN:180,tags:['Python','Security','Defence'],role:'backend'},
+{id:'y11',src:'yc',title:'Software Engineer',co:'Prenosis',loc:'Remote — Worldwide',sal:'$80K – $130K',salN:80,tags:['Go','HealthTech'],role:'backend'},
+{id:'y12',src:'yc',title:'Founding Engineer — AI Products',co:'Edviro',loc:'Remote — Worldwide',sal:'$130K – $180K',salN:130,tags:['AI','Founding Eng','YC'],role:'ai'},
+{id:'y13',src:'yc',title:'Full Stack Software Engineer',co:'Volaren',loc:'Remote — Worldwide',sal:'$80K – $120K',salN:80,tags:['React','TypeScript','FinTech'],role:'fullstack'},
+
+// === WELLFOUND ===
+{id:'f1',src:'wf',title:'Full Stack Software Engineer',co:'Moongate',loc:'Remote — Asia',sal:'$70K – $80K',salN:70,tags:['Full Stack','Web3','TypeScript'],role:'fullstack'},
+{id:'f2',src:'wf',title:'Senior Full-Stack Engineer — Server-Side Tracking',co:'Scoreify',loc:'Remote — Everywhere',sal:'$90K – $130K',salN:90,tags:['Full Stack','Node.js','Founding Eng'],role:'fullstack'},
+{id:'f3',src:'wf',title:'Senior Golang Developer',co:'LearnTube.ai',loc:'Remote — India',sal:'₹15L – ₹45L',salN:25,tags:['Go','Backend','EdTech'],role:'backend'},
+{id:'f4',src:'wf',title:'Senior Backend Engineer — FastAPI',co:'LearnTube.ai',loc:'Remote — India',sal:'₹20L – ₹32L',salN:30,tags:['FastAPI','Python','Backend'],role:'backend'},
+{id:'f5',src:'wf',title:'Senior Software Engineer — Backend & Infrastructure',co:'FilterPixel',loc:'India Remote',sal:'₹12L – ₹16L',salN:18,tags:['Backend','Infra','Photography AI'],role:'backend'},
+{id:'f6',src:'wf',title:'Software Engineer / AI Engineer',co:'JuiceLabs AI',loc:'Bangalore',sal:'₹15L – ₹25L',salN:20,tags:['AI','Python','AdTech'],role:'ai'},
+{id:'f7',src:'wf',title:'Senior Software Engineer',co:'CloudCrane',loc:'Remote — Everywhere',sal:'',salN:0,tags:['Senior','Cloud','Mobile AI'],role:'backend'},
+{id:'f8',src:'wf',title:'Software Engineer',co:'Fuze',loc:'Remote — Dubai / India',sal:'$40K – $100K',salN:40,tags:['Full Stack','Web3'],role:'fullstack'},
+{id:'f9',src:'wf',title:'AI Systems Engineer',co:'Kodense',loc:'Remote — Everywhere',sal:'Equity + competitive',salN:0,tags:['AI','Systems','LLM'],role:'ai'},
+{id:'f10',src:'wf',title:'Senior Data Engineer',co:'Pursuit Advisor',loc:'Remote — Worldwide',sal:'₹30L – ₹40L',salN:40,tags:['Data Engineering','Python','Spark'],role:'backend'},
+{id:'f11',src:'wf',title:'Senior Full Stack Developer',co:'MASHVERA',loc:'Remote — India',sal:'₹20L – ₹30L',salN:28,tags:['Full Stack','React','Node.js'],role:'fullstack'},
+{id:'f12',src:'wf',title:'Senior Backend Developer',co:'MASHVERA',loc:'Remote — India',sal:'₹20L – ₹30L',salN:28,tags:['Backend','Python','Node.js'],role:'backend'},
+{id:'f13',src:'wf',title:'Senior React Developer',co:'MASHVERA',loc:'Remote — India',sal:'₹20L – ₹30L',salN:28,tags:['React','TypeScript','Frontend'],role:'fullstack'},
+{id:'f14',src:'wf',title:'Senior Solution Architect — Java Lead',co:'Xohani Solutions',loc:'Remote — India',sal:'₹18L – ₹25L',salN:22,tags:['Java','Architecture','Senior'],role:'senior'},
+{id:'f15',src:'wf',title:'Platform Security Engineer',co:'Branch',loc:'Remote — India',sal:'₹25L – ₹35L',salN:30,tags:['Security','Platform','Go'],role:'devops'},
+];
+
+// Source metadata
+const SRC_META = {
+  remoteok:{label:'RemoteOK', cls:'b-src-remoteok', logo:{bg:'#d9f0e8',color:'#1f7a5c'}},
+  wwr:    {label:'WWR',      cls:'b-src-wwr',      logo:{bg:'#fce8e6',color:'#c0392b'}},
+  remotive:{label:'Remotive',cls:'b-src-remotive', logo:{bg:'#dbeafe',color:'#2563eb'}},
+  yc:     {label:'YC',      cls:'b-src-yc',        logo:{bg:'#fef3c7',color:'#d97706'}},
+  wf:     {label:'Wellfound',cls:'b-src-wf',       logo:{bg:'#ede9fe',color:'#7c3aed'}},
+};
+
+// ── STATE ─────────────────────────────────────────────────────────────────────
+const SK = 'remote100_applied_v1';
+let applied = {};
+try { applied = JSON.parse(localStorage.getItem(SK)||'{}'); } catch(e){}
+const state = {source:'all', pay:'all', role:'all'};
+
+// ── RENDER ────────────────────────────────────────────────────────────────────
+function initials(str){ return str.split(/\s+/).map(w=>w[0]).join('').toUpperCase().slice(0,2); }
+
+function salaryClass(salN){ return salN>=100?'hi':salN>0?'':'empty'; }
+
+function card(j){
+  const sm = SRC_META[j.src];
+  const ini = initials(j.co);
+  const isHigh = j.salN>=100;
+  const hasSal = j.sal && j.sal!=='';
+  const salLabel = hasSal ? j.sal : 'Salary not listed';
+  const appd = applied[j.id];
+  const tags = j.tags.map(t=>`<span class="tag">${t}</span>`).join('');
+  const badgeHigh = isHigh ? `<span class="bdg b-high">💰 High Pay</span>` : '';
+  return `<div class="card${appd?' applied':''}" id="${j.id}" data-src="${j.src}" data-saln="${j.salN}" data-role="${j.role}">
+  <div class="ct">
+    <div class="clogo" style="background:${sm.logo.bg};color:${sm.logo.color}">${ini}</div>
+    <div class="badges">
+      <span class="bdg ${sm.cls}">${sm.label}</span>
+      ${badgeHigh}
+      <span class="bdg b-remote">Remote</span>
+    </div>
+  </div>
+  <div class="ctitle">${j.title}</div>
+  <div class="cco">${j.co}</div>
+  <div class="cloc">${j.loc}</div>
+  <div class="csal ${salaryClass(j.salN)}">${salLabel}</div>
+  ${tags?`<div class="tags">${tags}</div>`:''}
+  <div class="cf">
+    <label class="at"><input type="checkbox" onchange="toggleApplied('${j.id}',this)"${appd?' checked':''}><span>${appd?'✅ Applied':'Mark applied'}</span></label>
+    <a class="ab" href="${j.url||'#'}" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>`;
+}
+
+// ── URLS ──────────────────────────────────────────────────────────────────────
+const URLS = {
+r1:'https://remoteok.com/remote-jobs/remote-senior-software-engineer-kubernetes-control-plane-buoyant-1137713',
+r2:'https://remoteok.com/remote-jobs/remote-senior-agentic-ai-engineer-nda-gt-1137710',
+r3:'https://remoteok.com/remote-jobs/remote-ui-developer-rainfocus-1137704',
+r4:'https://remoteok.com/remote-jobs/remote-ai-developer-salvo-software-1137701',
+r5:'https://remoteok.com/remote-jobs/remote-feltsense-ai-engineer-silver-dev-1137691',
+r6:'https://remoteok.com/remote-jobs/remote-ml-inference-engineer-terminal-bench-task-designer-vllm-sglang-tensorrt-llm-toptal-1137689',
+r7:'https://remoteok.com/remote-jobs/remote-senior-vue-developer-lemon-io-1137688',
+r8:'https://remoteok.com/remote-jobs/remote-senior-staff-infrastructure-security-engineer-civilgrid-1137687',
+r9:'https://remoteok.com/remote-jobs/remote-tech-lead-ringbook-limited-1137673',
+r10:'https://remoteok.com/remote-jobs/remote-ai-ml-engineer-docusketch-1137619',
+r11:'https://remoteok.com/remote-jobs/remote-software-engineer-infrastructure-sodalis-inc-1137614',
+r12:'https://remoteok.com/remote-jobs/remote-aws-cloud-solutions-architect-cloudary-sas-1137606',
+r13:'https://remoteok.com/remote-jobs/remote-cloud-engineer-automation-smile-digital-health-1137600',
+r14:'https://remoteok.com/remote-jobs/remote-front-end-developer-cambridge-information-group-1137597',
+r15:'https://remoteok.com/remote-jobs/remote-senior-software-engineer-latam-wagmo-1137572',
+r16:'https://remoteok.com/remote-jobs/remote-senior-software-engineer-klardaten-1137571',
+r17:'https://remoteok.com/remote-jobs/remote-solutions-engineer-onebrief-1137568',
+r18:'https://remoteok.com/remote-jobs/remote-senior-devops-engineer-lemon-io-1137557',
+r19:"https://remoteok.com/remote-jobs/remote-senior-software-engineer-sothebys-1137545",
+r20:'https://remoteok.com/remote-jobs/remote-senior-backend-engineer-rain-1137544',
+r21:'https://remoteok.com/remote-jobs/remote-senior-software-engineer-ii-applied-ai-wrapbook-1137527',
+r22:'https://remoteok.com/remote-jobs/remote-principal-software-engineer-vytalize-health-1137508',
+r23:'https://remoteok.com/remote-jobs/remote-product-engineering-lead-tether-operations-limited-1137478',
+r24:'https://remoteok.com/remote-jobs/remote-platform-and-integration-engineer-security-telemetry-redmimicry-1137465',
+r25:'https://remoteok.com/remote-jobs/remote-software-engineer-prenosis-1137427',
+r26:'https://remoteok.com/remote-jobs/remote-frontend-engineer-bjak-1137410',
+r27:'https://remoteok.com/remote-jobs/remote-senior-backend-engineer-build-ai-agents-salesforge-1137114',
+r28:'https://remoteok.com/remote-jobs/remote-senior-software-engineer-case-execution-pivotal-health-1136795',
+r29:'https://remoteok.com/remote-jobs/remote-data-engineer-addepto-1137714',
+r30:'https://remoteok.com/remote-jobs/remote-ai-engineer-data-apis-benzinga-1137224',
+w1:'https://weworkremotely.com/remote-jobs/samsara-staff-software-engineer',
+w2:'https://weworkremotely.com/remote-jobs/edgeq-technologies-private-limited-robotics-software-engineer-job-title-robotics-software-engineer',
+w3:'https://weworkremotely.com/remote-jobs/edgeq-technologies-private-limited-gis-software-engineer',
+w4:'https://weworkremotely.com/remote-jobs/karat-software-engineer-interviewer',
+w5:'https://weworkremotely.com/remote-jobs/drfirst-com-inc-senior-software-engineer',
+w6:'https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1',
+w7:'https://weworkremotely.com/remote-jobs/welcomehome-software-senior-software-engineer',
+w8:'https://weworkremotely.com/remote-jobs/descript-software-engineer-infrastructure',
+w9:'https://weworkremotely.com/remote-jobs/doximity-senior-software-engineer-data',
+w10:'https://weworkremotely.com/remote-jobs/vested-inc-senior-software-engineer-1',
+w11:'https://weworkremotely.com/remote-jobs/planetscale-software-engineer-planetscale-postgres',
+w12:'https://weworkremotely.com/remote-jobs/oportun-senior-software-engineer-r14285',
+w13:'https://weworkremotely.com/remote-jobs/offerup-software-development-engineer-ii-remote-colombia',
+w14:'https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-product-platform',
+w15:'https://weworkremotely.com/remote-jobs/lithic-senior-software-engineer-processing',
+w16:'https://weworkremotely.com/remote-jobs/dremio-staff-software-engineer-connectivity',
+w17:'https://weworkremotely.com/remote-jobs/lattice-senior-software-engineer-infrastructure-platform',
+w18:'https://weworkremotely.com/remote-jobs/smartsheet-principal-software-engineer-remote-eligible-in-bulgaria',
+w19:'https://weworkremotely.com/remote-jobs/dropbox-backend-product-software-engineer-1',
+w20:'https://weworkremotely.com/remote-jobs/squarespace-staff-software-engineer-revenue-systems',
+w21:'https://weworkremotely.com/remote-jobs/highlevel-software-development-engineer-iii-fullstack-workflows',
+w22:'https://weworkremotely.com/remote-jobs/highlevel-software-development-engineer-ii-crm',
+w23:'https://weworkremotely.com/remote-jobs/prospex-crm-senior-software-engineer',
+w24:'https://weworkremotely.com/remote-jobs/mitre-media-tech-lead-full-stack-rails-engineer-2069746',
+w25:'https://weworkremotely.com/remote-jobs/yooli-full-time-software-engineer-position-react-and-rest-1',
+m1:'https://remotive.com/remote-jobs/software-development/senior-react-full-stack-developer-2091136',
+m2:'https://remotive.com/remote-jobs/software-development/senior-back-end-developer-2091135',
+m3:'https://remotive.com/remote-jobs/software-development/head-of-engineering-2091134',
+m4:'https://remotive.com/remote-jobs/software-development/full-stack-developer-2091165',
+m5:'https://remotive.com/remote-jobs/software-development/tech-lead-full-stack-rails-engineer-2069746',
+m6:'https://remotive.com/remote-jobs/software-development/software-engineer-ai-coding-tasks-2091158',
+m7:'https://remotive.com/remote-jobs/information-technology/tier-iii-service-desk-engineer-2091045',
+y1:'https://www.workatastartup.com/jobs/116273',
+y2:'https://www.workatastartup.com/jobs/110499',
+y3:'https://www.workatastartup.com/jobs/100730',
+y4:'https://www.workatastartup.com/jobs/116542',
+y5:'https://www.workatastartup.com/jobs/113407',
+y6:'https://www.workatastartup.com/jobs/112545',
+y7:'https://www.workatastartup.com/jobs/60110',
+y8:'https://www.workatastartup.com/jobs/25984',
+y9:'https://www.workatastartup.com/jobs/111785',
+y10:'https://www.workatastartup.com/jobs?remote=true&role=eng',
+y11:'https://www.workatastartup.com/jobs?remote=true&role=eng',
+y12:'https://www.workatastartup.com/jobs?remote=true&role=eng',
+y13:'https://www.workatastartup.com/jobs?remote=true&role=eng',
+f1:'https://wellfound.com/jobs/5031224-full-stack-software-engineer',
+f2:'https://wellfound.com/jobs/4903392-senior-full-stack-engineer-server-side-tracking-founding-engineer',
+f3:'https://wellfound.com/jobs/5034675-senior-golang-developer-go-remote',
+f4:'https://wellfound.com/jobs/3301948-senior-backend-engineer-fastapi',
+f5:'https://wellfound.com/jobs/5027294-senior-software-engineer-backend-infrastructure',
+f6:'https://wellfound.com/jobs/4879023-software-engineer-ai-engineer',
+f7:'https://wellfound.com/jobs/5027354-senior-software-engineer',
+f8:'https://wellfound.com/jobs/2448180-software-engineer',
+f9:'https://wellfound.com/jobs/5013099',
+f10:'https://wellfound.com/jobs/4995289',
+f11:'https://wellfound.com/jobs/5015984',
+f12:'https://wellfound.com/jobs/5015988',
+f13:'https://wellfound.com/jobs/5015989',
+f14:'https://wellfound.com/jobs/5043155-senior-solution-architect-java-lead',
+f15:'https://wellfound.com/jobs?remote=true&role=software-engineer',
+};
+
+JOBS.forEach(j=>{ j.url = URLS[j.id]||'#'; });
+
+// ── RENDER ALL ────────────────────────────────────────────────────────────────
+const grid = document.getElementById('grid');
+grid.innerHTML = JOBS.map(card).join('');
+
+// ── FILTERS ───────────────────────────────────────────────────────────────────
+document.getElementById('filters').addEventListener('click', e=>{
+  const btn = e.target.closest('[data-f]');
+  if(!btn) return;
+  const f = btn.dataset.f, v = btn.dataset.v;
+  state[f] = v;
+  document.querySelectorAll(`[data-f="${f}"]`).forEach(b=>{
+    b.classList.remove('active','a-remoteok','a-wwr','a-remotive','a-yc','a-wf');
+  });
+  btn.classList.add('active');
+  if(v!=='all' && v!=='applied' && f==='source') btn.classList.add('a-'+v);
+  applyFilters();
+});
+
+function applyFilters(){
+  let shown=0;
+  document.querySelectorAll('.card').forEach(card=>{
+    const id=card.id;
+    const srcOk = state.source==='all'||card.dataset.src===state.source;
+    const salN  = parseInt(card.dataset.saln)||0;
+    let payOk=true;
+    if(state.pay==='high') payOk=salN>=100;
+    else if(state.pay==='mid') payOk=salN>=50&&salN<100;
+    else if(state.pay==='stated') payOk=salN>0;
+    let roleOk=true;
+    if(state.role==='applied') roleOk=!!applied[id];
+    else if(state.role!=='all') roleOk=card.dataset.role===state.role;
+    const vis=srcOk&&payOk&&roleOk;
+    card.classList.toggle('hid',!vis);
+    if(vis) shown++;
+  });
+  document.getElementById('cnt').textContent=shown;
+  document.getElementById('empty').style.display=shown?'none':'block';
+}
+
+// ── APPLIED ───────────────────────────────────────────────────────────────────
+function toggleApplied(id,cb){
+  const card=document.getElementById(id);
+  const lbl=card.querySelector('.at span');
+  if(cb.checked){ applied[id]=true; card.classList.add('applied'); lbl.textContent='✅ Applied'; }
+  else { delete applied[id]; card.classList.remove('applied'); lbl.textContent='Mark applied'; }
+  try{ localStorage.setItem(SK,JSON.stringify(applied)); }catch(e){}
+  updateProgress();
+  if(state.role==='applied') applyFilters();
+}
+
+function updateProgress(){
+  const c=Object.keys(applied).length, t=JOBS.length, p=Math.round(c/t*100);
+  document.getElementById('plbl').textContent=`Applied: ${c} / ${t}`;
+  document.getElementById('pfill').style.width=p+'%';
+}
+
+// init
+updateProgress();
+applyFilters();
+</script>
+</body>
+</html>

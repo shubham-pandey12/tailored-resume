@@ -1,0 +1,13 @@
+# Cover Letter — Apple | Frontend Engineer (200687902-1052)
+
+Dear Hiring Team,
+
+The Frontend Engineer role on Apple's IS&T Customer Systems team matches my experience building scalable, high-performance web applications and reusable component libraries using React, TypeScript, JavaScript, and modern state management. Powering Apple's customer support platforms—including Genius Bar workflows and AppleCare online support serving billions of visits—demands clean modular UI architecture, strict accessibility and cross-browser standards, and disciplined testing and optimization. With nearly four years of web engineering experience, I am eager to contribute to Customer Systems in Hyderabad.
+
+At Moresand Technologies, I architected a multi-tenant web platform end-to-end across React, TypeScript, and RESTful APIs, building a modular library of reusable widgets and templates with configurable data mapping and caching that cut new-brand onboarding time and repetitive development effort by 50%. Earlier at Techolution, I built production React and Angular web features backed by automated unit, integration, and acceptance tests reaching 90% coverage, and at GeekForGeeks I improved site performance by 40% and engagement by 30% through reusable React and Next.js components. This is exactly the kind of reusable component engineering, performance optimization, and end-to-end ownership Customer Systems is looking for.
+
+Delivering fast, accessible, resilient web experiences for AppleCare and Genius Bar users worldwide is an exciting opportunity. I'd welcome the chance to discuss how I can bring this to Apple.
+
+Sincerely,  
+Shubham Pandey
+

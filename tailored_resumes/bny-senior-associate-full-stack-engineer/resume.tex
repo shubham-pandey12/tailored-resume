@@ -1,0 +1,115 @@
+\documentclass[a4paper,20pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.70in}
+\addtolength{\textheight}{1.15in}
+
+\urlstyle{rm}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\vspace{-10pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeItemWithoutTitle}[1]{\item\small{{\vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-1pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{#3} & \textit{#4} \\\end{tabular*}\vspace{-5pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Shubham Pandey}} & Email: \href{mailto:mr.pshubham@gmail.com}{mr.pshubham@gmail.com}\\
+  \href{https://github.com/shubham-pandey12}{Github: shubham-pandey12} & Mobile:~~~~~~~~~~~~+91-8174081896 \\
+  \href{https://www.linkedin.com/in/shubham-pandey-a74716199/}{LinkedIn: shubhampandey} & Portfolio:~~~~~~~~\href{https://shubham-portfolio-mocha.vercel.app/}{shubham.pandey} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Indian Institute of Information Technology, Vadodara}{Vadodara, India}
+    {Bachelor of Technology -- Information Technology}{2019 -- 2023}
+\resumeSubHeadingListEnd
+
+%----------SKILLS SUMMARY-----------
+\section{Skills Summary}
+\resumeSubHeadingListStart
+  \resumeSubItem{Languages}{Java, JavaScript, TypeScript, NodeJS, HTML5, CSS3, JSON, Python, SQL}
+  \resumeSubItem{Frameworks \& Libraries}{React.js, Angular, Next.js, Express.js, Redux}
+  \resumeSubItem{Backend \& APIs}{REST APIs, GraphQL, Microservices, cross-platform interoperability}
+  \resumeSubItem{Cloud \& DevOps}{AWS (EC2, S3, ECS, CloudFront), Docker, Jenkins, CI/CD pipelines}
+  \resumeSubItem{Testing \& Quality}{Jest, Unit Testing, Integration Testing, Test Automation, code reviews, QA procedures}
+  \resumeSubItem{Databases \& Caching}{MySQL, MongoDB, Redis, PostgreSQL}
+  \resumeSubItem{SDLC \& Practices}{Full SDLC ownership, BRD/SRD, security and privacy principles, Agile, Git}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Moresand Technologies}{Bengaluru, India}
+    {Software Development Engineer 2}{Mar 2025 -- Present}
+    \resumeItemListStart
+      \resumeItem{Full-Stack Platform Architecture}{Architected a multi-tenant CMS platform end-to-end (NodeJS, Express.js, React.js, TypeScript) owning schema design, API versioning, security and data-contract standards, and service boundaries for 5+ enterprise clients -- cut onboarding time by 50\%; owned design through production deployment and monitoring.}
+      \resumeItem{Backend API Design}{Designed RESTful APIs and MySQL/PostgreSQL database schemas from the ground up, enforcing security and privacy principles, complex SQL joins, indexing strategies, and data-contract standards between NodeJS/Express backend services and Angular/React frontend components.}
+      \resumeItem{Reusable Component Library}{Led the build of a modular widget and template library with configurable JSON-driven API integrations, role-based access control, and a Redis-backed caching layer -- reducing development effort by 50\% and cutting API latency for high-traffic production endpoints.}
+      \resumeItem{Test Strategy \& CI/CD}{Owned full test strategy (unit, integration, E2E; Jest, Cypress) and CI/CD pipelines (Jenkins, Docker, AWS ECS) across frontend and backend -- implementing quality assurance procedures, production health monitoring, and incident-tracking standards for reliable, SLA-compliant releases.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {MAQ Software}{Noida, India}
+    {Software Engineer 1}{Apr 2024 -- Feb 2025}
+    \resumeItemListStart
+      \resumeItem{NodeJS Backend Service}{Built and owned a production NodeJS backend for an AI assistant with a custom Azure AI Search orchestration layer, improving prompt accuracy by \textbf{28\%} through iterative SDLC-driven development; managed full production lifecycle including deployment, monitoring, and incident resolution.}
+      \resumeItem{API \& Retrieval Workflows}{Designed RESTful and GraphQL backend APIs integrating search, application logic, and AI orchestration with full SDLC documentation (BRD, SRD); applied security and privacy principles and cross-platform interoperability standards to ensure enterprise-grade reliability in production.}
+      \resumeItem{React TypeScript Components}{Developed and shipped reusable React + TypeScript components for AI-powered applications, enabling scalable and resilient user experiences across multiple products; enforced consistent code-review standards and unit/integration test coverage across the component library.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Techolution}{Remote}
+    {Full Stack Developer}{Jul 2023 -- Mar 2024}
+    \resumeItemListStart
+      \resumeItem{Full-Stack Features \& Testing}{Built and shipped production full-stack features using React.js and Angular, establishing unit, integration, and automated acceptance testing with \textbf{90\% test coverage} using Jest and Cypress -- enforced quality assurance procedures and code-review standards across all releases.}
+      \resumeItem{CI/CD \& Containerization}{Designed and owned CI/CD pipelines using Jenkins and Docker for microservice deployments on AWS, reducing deployment time by \textbf{60\%}, enforcing change-control and security standards across releases, and monitoring post-deployment health metrics.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {GeeksForGeeks}{Noida, India}
+    {Software Development Engineer Intern}{Jan 2023 -- Jun 2023}
+    \resumeItemListStart
+      \resumeItem{Web Performance}{Boosted user engagement by \textbf{30\%} and improved site performance by \textbf{40\%} by building reusable web components and optimised pages using JavaScript, HTML5, CSS3, React.js, and Next.js with code-splitting and server-side rendering -- contributed to a high-traffic platform under full SDLC ownership from specification through delivery.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeSubItem{Distributed Task Queue (NodeJS, Redis, Docker)}{Built a horizontally scalable task queue with Redis-backed job scheduling, retry logic, and dead-letter handling; deployed via Docker with CI/CD and full integration test coverage.}
+  \resumeSubItem{Real-Time Dashboard (React, TypeScript, WebSocket)}{Developed a live analytics dashboard with WebSocket-driven updates, JSON-based data contracts, role-based access control, and automated end-to-end tests.}
+\resumeSubHeadingListEnd
+
+\end{document}

@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "count": 10,
+    "page": 1
+  },
+  "results": [
+    {
+      "id": "4486987406",
+      "title": "Full Stack .Net Developer",
+      "company": "Siemens Healthineers",
+      "companyUrl": "https://de.linkedin.com/company/siemens-healthineers",
+      "location": "Pune District, Maharashtra, India",
+      "date": "2026-11-06",
+      "url": "https://in.linkedin.com/jobs/view/full-stack-net-developer-at-siemens-healthineers-4486987406"
+    },
+    {
+      "id": "4486858570",
+      "title": "Software Engineer (Fullstack- Java)",
+      "company": "Veradigm®",
+      "companyUrl": "https://www.linkedin.com/company/veradigm",
+      "location": "Pune Division, Maharashtra, India",
+      "date": "2026-11-03",
+      "url": "https://in.linkedin.com/jobs/view/software-engineer-fullstack-java-at-veradigm%C2%AE-4486858570"
+    },
+    {
+      "id": "4485884128",
+      "title": "Full Stack Software Engineer",
+      "company": "SLB",
+      "companyUrl": "https://www.linkedin.com/company/slbglobal",
+      "location": "Pune Division, Maharashtra, India",
+      "date": "2026-11-05",
+      "url": "https://in.linkedin.com/jobs/view/full-stack-software-engineer-at-slb-4485884128"
+    },
+    {
+      "id": "4486907818",
+      "title": "Java full stack developer",
+      "company": "Citi",
+      "companyUrl": "https://www.linkedin.com/company/citi",
+      "location": "Pune Division, Maharashtra, India",
+      "date": "2026-11-05",
+      "url": "https://in.linkedin.com/jobs/view/java-full-stack-developer-at-citi-4486907818"
+    },
+    {
+      "id": "4486913607",
+      "title": "Java Fullstack Developer",
+      "company": "Citi",
+      "companyUrl": "https://www.linkedin.com/company/citi",
+      "location": "Chennai, Tamil Nadu, India",
+      "date": "2026-11-05",
+      "url": "https://in.linkedin.com/jobs/view/java-fullstack-developer-at-citi-4486913607"
+    },
+    {
+      "id": "4487271097",
+      "title": "Software Engineer - .NET Developer",
+      "company": "NCR Voyix",
+      "companyUrl": "https://www.linkedin.com/company/ncrvoyix",
+      "location": "Chennai, Tamil Nadu, India",
+      "date": "2026-11-04",
+      "url": "https://in.linkedin.com/jobs/view/software-engineer-net-developer-at-ncr-voyix-4487271097"
+    },
+    {
+      "id": "4424677292",
+      "title": "Fullstack Java With Angular-Software Engineer III",
+      "company": "Deloitte",
+      "companyUrl": "https://www.linkedin.com/company/deloitte",
+      "location": "Chennai, Tamil Nadu, India",
+      "date": "2026-11-03",
+      "url": "https://in.linkedin.com/jobs/view/fullstack-java-with-angular-software-engineer-iii-at-deloitte-4424677292"
+    },
+    {
+      "id": "4487513013",
+      "title": "Software Engineer II - Java - Springboot, React, RDBMS, Kubernetes",
+      "company": "JPMorganChase",
+      "companyUrl": "https://www.linkedin.com/company/jpmorganchase",
+      "location": "Mumbai, Maharashtra, India",
+      "date": "2026-11-04",
+      "url": "https://in.linkedin.com/jobs/view/software-engineer-ii-java-springboot-react-rdbms-kubernetes-at-jpmorganchase-4487513013"
+    },
+    {
+      "id": "4411586387",
+      "title": "Developer III - Software Engineering - .NET Fullstack",
+      "company": "UST",
+      "companyUrl": "https://www.linkedin.com/company/ustglobal",
+      "location": "Bengaluru, Karnataka, India",
+      "date": "2026-11-08",
+      "url": "https://in.linkedin.com/jobs/view/developer-iii-software-engineering-net-fullstack-at-ust-4411586387"
+    },
+    {
+      "id": "4424676269",
+      "title": "Fullstack Java With Angular-Software Engineer II",
+      "company": "Deloitte",
+      "companyUrl": "https://www.linkedin.com/company/deloitte",
+      "location": "Chennai, Tamil Nadu, India",
+      "date": "2026-11-05",
+      "url": "https://in.linkedin.com/jobs/view/fullstack-java-with-angular-software-engineer-ii-at-deloitte-4424676269"
+    }
+  ]
+}

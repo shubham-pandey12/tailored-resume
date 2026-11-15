@@ -1,0 +1,78 @@
+SHUBHAM PANDEY
+Email: mr.pshubham@gmail.com
+Mobile: +91-8174081896
+Github: shubham-pandey12
+LinkedIn: shubhampandey
+Portfolio: shubham.pandey
+
+========================================
+EDUCATION
+========================================
+
+Indian Institute of Information Technology Vadodara — Vadodara, Gujarat
+Bachelor of Technology — Information Technology | 2019 – 2023
+
+========================================
+SKILLS SUMMARY
+========================================
+
+Frontend:       React.js, TypeScript, JavaScript, Next.js, Angular.js, HTML5, CSS3, Responsive Design, Performance Optimisation
+State Mgmt:     Redux, Context API, Component Architecture, Cross-Browser Compatibility
+Backend:        Node.js, REST APIs, GraphQL, Microservices, Distributed Systems
+Databases:      MySQL, PostgreSQL, MongoDB, Redis, SQL, SQLite
+Infrastructure: AWS (EC2, S3, ECS), Docker, Git, CI/CD, Jenkins
+AI Dev Tools:   GitHub Copilot, Claude, Cursor, AI-Assisted Development
+
+========================================
+EXPERIENCE
+========================================
+
+Moresand Technologies — Bengaluru, Karnataka
+Software Development Engineer 2 | Mar 2025 – Present
+
+- Architected and delivered the React.js + TypeScript frontend for a distributed, multi-tenant SaaS platform serving 5+ enterprise clients — responsive design, cross-browser compatibility, and Redux-based state management across complex multi-step UI flows; owned feature delivery end-to-end, reducing client onboarding time by 50%.
+
+- Built a high-performance React.js component library with TypeScript and Redux — lazy loading, code splitting, and memoisation across high-traffic UI surfaces; drove frontend performance optimisation that measurably improved render times and reduced development effort by 50% across the platform.
+
+- Drove the full Node.js REST API data contract between backend services and React.js frontend components across 5+ enterprise clients — API versioning, typed request/response schemas, and structured error handling; maintained production observability via metrics, logs, and alerting with zero-downtime deployments on AWS ECS.
+
+- Owned end-to-end CI/CD pipelines (Docker, AWS ECS) and production incident response — root-cause analysis, runbooks, and operational documentation; mentored junior engineers through structured code reviews, championing frontend best practices and high-signal code quality standards across the team.
+
+---
+
+MAQ Software — Noida, UP
+Software Engineer 1 | Apr 2024 – Feb 2025
+
+- Built a React + TypeScript frontend for an enterprise AI assistant — performant rendering of real-time Azure AI search results at enterprise scale with optimised component trees, data fetching strategies, and responsive, accessible UI; improved prompt accuracy by 28%; owned full delivery from design through deployment using Claude and GitHub Copilot throughout.
+
+- Developed a reusable React + TypeScript component library with robust state management and performance optimisation patterns (memoisation, virtualisation, lazy loading) for AI-powered enterprise applications; designed scalable Node.js REST APIs to feed high-volume data into the frontend at SLA-compliant speed.
+
+- Enforced code review discipline, automated testing standards, and cross-browser compatibility practices across multiple product teams — applying AI-assisted development workflows and raising frontend quality standards across the organisation.
+
+---
+
+Techolution — Remote
+Full Stack Developer | Jul 2023 – Mar 2024
+
+- Built and shipped production full-stack features (React.js, Angular.js, Node.js) with 90% test coverage across unit, integration, and automated acceptance tests; enforced responsive design, cross-browser compatibility, SOLID principles, and clean code discipline — driving consistent delivery of production-quality features.
+
+- Designed and owned CI/CD pipelines (Jenkins, Docker) for deployments on AWS, cutting deployment time by 60%; managed production deployments end-to-end with health monitoring, alerting, and incident tracking.
+
+---
+
+GeeksForGeeks — Noida, UP
+SDE Intern | Jan 2023 – Jun 2023
+
+- Boosted user engagement by 30% and site performance by 40% by building reusable React.js and Next.js components with server-side rendering, code-splitting, and lazy-loading on a high-traffic platform serving millions of monthly users.
+
+========================================
+PROJECTS
+========================================
+
+WebHealth: Self-initiated full-stack website health auditing platform — React.js frontend, Node.js/Express.js backend, REST APIs, SQLite, GCP. Custom multi-page web crawler with Google Lighthouse integration, passive security scanning, and performance profiling; end-to-end owned from system design to production deployment with automated consolidated audit reporting and responsive UI.
+
+========================================
+ACHIEVEMENTS
+========================================
+
+HACKIIITV 2019 – Best Idea Award: Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the prestigious Best Idea Award.

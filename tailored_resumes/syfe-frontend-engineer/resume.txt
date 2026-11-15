@@ -1,0 +1,56 @@
+Shubham Pandey
+mr.pshubham@gmail.com | +91-8174081896
+GitHub: shubham-pandey12 | LinkedIn: shubhampandey | Portfolio
+Summary
+Software engineer building user-facing web applications with React.js, Next.js, TypeScript, and JavaScript. Experience
+delivering reusable components, multi-brand platforms, API integrations, automated testing, and measurable
+performance improvements.
+Skills Summary
+• Frontend: React.js (ReactJS), Next.js, TypeScript, JavaScript, Redux, reusable components
+• Testing: Jest, unit testing, integration testing, automated acceptance testing
+• Backend & Data: Node.js, Express.js, REST APIs, GraphQL, SQL, MySQL, MongoDB, Redis
+• Delivery: Git, Docker, Jenkins, CI/CD, AWS (EC2, S3, ECS, CloudFront)
+Work Experience
+Moresand Technologies Bengaluru, Karnataka
+•
+Software Development Engineer 2 Mar 2025 - Present
+◦ Built a multi-tenant CMS end-to-end with React.js, TypeScript, Node.js, and Express.js, supporting 5+
+luxury travel brands on one codebase and reducing new-brand onboarding time by 50%.
+◦ Created a modular library of reusable widgets and templates with configurable API integrations and data
+mapping, reducing development effort by 50% and improving consistency across brands.
+◦ Designed database schemas and REST API contracts connecting brand-specific backend data with frontend
+components; added Redis-backed caching for high-traffic endpoints to reduce API latency.
+◦ Owned unit and integration testing and CI/CD improvements across frontend and backend services to
+support reliable production releases.
+MAQ Software Noida, UP
+•
+Software Engineer 1 Apr 2024 - Feb 2025
+◦ Developed and shipped reusable React and TypeScript components for AI-powered applications,
+supporting consistent user experiences across multiple products.
+◦ Built a production Node.js service and backend retrieval workflows for an AI assistant, integrating Azure AI
+Search orchestration and improving prompt accuracy by 28%.
+Techolution Remote
+•
+Full Stack Developer Jul 2023 - Mar 2024
+◦ Shipped production full-stack features with React.js and Angular.js; established unit, integration, and
+automated acceptance testing with 90% test coverage.
+◦ Designed Jenkins and Docker CI/CD pipelines for microservice deployments, reducing deployment time
+by 60% and improving release reliability.
+GeekForGeeks Noida, UP
+•
+Software Development Engineer (Intern) Jan 2023 - Jun 2023
+◦ Built reusable web components and optimized pages using JavaScript, React.js, and Next.js, increasing
+user engagement by 30% and improving site performance by 40%.
+Projects
+WebHealth
+•
+React.js, Node.js, Express.js, SQLite, Recharts, Three.js, Google OAuth, GCP
+◦ Built a full-stack website auditing platform integrating a multi-page crawler, Google Lighthouse, and passive
+security scanning to deliver consolidated performance, accessibility, and SEO reports through REST
+APIs.
+Education
+Indian Institute Of Information Technology Vadodara
+Bachelor of Technology - Information Technology
+Achievements
+HACKIIITV - Best Idea Award (2019): Led a team of five software engineers to win the competition’s Best Idea
+Award.

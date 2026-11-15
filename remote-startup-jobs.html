@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Remote & Startup Jobs</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap">
+<style>
+:root {
+  --bg: #f7f6f3;
+  --surface: #ffffff;
+  --surface2: #f0eee9;
+  --border: #e2ddd6;
+  --fg: #1a1816;
+  --fg2: #5c5750;
+  --fg3: #9e9890;
+  --accent: #2d6a4f;
+  --accent-light: #d8f3dc;
+  --accent-hover: #245c43;
+  --yc: #e06b35;
+  --yc-light: #fef0e7;
+  --wf: #5c35a0;
+  --wf-light: #f0ebff;
+  --gold: #c9951f;
+  --gold-light: #fdf6e3;
+  --tag-bg: #eceae6;
+  --tag-fg: #4a4540;
+  --shadow: 0 1px 3px rgba(0,0,0,.07), 0 4px 12px rgba(0,0,0,.04);
+  --shadow-hover: 0 4px 16px rgba(0,0,0,.12);
+  --radius: 14px;
+  --progress-bg: #e2ddd6;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f0e0d;
+    --surface: #1c1a18;
+    --surface2: #242220;
+    --border: #2e2b27;
+    --fg: #f0ece6;
+    --fg2: #9e9890;
+    --fg3: #6b6560;
+    --accent: #52b788;
+    --accent-light: #1a3d2b;
+    --accent-hover: #3d9b6e;
+    --yc: #e07a35;
+    --yc-light: #2a1a0d;
+    --wf: #9b7be0;
+    --wf-light: #1e1530;
+    --gold: #d4a634;
+    --gold-light: #2a2110;
+    --tag-bg: #2e2b27;
+    --tag-fg: #bfb9b0;
+    --shadow: 0 1px 3px rgba(0,0,0,.3), 0 4px 12px rgba(0,0,0,.2);
+    --shadow-hover: 0 4px 20px rgba(0,0,0,.4);
+    --progress-bg: #2e2b27;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f0e0d;
+  --surface: #1c1a18;
+  --surface2: #242220;
+  --border: #2e2b27;
+  --fg: #f0ece6;
+  --fg2: #9e9890;
+  --fg3: #6b6560;
+  --accent: #52b788;
+  --accent-light: #1a3d2b;
+  --accent-hover: #3d9b6e;
+  --yc: #e07a35;
+  --yc-light: #2a1a0d;
+  --wf: #9b7be0;
+  --wf-light: #1e1530;
+  --gold: #d4a634;
+  --gold-light: #2a2110;
+  --tag-bg: #2e2b27;
+  --tag-fg: #bfb9b0;
+  --shadow: 0 1px 3px rgba(0,0,0,.3), 0 4px 12px rgba(0,0,0,.2);
+  --shadow-hover: 0 4px 20px rgba(0,0,0,.4);
+  --progress-bg: #2e2b27;
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  min-height: 100vh;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  padding-block: 0 32px;
+}
+
+/* ── HEADER ── */
+.site-header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 20px max(24px, env(safe-area-inset-left, 0px));
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto 14px;
+}
+.site-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--fg);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.site-title .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent); display: inline-block; }
+
+.stats-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 0.8rem;
+  color: var(--fg3);
+}
+.stat { font-weight: 600; color: var(--fg2); }
+
+.progress-bar-wrap {
+  max-width: 1100px;
+  margin: 0 auto 14px;
+}
+.progress-label { font-size: 0.75rem; color: var(--fg3); margin-bottom: 5px; }
+.progress-track { height: 4px; background: var(--progress-bg); border-radius: 2px; overflow: hidden; }
+.progress-fill { height: 100%; background: var(--accent); border-radius: 2px; transition: width 0.4s ease; width: 0%; }
+
+.filters-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.filter-group { display: flex; gap: 4px; flex-wrap: wrap; }
+.filter-sep { width: 1px; background: var(--border); align-self: stretch; margin: 0 2px; }
+.filter-btn {
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 5px 11px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--fg2);
+  cursor: pointer;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+.filter-btn:hover { background: var(--surface2); color: var(--fg); }
+.filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+.filter-btn.yc-active { background: var(--yc); border-color: var(--yc); color: #fff; }
+.filter-btn.wf-active { background: var(--wf); border-color: var(--wf); color: #fff; }
+
+/* ── MAIN ── */
+.main { max-width: 1100px; margin: 0 auto; padding-top: 24px; }
+
+.section-heading {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--fg3);
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.section-heading::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 14px;
+}
+
+/* ── CARD ── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s, box-shadow 0.15s, opacity 0.2s;
+  position: relative;
+}
+.card:hover { transform: translateY(-2px); box-shadow: var(--shadow-hover); }
+.card.applied { opacity: 0.6; border-color: var(--accent); }
+.card.hidden-card { display: none; }
+
+.card-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+.company-logo {
+  width: 40px; height: 40px;
+  border-radius: 10px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  background: var(--surface2);
+  color: var(--fg2);
+  border: 1px solid var(--border);
+}
+.card-badges { display: flex; gap: 5px; flex-wrap: wrap; justify-content: flex-end; }
+.badge {
+  font-size: 0.65rem;
+  font-weight: 600;
+  padding: 2px 7px;
+  border-radius: 10px;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+}
+.badge-yc { background: var(--yc-light); color: var(--yc); }
+.badge-wf { background: var(--wf-light); color: var(--wf); }
+.badge-high { background: var(--gold-light); color: var(--gold); }
+.badge-remote { background: var(--accent-light); color: var(--accent); }
+
+.card-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--fg);
+  line-height: 1.35;
+  text-wrap: balance;
+}
+.card-company { font-size: 0.82rem; font-weight: 500; color: var(--fg2); }
+.card-loc {
+  font-size: 0.75rem;
+  color: var(--fg3);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.card-loc::before { content: '📍'; font-size: 0.7rem; }
+
+.card-salary {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.card-salary.high { color: var(--gold); }
+
+.tags { display: flex; gap: 5px; flex-wrap: wrap; }
+.tag {
+  font-size: 0.68rem;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 8px;
+  background: var(--tag-bg);
+  color: var(--tag-fg);
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+.applied-toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  font-size: 0.75rem;
+  color: var(--fg3);
+  user-select: none;
+}
+.applied-toggle input { width: 14px; height: 14px; cursor: pointer; accent-color: var(--accent); }
+.apply-btn {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 7px 14px;
+  border-radius: 8px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+.apply-btn:hover { background: var(--accent-hover); }
+
+.posted { font-size: 0.7rem; color: var(--fg3); }
+
+/* empty state */
+.empty { text-align: center; padding: 60px 20px; color: var(--fg3); }
+.empty h3 { font-size: 1rem; margin-bottom: 6px; color: var(--fg2); }
+
+@media (max-width: 600px) {
+  .site-header { padding: 14px 16px; }
+  .grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-top">
+    <div class="site-title"><span class="dot"></span> Remote & Startup Jobs</div>
+    <div class="stats-row">
+      <span>Showing <span class="stat" id="count">0</span> jobs</span>
+      <span>Updated Nov 2026</span>
+    </div>
+  </div>
+
+  <div class="progress-bar-wrap">
+    <div class="progress-label" id="progress-label">Applied: 0 / 0</div>
+    <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
+  </div>
+
+  <div class="filters-wrap">
+    <div class="filter-group">
+      <button class="filter-btn active" onclick="filter(this,'all','source')">All Sources</button>
+      <button class="filter-btn" onclick="filter(this,'yc','source')">🔶 YC Startups</button>
+      <button class="filter-btn" onclick="filter(this,'wellfound','source')">💜 Wellfound</button>
+    </div>
+    <div class="filter-sep"></div>
+    <div class="filter-group">
+      <button class="filter-btn active" onclick="filter(this,'all','salary')">Any Salary</button>
+      <button class="filter-btn" onclick="filter(this,'high','salary')">$100K+</button>
+      <button class="filter-btn" onclick="filter(this,'mid','salary')">$50K–$100K</button>
+    </div>
+    <div class="filter-sep"></div>
+    <div class="filter-group">
+      <button class="filter-btn active" onclick="filter(this,'all','role')">All Roles</button>
+      <button class="filter-btn" onclick="filter(this,'fullstack','role')">Full Stack</button>
+      <button class="filter-btn" onclick="filter(this,'backend','role')">Backend</button>
+      <button class="filter-btn" onclick="filter(this,'ai','role')">AI / ML</button>
+      <button class="filter-btn" onclick="filter(this,'founding','role')">Founding Eng</button>
+    </div>
+    <div class="filter-sep"></div>
+    <div class="filter-group">
+      <button class="filter-btn" onclick="filter(this,'applied','role')" style="color:var(--accent)">✅ Applied</button>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+
+<div class="section-heading" id="yc-label">YC Startups — High Paying Remote</div>
+<div class="grid" id="jobs-grid">
+
+<!-- ===== YC JOBS ===== -->
+<div class="card" id="j1" data-source="yc" data-salary="200" data-role="engineering">
+  <div class="card-top">
+    <div class="company-logo" style="background:#fef0e7;color:#e06b35">BL</div>
+    <div class="card-badges"><span class="badge badge-yc">YC</span><span class="badge badge-high">$200K+</span><span class="badge badge-remote">Remote</span></div>
+  </div>
+  <div class="card-title">Chief Technology Officer</div>
+  <div class="card-company">Bloomy</div>
+  <div class="card-loc">Remote — Worldwide</div>
+  <div class="card-salary high">$200K – $250K</div>
+  <div class="tags"><span class="tag">Leadership</span><span class="tag">Architecture</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j1',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.workatastartup.com/jobs/116273" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j2" data-source="yc" data-salary="180" data-role="engineering">
+  <div class="card-top">
+    <div class="company-logo" style="background:#fef0e7;color:#e06b35">LI</div>
+    <div class="card-badges"><span class="badge badge-yc">YC</span><span class="badge badge-high">$180K+</span><span class="badge badge-remote">Remote</span></div>
+  </div>
+  <div class="card-title">Founding Engineer</div>
+  <div class="card-company">Limrun</div>
+  <div class="card-loc">Remote — Worldwide</div>
+  <div class="card-salary high">$180K – $300K</div>
+  <div class="tags"><span class="tag">Founding</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j2',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.workatastartup.com/jobs/110499" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j3" data-source="yc" data-salary="175" data-role="founding">
+  <div class="card-top">
+    <div class="company-logo" style="background:#fef0e7;color:#e06b35">BL</div>
+    <div class="card-badges"><span class="badge badge-yc">YC</span><span class="badge badge-high">$175K+</span><span class="badge badge-remote">Remote</span></div>
+  </div>
+  <div class="card-title">Founding Engineer</div>
+  <div class="card-company">Bloomy</div>
+  <div class="card-loc">Remote — Worldwide</div>
+  <div class="card-salary high">$175K – $200K</div>
+  <div class="tags"><span class="tag">Founding</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j3',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.workatastartup.com/jobs/100730" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j4" data-source="yc" data-salary="165" data-role="engineering">
+  <div class="card-top">
+    <div class="company-logo" style="background:#fef0e7;color:#e06b35">LI</div>
+    <div class="card-badges"><span class="badge badge-yc">YC</span><span class="badge badge-high">$165K+</span><span class="badge badge-remote">Remote</span></div>
+  </div>
+  <div class="card-title">Developer Relations Engineer</div>
+  <div class="card-company">Limrun</div>
+  <div class="card-loc">Remote — Worldwide</div>
+  <div class="card-salary high">$165K – $175K</div>
+  <div class="tags"><span class="tag">DevRel</span><span class="tag">APIs</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j4',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.workatastartup.com/jobs/116542" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j5" data-source="yc" data-salary="160" data-role="ai">
+  <div class="card-top">
+    <div class="company-logo" style="background:#fef0e7;color:#e06b35">ED</div>
+    <div class="card-badges"><span class="badge badge-yc">YC</span><span class="badge badge-high">$160K+</span><span class="badge badge-remote">Remote</span></div>
+  </div>
+  <div class="card-title">Member of Technical Staff</div>
+  <div class="card-company">Edviro</div>
+  <div class="card-loc">Remote — Worldwide</div>
+  <div class="card-salary high">$160K – $260K</div>
+  <div class="tags"><span class="tag">AI</span><span class="tag">Energy Infrastructure</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j5',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.workatastartup.com/jobs/113407" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j6" data-source="yc" data-salary="148" data-role="engineering">
+  <div class="card-top">
+    <div class="company-logo" style="background:#fef0e7;color:#e06b35">GC</div>
+    <div class="card-badges"><span class="badge badge-yc">YC</span><span class="badge badge-high">$148K+</span><span class="badge badge-remote">US Remote</span></div>
+  </div>
+  <div class="card-title">Senior Software Engineer, Emerging Product</div>
+  <div class="card-company">GiveCampus</div>
+  <div class="card-loc">Remote — US</div>
+  <div class="card-salary high">$148K – $190K</div>
+  <div class="tags"><span class="tag">Senior</span><span class="tag">Education Tech</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j6',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.workatastartup.com/jobs/112545" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j7" data-source="yc" data-salary="126" data-role="ai">
+  <div class="card-top">
+    <div class="company-logo" style="background:#fef0e7;color:#e06b35">IR</div>
+    <div class="card-badges"><span class="badge badge-yc">YC</span><span class="badge badge-high">$126K+</span><span class="badge badge-remote">US Remote</span></div>
+  </div>
+  <div class="card-title">Senior Software Engineer, AI</div>
+  <div class="card-company">Ironclad</div>
+  <div class="card-loc">Remote — US</div>
+  <div class="card-salary high">$126K – $175K</div>
+  <div class="tags"><span class="tag">AI</span><span class="tag">LLM</span><span class="tag">Contract Tech</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j7',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.workatastartup.com/jobs/60110" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j8" data-source="yc" data-salary="120" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo" style="background:#fef0e7;color:#e06b35">GC</div>
+    <div class="card-badges"><span class="badge badge-yc">YC</span><span class="badge badge-high">$120K+</span><span class="badge badge-remote">US Remote</span></div>
+  </div>
+  <div class="card-title">Full Stack Engineer</div>
+  <div class="card-company">GiveCampus</div>
+  <div class="card-loc">Remote — US</div>
+  <div class="card-salary high">$120K – $200K</div>
+  <div class="tags"><span class="tag">Full Stack</span><span class="tag">React</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j8',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.workatastartup.com/jobs/25984" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j9" data-source="yc" data-salary="110" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo" style="background:#fef0e7;color:#e06b35">VO</div>
+    <div class="card-badges"><span class="badge badge-yc">YC</span><span class="badge badge-high">$110K+</span><span class="badge badge-remote">Remote</span></div>
+  </div>
+  <div class="card-title">Software Engineer</div>
+  <div class="card-company">Volaren</div>
+  <div class="card-loc">Remote — Worldwide</div>
+  <div class="card-salary high">$110K – $150K</div>
+  <div class="tags"><span class="tag">FinTech</span><span class="tag">AI Agent</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j9',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.workatastartup.com/jobs/111785" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j10" data-source="yc" data-salary="100" data-role="ai">
+  <div class="card-top">
+    <div class="company-logo" style="background:#fef0e7;color:#e06b35">HU</div>
+    <div class="card-badges"><span class="badge badge-yc">YC</span><span class="badge badge-high">$100K+</span><span class="badge badge-remote">Remote</span></div>
+  </div>
+  <div class="card-title">AI / ML Engineer</div>
+  <div class="card-company">Huscarl</div>
+  <div class="card-loc">Remote — Worldwide</div>
+  <div class="card-salary high">$100K – $160K</div>
+  <div class="tags"><span class="tag">AI</span><span class="tag">ML</span><span class="tag">Python</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j10',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.workatastartup.com/jobs/119012" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j11" data-source="yc" data-salary="95" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo" style="background:#fef0e7;color:#e06b35">ED</div>
+    <div class="card-badges"><span class="badge badge-yc">YC</span><span class="badge badge-remote">Remote</span></div>
+  </div>
+  <div class="card-title">Backend Engineer</div>
+  <div class="card-company">Edviro</div>
+  <div class="card-loc">Remote — Worldwide</div>
+  <div class="card-salary high">$95K – $140K</div>
+  <div class="tags"><span class="tag">Backend</span><span class="tag">Python</span><span class="tag">APIs</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j11',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.workatastartup.com/jobs?remote=true&role=eng" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j12" data-source="yc" data-salary="80" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo" style="background:#fef0e7;color:#e06b35">IR</div>
+    <div class="card-badges"><span class="badge badge-yc">YC</span><span class="badge badge-remote">US Remote</span></div>
+  </div>
+  <div class="card-title">Full Stack Engineer</div>
+  <div class="card-company">Ironclad</div>
+  <div class="card-loc">Remote — US</div>
+  <div class="card-salary high">$80K – $130K</div>
+  <div class="tags"><span class="tag">Full Stack</span><span class="tag">TypeScript</span><span class="tag">React</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j12',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://www.workatastartup.com/jobs?remote=true&role=eng" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<!-- ===== WELLFOUND JOBS ===== -->
+<div class="card" id="j13" data-source="wellfound" data-salary="70" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo" style="background:#f0ebff;color:#5c35a0">MG</div>
+    <div class="card-badges"><span class="badge badge-wf">Wellfound</span><span class="badge badge-remote">Asia Remote</span></div>
+  </div>
+  <div class="card-title">Full Stack Software Engineer</div>
+  <div class="card-company">Moongate</div>
+  <div class="card-loc">Remote — Asia</div>
+  <div class="card-salary">$70K – $80K</div>
+  <div class="tags"><span class="tag">Full Stack</span><span class="tag">Web3</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j13',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/5031224-full-stack-software-engineer" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j14" data-source="wellfound" data-salary="90" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo" style="background:#f0ebff;color:#5c35a0">SC</div>
+    <div class="card-badges"><span class="badge badge-wf">Wellfound</span><span class="badge badge-high">$90K+</span><span class="badge badge-remote">Remote</span></div>
+  </div>
+  <div class="card-title">Senior Full-Stack Engineer, Server-Side Tracking (Founding)</div>
+  <div class="card-company">Scoreify</div>
+  <div class="card-loc">Remote — Everywhere</div>
+  <div class="card-salary high">$90K – $130K</div>
+  <div class="tags"><span class="tag">Full Stack</span><span class="tag">Node.js</span><span class="tag">Founding Eng</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j14',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/4903392-senior-full-stack-engineer-server-side-tracking-founding-engineer" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j15" data-source="wellfound" data-salary="40" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo" style="background:#f0ebff;color:#5c35a0">LT</div>
+    <div class="card-badges"><span class="badge badge-wf">Wellfound</span><span class="badge badge-remote">India Remote</span></div>
+  </div>
+  <div class="card-title">Senior Golang Developer (Go) — Remote</div>
+  <div class="card-company">LearnTube.ai (backed by Google)</div>
+  <div class="card-loc">Remote — India</div>
+  <div class="card-salary">₹15L – ₹45L</div>
+  <div class="tags"><span class="tag">Go</span><span class="tag">Backend</span><span class="tag">EdTech</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j15',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/5034675-senior-golang-developer-go-remote" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j16" data-source="wellfound" data-salary="30" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo" style="background:#f0ebff;color:#5c35a0">LT</div>
+    <div class="card-badges"><span class="badge badge-wf">Wellfound</span><span class="badge badge-remote">India Remote</span></div>
+  </div>
+  <div class="card-title">Senior Backend Engineer — FastAPI</div>
+  <div class="card-company">LearnTube.ai (backed by Google)</div>
+  <div class="card-loc">Remote — Mumbai / India</div>
+  <div class="card-salary">₹20L – ₹32L</div>
+  <div class="tags"><span class="tag">FastAPI</span><span class="tag">Python</span><span class="tag">Backend</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j16',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/3301948-senior-backend-engineer-fastapi" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j17" data-source="wellfound" data-salary="30" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo" style="background:#f0ebff;color:#5c35a0">FP</div>
+    <div class="card-badges"><span class="badge badge-wf">Wellfound</span><span class="badge badge-remote">India</span></div>
+  </div>
+  <div class="card-title">Senior Software Engineer — Backend & Infrastructure</div>
+  <div class="card-company">FilterPixel</div>
+  <div class="card-loc">India</div>
+  <div class="card-salary">₹12L – ₹16L</div>
+  <div class="tags"><span class="tag">Backend</span><span class="tag">Infrastructure</span><span class="tag">Photography AI</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j17',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/5027294-senior-software-engineer-backend-infrastructure" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j18" data-source="wellfound" data-salary="20" data-role="ai">
+  <div class="card-top">
+    <div class="company-logo" style="background:#f0ebff;color:#5c35a0">JL</div>
+    <div class="card-badges"><span class="badge badge-wf">Wellfound</span><span class="badge badge-remote">India</span></div>
+  </div>
+  <div class="card-title">Software Engineer / AI Engineer</div>
+  <div class="card-company">JuiceLabs AI</div>
+  <div class="card-loc">India (Bangalore)</div>
+  <div class="card-salary">₹15L – ₹25L</div>
+  <div class="tags"><span class="tag">AI</span><span class="tag">Python</span><span class="tag">AdTech</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j18',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/4879023-software-engineer-ai-engineer" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j19" data-source="wellfound" data-salary="40" data-role="engineering">
+  <div class="card-top">
+    <div class="company-logo" style="background:#f0ebff;color:#5c35a0">CC</div>
+    <div class="card-badges"><span class="badge badge-wf">Wellfound</span><span class="badge badge-remote">Remote</span></div>
+  </div>
+  <div class="card-title">Senior Software Engineer</div>
+  <div class="card-company">CloudCrane</div>
+  <div class="card-loc">Remote — Everywhere</div>
+  <div class="card-salary" style="color:var(--fg3);font-weight:400">Salary not listed</div>
+  <div class="tags"><span class="tag">Senior</span><span class="tag">Cloud</span><span class="tag">Mobile AI</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j19',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/5027354-senior-software-engineer" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j20" data-source="wellfound" data-salary="40" data-role="engineering">
+  <div class="card-top">
+    <div class="company-logo" style="background:#f0ebff;color:#5c35a0">FZ</div>
+    <div class="card-badges"><span class="badge badge-wf">Wellfound</span><span class="badge badge-remote">Remote</span></div>
+  </div>
+  <div class="card-title">Software Engineer</div>
+  <div class="card-company">Fuze</div>
+  <div class="card-loc">Remote — Dubai / Europe / India</div>
+  <div class="card-salary">$40K – $100K</div>
+  <div class="tags"><span class="tag">Full Stack</span><span class="tag">Web3</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j20',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/2448180-software-engineer" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j21" data-source="wellfound" data-salary="60" data-role="ai">
+  <div class="card-top">
+    <div class="company-logo" style="background:#f0ebff;color:#5c35a0">KD</div>
+    <div class="card-badges"><span class="badge badge-wf">Wellfound</span><span class="badge badge-remote">Remote</span></div>
+  </div>
+  <div class="card-title">AI Systems Engineer</div>
+  <div class="card-company">Kodense</div>
+  <div class="card-loc">Remote — Everywhere</div>
+  <div class="card-salary" style="color:var(--fg3);font-weight:400">Equity + competitive</div>
+  <div class="tags"><span class="tag">AI</span><span class="tag">Systems</span><span class="tag">LLM</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j21',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/5013099" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j22" data-source="wellfound" data-salary="30" data-role="engineering">
+  <div class="card-top">
+    <div class="company-logo" style="background:#f0ebff;color:#5c35a0">PA</div>
+    <div class="card-badges"><span class="badge badge-wf">Wellfound</span><span class="badge badge-high">₹30L+</span><span class="badge badge-remote">Remote</span></div>
+  </div>
+  <div class="card-title">Senior Data Engineer</div>
+  <div class="card-company">Pursuit Advisor</div>
+  <div class="card-loc">Remote — Worldwide</div>
+  <div class="card-salary">₹30L – ₹40L</div>
+  <div class="tags"><span class="tag">Data Engineering</span><span class="tag">Python</span><span class="tag">Spark</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j22',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/4995289" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j23" data-source="wellfound" data-salary="20" data-role="engineering">
+  <div class="card-top">
+    <div class="company-logo" style="background:#f0ebff;color:#5c35a0">MV</div>
+    <div class="card-badges"><span class="badge badge-wf">Wellfound</span><span class="badge badge-high">₹20L+</span><span class="badge badge-remote">India Remote</span></div>
+  </div>
+  <div class="card-title">Senior Full Stack Developer</div>
+  <div class="card-company">MASHVERA</div>
+  <div class="card-loc">Remote — India</div>
+  <div class="card-salary">₹20L – ₹30L</div>
+  <div class="tags"><span class="tag">Full Stack</span><span class="tag">React</span><span class="tag">Node.js</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j23',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/5015984" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j24" data-source="wellfound" data-salary="20" data-role="backend">
+  <div class="card-top">
+    <div class="company-logo" style="background:#f0ebff;color:#5c35a0">MV</div>
+    <div class="card-badges"><span class="badge badge-wf">Wellfound</span><span class="badge badge-high">₹20L+</span><span class="badge badge-remote">India Remote</span></div>
+  </div>
+  <div class="card-title">Senior Backend Developer</div>
+  <div class="card-company">MASHVERA</div>
+  <div class="card-loc">Remote — India</div>
+  <div class="card-salary">₹20L – ₹30L</div>
+  <div class="tags"><span class="tag">Backend</span><span class="tag">Python</span><span class="tag">Node.js</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j24',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/5015988" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j25" data-source="wellfound" data-salary="20" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo" style="background:#f0ebff;color:#5c35a0">MV</div>
+    <div class="card-badges"><span class="badge badge-wf">Wellfound</span><span class="badge badge-high">₹20L+</span><span class="badge badge-remote">India Remote</span></div>
+  </div>
+  <div class="card-title">Senior React Developer</div>
+  <div class="card-company">MASHVERA</div>
+  <div class="card-loc">Remote — India</div>
+  <div class="card-salary">₹20L – ₹30L</div>
+  <div class="tags"><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">Frontend</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j25',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/5015989" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j26" data-source="wellfound" data-salary="20" data-role="engineering">
+  <div class="card-top">
+    <div class="company-logo" style="background:#f0ebff;color:#5c35a0">XH</div>
+    <div class="card-badges"><span class="badge badge-wf">Wellfound</span><span class="badge badge-high">₹18L+</span><span class="badge badge-remote">India Remote</span></div>
+  </div>
+  <div class="card-title">Senior Solution Architect — Java Lead</div>
+  <div class="card-company">Xohani Solutions</div>
+  <div class="card-loc">Remote — India</div>
+  <div class="card-salary">₹18L – ₹25L</div>
+  <div class="tags"><span class="tag">Java</span><span class="tag">Architecture</span><span class="tag">Senior</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j26',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/5043155-senior-solution-architect-java-lead" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j27" data-source="wellfound" data-salary="60" data-role="engineering">
+  <div class="card-top">
+    <div class="company-logo" style="background:#f0ebff;color:#5c35a0">DC</div>
+    <div class="card-badges"><span class="badge badge-wf">Wellfound</span><span class="badge badge-remote">Remote</span></div>
+  </div>
+  <div class="card-title">Senior Software Engineer</div>
+  <div class="card-company">DC Tech Consulting</div>
+  <div class="card-loc">Remote — Everywhere</div>
+  <div class="card-salary" style="color:var(--fg3);font-weight:400">Salary not listed</div>
+  <div class="tags"><span class="tag">Senior</span><span class="tag">Consulting</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j27',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/4903436-senior-software-engineer" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j28" data-source="wellfound" data-salary="40" data-role="engineering">
+  <div class="card-top">
+    <div class="company-logo" style="background:#f0ebff;color:#5c35a0">JS</div>
+    <div class="card-badges"><span class="badge badge-wf">Wellfound</span><span class="badge badge-remote">India Remote</span></div>
+  </div>
+  <div class="card-title">Senior Technical Lead — India</div>
+  <div class="card-company">Juniper Square</div>
+  <div class="card-loc">Remote — India</div>
+  <div class="card-salary" style="color:var(--fg3);font-weight:400">Competitive</div>
+  <div class="tags"><span class="tag">Tech Lead</span><span class="tag">FinTech</span><span class="tag">Senior</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j28',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/3569085-senior-technical-lead-india" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j29" data-source="wellfound" data-salary="20" data-role="engineering">
+  <div class="card-top">
+    <div class="company-logo" style="background:#f0ebff;color:#5c35a0">BN</div>
+    <div class="card-badges"><span class="badge badge-wf">Wellfound</span><span class="badge badge-remote">Remote</span></div>
+  </div>
+  <div class="card-title">Platform Security Engineer</div>
+  <div class="card-company">Branch</div>
+  <div class="card-loc">Remote — India</div>
+  <div class="card-salary">₹25L – ₹35L</div>
+  <div class="tags"><span class="tag">Security</span><span class="tag">Platform</span><span class="tag">Go</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j29',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs?remote=true&role=software-engineer" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+<div class="card" id="j30" data-source="wellfound" data-salary="20" data-role="fullstack">
+  <div class="card-top">
+    <div class="company-logo" style="background:#f0ebff;color:#5c35a0">DL</div>
+    <div class="card-badges"><span class="badge badge-wf">Wellfound</span><span class="badge badge-remote">Remote</span></div>
+  </div>
+  <div class="card-title">Full Stack Engineer</div>
+  <div class="card-company">Discovered Labs</div>
+  <div class="card-loc">Remote — Worldwide</div>
+  <div class="card-salary">$20K – $28K</div>
+  <div class="tags"><span class="tag">Full Stack</span><span class="tag">SEO AI</span></div>
+  <div class="card-footer">
+    <label class="applied-toggle"><input type="checkbox" onchange="toggleApplied('j30',this)"><span>Mark applied</span></label>
+    <a class="apply-btn" href="https://wellfound.com/jobs/4523283-full-stack-engineer" target="_blank" rel="noopener">Apply →</a>
+  </div>
+</div>
+
+</div><!-- /grid -->
+</main>
+
+<script>
+const STORAGE_KEY = 'remote_jobs_applied_v1';
+let applied = {};
+try { applied = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'); } catch(e) {}
+
+const state = { source: 'all', salary: 'all', role: 'all' };
+
+function toggleApplied(id, cb) {
+  const card = document.getElementById(id);
+  if (cb.checked) {
+    applied[id] = true;
+    card.classList.add('applied');
+    card.querySelector('.applied-toggle span').textContent = '✅ Applied';
+  } else {
+    delete applied[id];
+    card.classList.remove('applied');
+    card.querySelector('.applied-toggle span').textContent = 'Mark applied';
+  }
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(applied)); } catch(e) {}
+  updateProgress();
+  if (state.role === 'applied') applyFilters();
+}
+
+function filter(btn, val, type) {
+  state[type] = val;
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    const onclick = b.getAttribute('onclick') || '';
+    if (onclick.includes(`'${type}'`)) b.classList.remove('active');
+  });
+  btn.classList.add('active');
+  applyFilters();
+}
+
+function applyFilters() {
+  const cards = document.querySelectorAll('.card');
+  let shown = 0;
+  cards.forEach(card => {
+    const id = card.id;
+    const sourceOk = state.source === 'all' || card.dataset.source === state.source;
+    const salaryVal = parseInt(card.dataset.salary || '0');
+
+    let salaryOk = true;
+    if (state.salary === 'high') salaryOk = salaryVal >= 100;
+    else if (state.salary === 'mid') salaryOk = salaryVal >= 50 && salaryVal < 100;
+
+    let roleOk = true;
+    if (state.role === 'applied') roleOk = !!applied[id];
+    else if (state.role !== 'all') roleOk = card.dataset.role === state.role;
+
+    const visible = sourceOk && salaryOk && roleOk;
+    card.classList.toggle('hidden-card', !visible);
+    if (visible) shown++;
+  });
+  document.getElementById('count').textContent = shown;
+}
+
+function updateProgress() {
+  const count = Object.keys(applied).length;
+  const total = document.querySelectorAll('.card').length;
+  const pct = total > 0 ? Math.round(count / total * 100) : 0;
+  document.getElementById('progress-label').textContent = `Applied: ${count} / ${total}`;
+  document.getElementById('progress-fill').style.width = pct + '%';
+}
+
+// Restore applied states on load
+document.addEventListener('DOMContentLoaded', () => {
+  Object.keys(applied).forEach(id => {
+    const card = document.getElementById(id);
+    if (!card) return;
+    card.classList.add('applied');
+    const cb = card.querySelector('input[type="checkbox"]');
+    if (cb) cb.checked = true;
+    const lbl = card.querySelector('.applied-toggle span');
+    if (lbl) lbl.textContent = '✅ Applied';
+  });
+  updateProgress();
+  applyFilters();
+});
+</script>
+</body>
+</html>

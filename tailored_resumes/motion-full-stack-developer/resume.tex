@@ -1,0 +1,117 @@
+\documentclass[a4paper,20pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.70in}
+\addtolength{\textheight}{1.15in}
+\urlstyle{rm}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}{\vspace{-10pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeItemWithoutTitle}[1]{\item\small{{\vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-1pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{#3} & \textit{#4} \\\end{tabular*}\vspace{-5pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Shubham Pandey}} & Email: \href{mailto:mr.pshubham@gmail.com}{mr.pshubham@gmail.com}\\
+  \href{https://github.com/shubham-pandey12}{Github: shubham-pandey12} & Mobile:~~~~~~~~~~~~+91-8174081896 \\
+  \href{https://www.linkedin.com/in/shubham-pandey-a74716199/}{LinkedIn: shubhampandey} & Portfolio:~~~~~~~~\href{https://shubham-portfolio-mocha.vercel.app/}{shubham.pandey} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Indian Institute of Information Technology Vadodara}{Vadodara, Gujarat}
+      {Bachelor of Technology -- Information Technology}{2019 -- 2023}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\section{Skills Summary}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Frontend}{~~~~~~~~React.js, Next.js (SSR/SSG), TypeScript, JavaScript, HTML5, CSS3, Responsive Design}
+    \resumeSubItem{Backend}{~~~~~~~~~Node.js, Express.js, REST APIs, GraphQL, Microservices, Distributed Systems}
+    \resumeSubItem{Databases}{~~~~~~~PostgreSQL, MySQL, MongoDB, Redis, SQL, SQLite}
+    \resumeSubItem{Infrastructure}{~AWS (EC2, S3, ECS), Docker, Git, CI/CD, Jenkins}
+    \resumeSubItem{Testing}{~~~~~~~~~~~Jest, Unit Testing, Integration Testing, TDD, Automated Testing}
+    \resumeSubItem{AI Dev Tools}{~~~GitHub Copilot, Claude, Cursor, AI-Assisted Development}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Moresand Technologies}{Bengaluru, Karnataka}
+      {Software Development Engineer 2}{Mar 2025 -- Present}
+      \resumeItemListStart
+        \item\small{Architected a distributed, multi-tenant SaaS platform with \textbf{TypeScript} end-to-end -- \textbf{Next.js} SSR frontend (React.js, TypeScript) and \textbf{Express.js} backend API services serving 5+ enterprise clients; owned feature delivery end-to-end from schema design through production deployment, reducing client onboarding time by \textbf{50\%}.}
+        \item\small{Designed and built \textbf{Express.js} backend APIs with typed TypeScript contracts -- integrating \textbf{PostgreSQL} for complex joins, indexing strategies, and transactional integrity across high-volume enterprise data; drove the full data layer from schema design through \textbf{REST API} delivery to the Next.js frontend components.}
+        \item\small{Built a high-performance \textbf{React.js component library} in TypeScript with lazy loading, code splitting, and memoisation; maintained \textbf{production observability} via structured metrics, logs, and alerting -- achieving SLA-compliant reliability with \textbf{50\%} reduction in development effort and zero-downtime deployments on \textbf{AWS ECS}.}
+        \item\small{Owned \textbf{end-to-end CI/CD pipelines} (Docker, AWS ECS) and production incident response -- root-cause analysis, runbooks, and operational documentation; \textbf{mentored junior engineers} through structured code reviews, establishing clean, testable TypeScript standards and engineering best practices across the team.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {MAQ Software}{Noida, UP}
+      {Software Engineer 1}{Apr 2024 -- Feb 2025}
+      \resumeItemListStart
+        \item\small{Built a \textbf{Next.js + TypeScript} frontend for an enterprise AI assistant -- server-side rendering, optimised data fetching, and performant rendering of high-volume Azure AI search results at enterprise scale; improved prompt accuracy by \textbf{28\%}; owned full delivery from system design through containerised deployment using \textbf{Claude and GitHub Copilot} throughout.}
+        \item\small{Designed scalable \textbf{Express.js REST API} backend services in TypeScript -- integrating vector search, \textbf{PostgreSQL} queries, and LLM APIs with typed contracts and strict data modelling; maintained production observability (metrics, structured logs, alerting) to meet SLA commitments under high-volume enterprise load.}
+        \item\small{Developed reusable \textbf{React + TypeScript} component library with robust state management and clean, testable code patterns; enforced code review discipline, automated testing standards, and monitoring practices across multiple product teams using AI-assisted development workflows.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Techolution}{Remote}
+      {Full Stack Developer}{Jul 2023 -- Mar 2024}
+      \resumeItemListStart
+        \item\small{Built and shipped production full-stack features (\textbf{React.js, Node.js/Express.js, Angular.js}) with \textbf{90\% test coverage} across unit, integration, and automated acceptance tests; enforced SOLID principles, clean and testable code, and high-signal code review discipline -- driving consistent delivery of production-quality features.}
+        \item\small{Designed and owned \textbf{CI/CD pipelines} (Jenkins, Docker) for \textbf{deployments on AWS}, cutting deployment time by \textbf{60\%}; managed production deployments end-to-end with health monitoring, alerting, and incident tracking.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {GeeksForGeeks}{Noida, UP}
+      {SDE Intern}{Jan 2023 -- Jun 2023}
+      \resumeItemListStart
+        \item\small{Boosted user engagement by \textbf{30\%} and site performance by \textbf{40\%} by building reusable \textbf{React.js and Next.js} components with \textbf{server-side rendering}, code-splitting, and lazy-loading on a high-traffic platform serving millions of monthly users.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{WebHealth}
+      {Self-initiated full-stack website health auditing platform -- \textbf{Next.js/React.js} frontend with SSR, \textbf{Node.js/Express.js} backend REST APIs, SQLite, GCP. Custom multi-page web crawler with Google Lighthouse integration, performance profiling, and automated consolidated audit reporting; end-to-end owned from system design to production deployment.}
+  \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubItem{HACKIIITV 2019 -- Best Idea Award}{Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the prestigious Best Idea Award.}
+  \resumeSubHeadingListEnd
+
+\end{document}

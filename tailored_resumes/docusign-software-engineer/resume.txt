@@ -1,0 +1,60 @@
+Shubham Pandey Email: mr.pshubham@gmail.com
+Github: shubham-pandey12 Mobile: +91-8174081896
+LinkedIn: shubhampandey Portfolio: shubham.pandey
+Education
+•
+Indian Institute Of Information Technology Vadodara
+Bachelor of Technology - Information Technology;
+Skills Summary
+• Languages & Core: • Cloud & Storage: • IaC & Automation: • Reliability & Sec: • Architecture & QA: Work Experience
+Java (OOP), Scripting, Configuration Platforms, Microservices, Distributed Systems
+AWS, Azure, GCP, Azure Blob, Google Cloud Storage, Azure Event Hub, GCP Pub/Sub
+Terraform (IaC), CI/CD Pipelines, Cloud Deployment, Infrastructure Automation, Data Platforms
+Cloud Security, Security Hardening, Lifecycle Management, Cost Optimization, On-Call
+Cross-Cloud Abstraction Patterns, SaaS, Incident Response, Test Coverage, System Reliability
+•
+•
+•
+•
+Moresand Technologies Bengaluru, Karnataka
+Software Development Engineer 2 Mar 2025 - Present
+◦ Architected scalable microservices frameworks and distributed systems in Java for multi-tenant SaaS
+platforms, collaborating with Product Management — cutting onboarding time by 50%.
+◦ Engineered cross-cloud abstraction patterns across cloud object storage (Azure Blob, Google
+Cloud Storage, AWS) and data platform services, driving lifecycle management and security hardening.
+◦ Built eventing/messaging platforms (Azure Event Hub, GCP Pub/Sub) with resilient,
+high-performance storage architectures — cutting development effort by 50% and latency.
+◦ Automated cloud infrastructure as code (IaC) via Terraform, enforcing cloud security, cost
+optimization, ample test coverage, and participating in on-call rotations and incident response.
+MAQ Software Noida, UP
+Software Engineer 1 Apr 2024 - Feb 2025
+◦ Built and owned production Java microservices and cloud-based data platform services across Azure
+and GCP, improving retrieval and system response accuracy by 28%.
+◦ Designed resilient distributed architectures integrating Azure Event Hub, GCP Pub/Sub, and
+cloud object storage (Azure Blob, Google Cloud Storage) for reliable cross-cloud workflows.
+◦ Collaborated with cross-functional teams to ship testable, ship-ready SaaS platform modules, applying
+automation, security hardening, and cost optimization across cloud environments.
+Techolution Remote
+Full Stack Developer Jul 2023 - Mar 2024
+◦ Developed and shipped scalable Java and microservices solutions in a cloud SaaS environment, enforcing
+unit and automated testing standards to achieve 90% test coverage.
+◦ Managed cloud deployment and configuration tools using scripting, configuration platforms,
+Terraform (IaC), and CI/CD pipelines on AWS — reducing deployment time by 60%.
+GeekForGeeks Noida, UP
+Software Development Engineer (Intern) Jan 2023 - Jun 2023
+◦ Boosted user engagement by 30% and improved platform performance by 40% by developing high-quality,
+testable software components and automation scripts in a fast-paced engineering team.
+Projects
+•
+WebHealth
+React.js, Node.js, Express.js, SQLite, REST APIs, Recharts, Three.js, Google OAuth, GCP
+◦ Designed and built a full-stack website health auditing platform end-to-end (Node.js/Express backend,
+React.js frontend) to run client-facing website audits, integrating a custom multi-page web crawler, Google
+Lighthouse, and passive security scanning to generate consolidated SEO, performance, and accessibility reports
+via REST APIs, replacing manual, tool-by-tool audits.
+Achievements
+•
+HACKIIITV 2019
+Best Idea Award
+◦ Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the
+prestigious Best Idea Award.

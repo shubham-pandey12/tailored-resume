@@ -1,0 +1,64 @@
+Shubham Pandey Email: mr.pshubham@gmail.com
+Github: shubham-pandey12 Mobile: +91-8174081896
+LinkedIn: shubhampandey Portfolio: shubham.pandey
+Education
+Indian Institute Of Information Technology Vadodara
+•
+Bachelor of Technology - Information Technology;
+Skills Summary
+• Runtimes & Langs: C, C++, Node.js, PHP, NGINX, PostgreSQL, OpenSSL, Linux Kernel, EOL Internals
+• Security & CVEs: CVE Patching & Backporting, CVSS, Memory Safety, Buffer Overflows, Use-After-Free, Integer
+Overflows, Format Strings, DoS Triage
+• Linux & Packaging: RHEL, Debian, Ubuntu, Alpine, Amazon Linux, RPM, DEB, mock, pbuilder, abuild, libc
+• Build & Arch: CMake, Make, autotools, GCC, Clang, Toolchain Archaeology, Dependency Pinning, Cross-Compilation
+(x86_64, aarch64, armv7)
+• Cloud, AI & Ops: AWS, Azure, Kubernetes, Container Image Hardening, SBOMs, Artifact Signing, Supply Chain
+Security, LLMs, AI-Assisted Automation, Test Harnesses, Regression Coverage, Tier-3 Support
+Work Experience
+•
+•
+•
+•
+Moresand Technologies Bengaluru, Karnataka
+Software Development Engineer 2 Mar 2025 - Present
+◦ Architected EOL runtimes (C, C++, Node.js, PHP, NGINX, PostgreSQL, OpenSSL) from research
+to launch on 5+ Linux distributions (RHEL, Debian, Ubuntu, Alpine, Amazon Linux), fixing libc
+gaps to cut onboarding 50%.
+◦ Backported CVE patches in unfamiliar C, C++, and Linux kernel code, assessing CVSS exploitability
+and memory safety (buffer overflows, use-after-free, integer overflows, format strings, DoS).
+◦ Led toolchain archaeology and RPM/DEB builds (CMake, Make, autotools, GCC, Clang, mock,
+pbuilder, abuild), pinning dependencies and cross-compiling (x86_64, aarch64, armv7) to cut effort 50%.
+◦ Owned test harnesses, regression coverage, and supply chain security on AWS/Kubernetes,
+enforcing container image hardening, SBOMs, artifact signing, and tier-3 support on customer calls.
+MAQ Software Noida, UP
+Software Engineer 1 Apr 2024 - Feb 2025
+◦ Built and owned a production Node.js service with an Azure LLM and AI-assisted automation layer for
+vulnerability triage, patch analysis, and backport drafting, improving accuracy by 28%.
+◦ Engineered automated regression verification and source analysis in C, C++, PHP, and PostgreSQL,
+applying judgment on LLM automation limits to validate patch correctness and prevent unintended side effects.
+◦ Shipped reusable Linux build-system archaeology templates (CMake, Make, autotools) and
+NGINX/OpenSSL hardening profiles for RHEL, Debian, and Alpine across multiple products.
+Techolution Remote
+Full Stack Developer Jul 2023 - Mar 2024
+◦ Shipped production C, C++, and Node.js runtime modules and test harnesses, establishing unit,
+backwards-compatibility, and regression coverage at 90% test coverage (x86_64, aarch64).
+◦ Automated Linux packaging (RPM, DEB, mock, pbuilder, abuild) and container image hardening
+on AWS, Azure, and Kubernetes with SBOMs and artifact signing, cutting release time by 60%.
+GeekForGeeks Noida, UP
+Software Development Engineer (Intern) Jan 2023 - Jun 2023
+◦ Boosted engagement by 30% and performance by 40% by debugging C, PHP, PostgreSQL, NGINX,
+and OpenSSL software builds from source with GCC/Clang across Ubuntu and Amazon Linux.
+Projects
+•
+WebHealth
+React.js, Node.js, Express.js, SQLite, REST APIs, Recharts, Three.js, Google OAuth, GCP
+◦ Designed and built a full-stack website health auditing platform end-to-end (Node.js/Express backend,
+React.js frontend) to run client-facing website audits, integrating a custom multi-page web crawler, Google
+Lighthouse, and passive security scanning to generate consolidated SEO, performance, and accessibility reports
+via REST APIs, replacing manual, tool-by-tool audits.
+Achievements
+•
+HACKIIITV 2019
+Best Idea Award
+◦ Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the
+prestigious Best Idea Award.

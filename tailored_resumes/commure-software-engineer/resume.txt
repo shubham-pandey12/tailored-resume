@@ -1,0 +1,72 @@
+SHUBHAM PANDEY
+Email: mr.pshubham@gmail.com
+Mobile: +91-8174081896
+Github: shubham-pandey12
+LinkedIn: shubhampandey
+Portfolio: shubham.pandey
+
+========================================
+EDUCATION
+========================================
+
+Indian Institute of Information Technology Vadodara — Vadodara, Gujarat
+Bachelor of Technology — Information Technology | 2019 – 2023
+
+========================================
+SKILLS SUMMARY
+========================================
+
+Backend:        Python, Node.js, Express.js, TypeScript, JavaScript, REST APIs, Microservices
+Frontend:       React.js, Next.js, TypeScript, JavaScript, HTML5, CSS3
+Databases:      MySQL, PostgreSQL, MongoDB, Redis, SQL
+Infrastructure: AWS (EC2, S3, ECS), GCP, Docker, Jenkins, CI/CD, Git
+Testing:        Jest, Unit Testing, Integration Testing, Automated Testing
+AI Dev Tools:   GitHub Copilot, Claude, Cursor, GenAI Integration, AI-Assisted Development
+
+========================================
+EXPERIENCE
+========================================
+
+Moresand Technologies — Bengaluru, Karnataka
+Software Development Engineer 2 | Mar 2025 – Present
+
+- Took full ownership from early thinking to production — designed and built tailored full-stack solutions (Node.js, Express.js, React.js, TypeScript) for 5+ enterprise clients; collaborated directly with clients to understand technology needs and integration requirements; produced detailed technical documentation to streamline client onboarding; cut onboarding time by 50%.
+
+- Led deployment and integration phases — integrated solutions into client settings, connected enterprise APIs and data sources, and solved technical challenges during implementation; built Redis-backed caching, observability tooling (structured logging, metrics, alerting), and maintained production reliability for client-critical systems.
+
+- Owned test strategy and CI/CD pipelines; mentored junior engineers; used Claude and GitHub Copilot throughout — for coding, debugging, and understanding unfamiliar systems; reduced development effort by 50%.
+
+---
+
+MAQ Software — Noida, UP
+Software Engineer 1 | Apr 2024 – Feb 2025
+
+- Built and owned a production AI-native backend service (Python + Node.js + TypeScript) — designed a custom AI orchestration layer (Azure AI Search + LLM APIs) with agentic capabilities for intelligent, context-aware retrieval; improved prompt accuracy by 28%; owned full delivery from early thinking to production using Claude and GitHub Copilot throughout.
+
+- Designed REST APIs and data pipelines for AI-powered applications; applied SOLID principles, automated testing (unit, integration); maintained production reliability through metrics, structured logs, and alerting; enforced engineering standards across teams.
+
+---
+
+Techolution — Remote
+Full Stack Developer | Jul 2023 – Mar 2024
+
+- Built and shipped production full-stack features (Node.js, React.js, TypeScript) with 90% test coverage; designed CI/CD pipelines (Jenkins, Docker); reduced deployment time by 60% — applied fast-paced deployment practices and production health monitoring.
+
+---
+
+GeeksForGeeks — Noida, UP
+SDE Intern | Jan 2023 – Jun 2023
+
+- Boosted user engagement by 30% and improved site performance by 40% building and deploying reusable web components using JavaScript, React.js, and Next.js on a high-traffic platform serving millions of monthly users.
+
+========================================
+PROJECTS
+========================================
+
+WebHealth: Built 0-1 from early thinking to production — full-stack platform (Node.js/Express.js, React.js, Python) integrating external APIs for automated website health auditing; produced technical documentation for onboarding; deployed on GCP with structured monitoring — automating consolidated SEO, performance, and accessibility reporting via REST APIs.
+
+========================================
+ACHIEVEMENTS
+========================================
+
+HACKIIITV 2019 – Best Idea Award: Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the prestigious Best Idea Award.

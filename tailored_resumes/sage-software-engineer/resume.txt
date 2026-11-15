@@ -1,0 +1,72 @@
+SHUBHAM PANDEY
+Email: mr.pshubham@gmail.com
+Mobile: +91-8174081896
+Github: shubham-pandey12
+LinkedIn: shubhampandey
+Portfolio: shubham.pandey
+
+========================================
+EDUCATION
+========================================
+
+Indian Institute of Information Technology Vadodara — Vadodara, Gujarat
+Bachelor of Technology — Information Technology | 2019 – 2023
+
+========================================
+SKILLS SUMMARY
+========================================
+
+Backend:        Node.js, Express.js, TypeScript, JavaScript, REST APIs, GraphQL, Microservices
+Frontend:       React.js, Next.js, TypeScript, JavaScript, Redux
+Databases:      MySQL, MongoDB, Redis, PostgreSQL, SQL
+Infrastructure: AWS (EC2, S3, ECS), GCP, Kubernetes, Docker, Jenkins, CI/CD, Git
+Testing:        Jest, Unit Testing, Integration Testing, API Testing, Automated Testing
+AI Dev Tools:   GitHub Copilot, Claude, Cursor, AI-Assisted Development
+
+========================================
+EXPERIENCE
+========================================
+
+Moresand Technologies — Bengaluru, Karnataka
+Software Development Engineer 2 | Mar 2025 – Present
+
+- Architected multi-tenant platform (Node.js, Express.js, React.js, TypeScript) — designed service/API contracts, API versioning, and service boundaries for backward compatibility across 5+ enterprise clients on a single codebase; cut new-client onboarding time by 50%.
+
+- Designed REST and GraphQL APIs, event-driven integrations, and fault-tolerant distributed system components — Redis-backed async processing, scalability and resiliency patterns, structured telemetry (logs, metrics, traces), and secure CI/CD for cloud-operable production-grade services.
+
+- Built modular reusable component library; owned automated testing (unit, integration, API tests), code reviews, and observability tooling; mentored engineers on safe engineering standards and upgrade practices; reduced development effort by 50%.
+
+---
+
+MAQ Software — Noida, UP
+Software Engineer 1 | Apr 2024 – Feb 2025
+
+- Built production Node.js + TypeScript backend with AI orchestration layer (Azure AI Search + LLM APIs) — event-driven retrieval pipeline delivering context-aware responses; improved prompt accuracy by 28%; owned full delivery using Claude and GitHub Copilot throughout.
+
+- Designed REST APIs and data integration contracts for AI workflows; applied SOLID principles, automated API testing (unit, integration); maintained production reliability through structured telemetry (logs, metrics, alerting).
+
+---
+
+Techolution — Remote
+Full Stack Developer | Jul 2023 – Mar 2024
+
+- Built and shipped production full-stack features (Node.js, React.js, TypeScript) with 90% test coverage; designed CI/CD pipelines (Jenkins, Docker) for container-orchestrated microservice deployments on Kubernetes — reduced deployment time by 60%; applied cloud-native engineering practices for production health monitoring.
+
+---
+
+GeeksForGeeks — Noida, UP
+SDE Intern | Jan 2023 – Jun 2023
+
+- Boosted user engagement 30% and improved site performance 40% by building and deploying reusable web components and optimized pages using JavaScript, React.js, and Next.js.
+
+========================================
+PROJECTS
+========================================
+
+WebHealth: Full-stack website health auditing platform — Node.js/Express backend REST APIs and integrations, React.js frontend; integrated a custom web crawler, Google Lighthouse, and passive security scanning; deployed on GCP with observability tooling (structured logging, metrics) — generating consolidated SEO, performance, and accessibility reports.
+
+========================================
+ACHIEVEMENTS
+========================================
+
+HACKIIITV 2019 – Best Idea Award: Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the prestigious Best Idea Award.

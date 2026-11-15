@@ -1,0 +1,98 @@
+{
+  "meta": {
+    "count": 10,
+    "page": 3
+  },
+  "results": [
+    {
+      "id": "4470057400",
+      "title": ".NET Developer",
+      "company": "Infosys",
+      "companyUrl": "https://in.linkedin.com/company/infosys",
+      "location": "Bengaluru East, Karnataka, India",
+      "date": "2026-11-06",
+      "url": "https://in.linkedin.com/jobs/view/net-developer-at-infosys-4470057400"
+    },
+    {
+      "id": "4485055822",
+      "title": "Dot Net Fullstack Developer",
+      "company": "Persistent Systems",
+      "companyUrl": "https://in.linkedin.com/company/persistent-systems",
+      "location": "Pune City, Maharashtra, India",
+      "date": "2026-11-04",
+      "url": "https://in.linkedin.com/jobs/view/dot-net-fullstack-developer-at-persistent-systems-4485055822"
+    },
+    {
+      "id": "4486377004",
+      "title": "Java Full Stack Developer ? Spring Boot & Cursor AI",
+      "company": "Persistent Systems",
+      "companyUrl": "https://in.linkedin.com/company/persistent-systems",
+      "location": "Pune Division, Maharashtra, India",
+      "date": "2026-11-04",
+      "url": "https://in.linkedin.com/jobs/view/java-full-stack-developer-%3F-spring-boot-cursor-ai-at-persistent-systems-4486377004"
+    },
+    {
+      "id": "4471418874",
+      "title": "Software Development Engineer",
+      "company": "Foxit",
+      "companyUrl": "https://www.linkedin.com/company/foxit-corporation",
+      "location": "Noida, Uttar Pradesh, India",
+      "date": "2026-11-06",
+      "url": "https://in.linkedin.com/jobs/view/software-development-engineer-at-foxit-4471418874"
+    },
+    {
+      "id": "4479328579",
+      "title": "Software Engineer, Staff - Java",
+      "company": "Blackbaud India",
+      "companyUrl": "https://in.linkedin.com/company/blackbaud-india",
+      "location": "Hyderabad, Telangana, India",
+      "date": "2026-11-06",
+      "url": "https://in.linkedin.com/jobs/view/software-engineer-staff-java-at-blackbaud-india-4479328579"
+    },
+    {
+      "id": "4424876477",
+      "title": "Senior Software Engineer",
+      "company": "Milliman India",
+      "companyUrl": "https://in.linkedin.com/company/milliman-asia",
+      "location": "Gurgaon, Haryana, India",
+      "date": "2026-11-09",
+      "url": "https://in.linkedin.com/jobs/view/senior-software-engineer-at-milliman-india-4424876477"
+    },
+    {
+      "id": "4485840698",
+      "title": ".NET Developer",
+      "company": "Konrad",
+      "companyUrl": "https://www.linkedin.com/company/konrad-group",
+      "location": "Gurgaon, Haryana, India",
+      "date": "2026-11-05",
+      "url": "https://in.linkedin.com/jobs/view/net-developer-at-konrad-4485840698"
+    },
+    {
+      "id": "4470930597",
+      "title": "Senior Full Stack Developer",
+      "company": "Euronext",
+      "companyUrl": "https://www.linkedin.com/company/euronext",
+      "location": "Bengaluru, Karnataka, India",
+      "date": "2026-11-05",
+      "url": "https://in.linkedin.com/jobs/view/senior-full-stack-developer-at-euronext-4470930597"
+    },
+    {
+      "id": "4479875437",
+      "title": "Java Full Stack Developer (React/Angular)",
+      "company": "Volante Technologies",
+      "companyUrl": "https://www.linkedin.com/company/volante-technologies",
+      "location": "Pune Division, Maharashtra, India",
+      "date": "2026-11-06",
+      "url": "https://in.linkedin.com/jobs/view/java-full-stack-developer-react-angular-at-volante-technologies-4479875437"
+    },
+    {
+      "id": "4480926092",
+      "title": "Full Stack C# .Net Software Engineer",
+      "company": "BNP Paribas",
+      "companyUrl": "https://fr.linkedin.com/company/bnp-paribas",
+      "location": "Bengaluru, Karnataka, India",
+      "date": "2026-11-09",
+      "url": "https://in.linkedin.com/jobs/view/full-stack-c%23-net-software-engineer-at-bnp-paribas-4480926092"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+\documentclass[a4paper,20pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.70in}
+\addtolength{\textheight}{1.15in}
+
+\urlstyle{rm}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\vspace{-10pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+\newcommand{\resumeItem}[2]{\item\small{\textbf{#1}{: #2 \vspace{-2pt}}}}
+\newcommand{\resumeItemWithoutTitle}[1]{\item\small{{\vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-1pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}\textbf{#1} & #2 \\\textit{#3} & \textit{#4} \\\end{tabular*}\vspace{-5pt}}
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-3pt}}
+\renewcommand{\labelitemii}{$\circ$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\LARGE Shubham Pandey}} & Email: \href{mailto:mr.pshubham@gmail.com}{mr.pshubham@gmail.com}\\
+  \href{https://github.com/shubham-pandey12}{Github: shubham-pandey12} & Mobile:~~~~~~~~~~~~+91-8174081896 \\
+  \href{https://www.linkedin.com/in/shubham-pandey-a74716199/}{LinkedIn: shubhampandey} & Portfolio:~~~~~~~~\href{https://shubham-portfolio-mocha.vercel.app/}{shubham.pandey} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Indian Institute of Information Technology Vadodara}{Vadodara, Gujarat}
+    {Bachelor of Technology -- Information Technology}{Aug 2019 -- Jun 2023}
+\resumeSubHeadingListEnd
+
+%--------SKILLS SUMMARY------------
+\section{Skills Summary}
+\resumeSubHeadingListStart
+  \resumeSubItem{Frontend}{React.js, Next.js, TypeScript, JavaScript, HTML5, CSS/SCSS, Redux, Ant Design, Angular.js}
+  \resumeSubItem{Backend}{Node.js, NestJS, Express.js, Python, Django, REST APIs, GraphQL, Microservices, WebSockets}
+  \resumeSubItem{Databases}{PostgreSQL, MySQL, MongoDB, Redis, Snowflake}
+  \resumeSubItem{Cloud \& DevOps}{GCP, AWS (EC2, S3, ECS, CloudFront), Docker, Kubernetes, Jenkins, CI/CD}
+  \resumeSubItem{Testing \& Tools}{Jest, Unit Testing, Integration Testing, Automated Testing, Git}
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+    {Moresand Technologies}{Bengaluru, India}
+    {Software Development Engineer 2}{Mar 2025 -- Present}
+    \resumeItemListStart
+      \resumeItem{Multi-Tenant SaaS Platform}{Architected a multi-tenant SaaS CMS end-to-end (Node.js, NestJS, React.js, TypeScript) supporting 5+ luxury travel brands with isolated tenant data, shared service infrastructure, and configurable API integrations -- cut new-brand onboarding time by 50\%; owned design through production deployment and monitoring.}
+      \resumeItem{Scalable REST \& GraphQL APIs}{Designed and implemented REST and GraphQL APIs from the ground up, owning schema design, API versioning, complex SQL joins, and end-to-end data contracts between backend services and React frontend components; authored runbooks for service ownership and on-call support.}
+      \resumeItem{Reusable Component Library}{Built a modular library of reusable React widgets and templates with configurable API integrations, data mapping, Snowflake-backed analytics queries, and a Redis-backed caching layer for high-traffic endpoints -- reducing dev effort by 50\% and cutting API response latency significantly.}
+      \resumeItem{CI/CD \& Test Strategy}{Owned unit, integration, and automated testing suites and CI/CD pipelines (Jenkins, Docker, AWS ECS) across frontend and backend services, ensuring SLA-compliant, production-ready deployments and leading production incident response across all tenant environments.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {MAQ Software}{Noida, India}
+    {Software Engineer 1}{Apr 2024 -- Feb 2025}
+    \resumeItemListStart
+      \resumeItem{AI-Assisted Workflow Backend}{Built and owned a production Node.js/NestJS backend service powering a real-time AI assistant with a custom Azure AI Search orchestration layer, enabling context-aware LLM responses and improving prompt accuracy by \textbf{28\%}; owned full lifecycle from design to production deployment and monitoring.}
+      \resumeItem{Retrieval \& API Design}{Designed REST and GraphQL APIs and retrieval workflows integrating Azure Search, PostgreSQL queries, and AI orchestration -- applied NLP-informed retrieval patterns to deliver reliable, low-latency agent-facing responses in production with structured logging and alerting.}
+      \resumeItem{React + TypeScript Component Library}{Developed and shipped reusable React and TypeScript components for AI-powered applications using WebSocket-driven real-time updates and Redux state management, enabling scalable, resilient user experiences across multiple enterprise products.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {Techolution}{Remote}
+    {Full Stack Developer}{Jul 2023 -- Mar 2024}
+    \resumeItemListStart
+      \resumeItem{Full-Stack Feature Development}{Built and shipped production features using React.js, Angular.js, and NestJS with \textbf{90\% test coverage} across unit, integration, and automated acceptance tests using Jest -- enforced code-review standards and automated regression detection across the codebase.}
+      \resumeItem{Docker \& Jenkins CI/CD}{Designed and owned CI/CD pipelines using Jenkins and Docker for microservice deployments on AWS, reducing deployment time by \textbf{60\%}, improving release reliability, and enabling continuous delivery across multiple team environments.}
+    \resumeItemListEnd
+
+  \resumeSubheading
+    {GeeksForGeeks}{Noida, India}
+    {SDE Intern}{Jan 2023 -- Jun 2023}
+    \resumeItemListStart
+      \resumeItem{Web Performance}{Boosted user engagement by \textbf{30\%} and improved site performance by \textbf{40\%} by building reusable web components and optimised pages using JavaScript, React.js, and Next.js with server-side rendering, code-splitting, and Snowflake-backed analytics integration.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeSubItem{Job Hunter}{Multi-tenant job aggregation platform — Node.js scrapers, Next.js frontend, PostgreSQL + Redis, Docker + CI/CD; real-time job matching across 10+ sources.}
+  \resumeSubItem{AI Code Review Tool}{React + TypeScript SPA integrating OpenAI APIs for real-time code feedback; Redux state management, REST API backend, WebSocket-based streaming responses.}
+\resumeSubHeadingListEnd
+
+\end{document}

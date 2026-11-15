@@ -1,0 +1,72 @@
+SHUBHAM PANDEY
+Email: mr.pshubham@gmail.com
+Mobile: +91-8174081896
+Github: shubham-pandey12
+LinkedIn: shubhampandey
+Portfolio: shubham.pandey
+
+========================================
+EDUCATION
+========================================
+
+Indian Institute of Information Technology Vadodara — Vadodara, Gujarat
+Bachelor of Technology — Information Technology | 2019 – 2023
+
+========================================
+SKILLS SUMMARY
+========================================
+
+Backend:        Node.js, Express.js, TypeScript, JavaScript, REST APIs, Microservices
+Frontend:       React.js, Next.js, TypeScript, Redux
+Databases:      SQL, PostgreSQL, MySQL, MongoDB, Redis
+Infrastructure: AWS (EC2, S3, ECS), GCP, Docker, Jenkins, CI/CD, Git
+Testing:        Jest, Unit Testing, Integration Testing, Automated Testing
+AI Dev Tools:   GitHub Copilot, Claude, Cursor, AI-Assisted Development
+
+========================================
+EXPERIENCE
+========================================
+
+Moresand Technologies — Bengaluru, Karnataka
+Software Development Engineer 2 | Mar 2025 – Present
+
+- Designed and owned high-quality, secure, high-performant backend services (Node.js, Express.js, TypeScript) for a multi-tenant SaaS platform — built scalable REST APIs, server-side business logic, and integration layers across 5+ enterprise client deployments; applied security and data protection (authentication flows, tenant-scoped data isolation); cut onboarding time by 50%.
+
+- Integrated server-side logic with frontend-facing elements — built modular API contracts, a Redis-backed caching layer for high-traffic endpoints, and workflow automations; collaborated cross-functionally with frontend engineers and product teams to ship complete, well-tested features on schedule.
+
+- Drove engineering rigour: participated in sprint planning, task estimation, and user story creation; owned automated testing (Jest, unit + integration), code reviews, and CI/CD pipelines (Jenkins, Docker); maintained observability through structured logging, custom metrics, and alerting; reduced development effort by 50%.
+
+---
+
+MAQ Software — Noida, UP
+Software Engineer 1 | Apr 2024 – Feb 2025
+
+- Built and owned a production Node.js + TypeScript backend service with a custom AI orchestration layer (Azure AI Search + LLM APIs) — designed REST API contracts, implemented testable and scalable backend architecture, applied SOLID principles and code quality standards; improved prompt accuracy by 28%; owned full delivery using Claude and GitHub Copilot.
+
+- Designed data pipelines for enterprise AI workflows — unit + integration testing, production reliability monitoring (metrics, structured logs, alerting); translated business requirements into technical solutions; collaborated with frontend developers on API integration.
+
+---
+
+Techolution — Remote
+Full Stack Developer | Jul 2023 – Mar 2024
+
+- Built and shipped production backend features (Node.js, TypeScript) with 90% test coverage; designed and owned CI/CD pipelines (Jenkins, Docker) on AWS — reduced deployment time by 60%; enforced code quality through structured code reviews and sprint-driven delivery.
+
+---
+
+GeeksForGeeks — Noida, UP
+SDE Intern | Jan 2023 – Jun 2023
+
+- Contributed backend and frontend features (Node.js, React.js) with 40% performance improvement; applied web optimization on a high-traffic platform serving millions of monthly users.
+
+========================================
+PROJECTS
+========================================
+
+WebHealth: Full-stack web auditing platform — Node.js/Express.js backend REST APIs, PostgreSQL-compatible SQL queries, and server-side integration logic; React.js + TypeScript frontend; integrated Google Lighthouse for automated performance and accessibility auditing; deployed on GCP with full observability, monitoring, and security scanning.
+
+========================================
+ACHIEVEMENTS
+========================================
+
+HACKIIITV 2019 – Best Idea Award: Led and guided a team of 5 software engineers in the HackIIITV competition, resulting in the team winning the prestigious Best Idea Award.
